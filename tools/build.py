@@ -17,6 +17,7 @@ def load(name):
 rev, sets = load("revision_questions.json"), load("revision_sets.json")
 synant, roots = load("synonyms_antonyms.json"), load("roots.json")
 idioms, foreign, ws = load("idioms.json"), load("foreign_phrases.json"), load("worksheets.json")
+apt = load("aptitude.json")
 L = "ABCD"
 
 
@@ -32,7 +33,7 @@ def cell(s):
 
 
 # ------------------------------------------------------------------ app
-data = {"rev": rev, "sets": sets, "synant": synant, "roots": roots, "idioms": idioms, "foreign": foreign, "ws": ws}
+data = {"rev": rev, "sets": sets, "synant": synant, "roots": roots, "idioms": idioms, "foreign": foreign, "ws": ws, "apt": apt}
 body = (ROOT / "app" / "template.html").read_text(encoding="utf-8")
 body = body.replace("/*__DATA__*/", json.dumps(data, ensure_ascii=False, separators=(",", ":")))
 page = ('<!doctype html>\n<html lang="en">\n<head>\n<meta charset="utf-8">\n'
@@ -83,6 +84,16 @@ md += ["", "Items 1, 9, 11 and 16 are loosely worded on the sheet — the note g
        "## Part B. Use in a sentence (model answers)", "", "| Term | Meaning | Sentence |", "|---|---|---|"]
 md += [f"| **{cell(r['term'])}** | {cell(r['meaning'])} | {cell(r['sentence'])} |" for r in ws["foreign_b"]]
 write("answer-keys/foreign-phrases-worksheet.md", "\n".join(md))
+
+# ------------------------------------------------------------------ answer key: aptitude self-assessment
+md = ["# Self-assessment (aptitude & reasoning) — answer key", "",
+      "Worked solutions for all 30 questions. Methods for each type are in `notes/aptitude.md`.", "",
+      "Quick check: " + "  ".join(f"`{q['n']}-{'abcd'[q['ans']]}`" for q in apt), ""]
+for q in apt:
+    md += [f"**Q{q['n']}. {q['q']}** _({q['topic']})_  ",
+           "  ".join(f"({'abcd'[k]}) {o}" for k, o in enumerate(q["opts"])) + "  ",
+           f"**Answer: ({'abcd'[q['ans']]}) {q['opts'][q['ans']]}** — {q['why']}", ""]
+write("answer-keys/aptitude-self-assessment.md", "\n".join(md))
 
 # ------------------------------------------------------------------ notes
 t = [r for r in roots if r["tested"]]
