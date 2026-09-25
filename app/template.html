@@ -677,18 +677,24 @@ td.k { font-weight: 600; white-space: nowrap; }
   ];
   // score, streak, the repeat queue and the question on screen survive a refresh
   const saved = store.get("prac", {});
-  let prac = { topic: store.get("pTopic", "rev"), q: null, chosen: null, right: 0, seen: 0, streak: 0, best: 0, lastKey: null, retry: [], again: false, ...saved };
-  const savePrac = () => store.set("prac", { q: prac.q, chosen: prac.chosen, right: prac.right, seen: prac.seen, streak: prac.streak, best: prac.best, lastKey: prac.lastKey, retry: prac.retry, again: prac.again });
+  let prac = { topic: store.get("pTopic", "rev"), q: null, chosen: null, right: 0, seen: 0, streak: 0, best: 0, lastKey: null, retry: [], again: false, misses: {}, cur: null, ...saved };
+  const savePrac = () => store.set("prac", { q: prac.q, chosen: prac.chosen, right: prac.right, seen: prac.seen, streak: prac.streak, best: prac.best, lastKey: prac.lastKey, retry: prac.retry, again: prac.again, misses: prac.misses, cur: prac.cur });
   function nextPractice() {
     // a question you missed comes back 3 questions later, until you get it right
-    const due = prac.retry.findIndex(r => r.due <= prac.seen);
+    // an unanswered repeat (e.g. you switched topic) goes back in the queue
+    if (prac.cur && !prac.cur.done && prac.chosen == null) prac.retry.push({ ...prac.cur, due: prac.seen });
+    let due = -1;
+    prac.retry.forEach((r, i) => { if (r.due <= prac.seen && (due < 0 || r.due < prac.retry[due].due)) due = i; });
     let q;
-    if (due >= 0) { q = prac.retry.splice(due, 1)[0].q; prac.again = true; }
+    prac.cur = null;
+    if (due >= 0) { prac.cur = prac.retry.splice(due, 1)[0]; q = prac.cur.q; prac.again = true; }
     else {
       const t = P_TOPICS.find(x => x.id === prac.topic) || P_TOPICS[0];
       q = t.next();
       for (let tries = 0; q && q.key === prac.lastKey && tries < 5 && t.n() > 1; tries++) q = t.next();
-      prac.again = false;
+      const queued = q ? prac.retry.findIndex(r => r.key === q.key || r.q.key === q.key) : -1;
+      if (queued >= 0) { prac.cur = prac.retry.splice(queued, 1)[0]; q = prac.cur.q; }
+      prac.again = !!prac.cur;
     }
     prac.q = q; prac.chosen = null; prac.lastKey = q && q.key;
     savePrac();
@@ -698,9 +704,9 @@ td.k { font-weight: 600; white-space: nowrap; }
     const q = prac.q;
     view.innerHTML = `<section class="stack">
       <div class="row" role="group" aria-label="Topic">${P_TOPICS.map(t => `<button class="chip" aria-pressed="${t.id === prac.topic}" data-t="${t.id}">${t.name}<span class="n">${t.n()}</span></button>`).join("")}</div>
-      <div class="p-intro"><b>Answer, see why, and your misses come back.</b><span>Get one wrong and it returns three questions later, in any topic, until you get it right. It's also saved to <i>My mistakes</i> for tomorrow morning.</span></div>
+      <div class="p-intro"><b>Answer, see why, and your misses come back.</b><span>Get one wrong and it comes back 2 questions later, in any topic. It has to be answered right several times before it's cleared (more times if you keep missing it), with longer gaps as you get it right. It's also saved to <i>My mistakes</i> for tomorrow morning.</span></div>
       <div class="pstats"><span>Score <b>${prac.right}/${prac.seen}</b></span><span>Streak <b>${prac.streak}</b></span><span>Best <b>${prac.best}</b></span><span>Coming back <b>${prac.retry.length}</b></span><button class="chip" id="preset" style="padding:2px 10px;font-size:12px">${prac.confirmReset ? "Tap again to reset" : "Reset score"}</button><span class="muted">Keys: <span class="kbd">A</span>–<span class="kbd">D</span> answer · <span class="kbd">Enter</span> next</span></div>
-      ${q && prac.again ? `<div><span class="again">Back again: you missed this one</span></div>` : ""}
+      ${q && prac.again ? `<div><span class="again">Back again · missed ${prac.misses[q.key] || 1}× · ${prac.cur?.need ?? 2} more correct to clear</span></div>` : ""}
       ${q ? qHTML(q, 0, { chosen: prac.chosen, reveal: prac.chosen != null }) : `<div class="panel">No mistakes saved yet. Every question you miss in a test or here lands in this list until you get it right.</div>`}
       ${q && prac.chosen != null ? `<div class="row"><button class="btn primary" id="next">Next question</button></div>` : ""}
     </section>`;
@@ -711,7 +717,7 @@ td.k { font-weight: 600; white-space: nowrap; }
     const n = view.querySelector("#next"); if (n) { n.onclick = nextPractice; n.focus({ preventScroll: true }); }
     view.querySelector("#preset").onclick = () => {
       if (!prac.confirmReset) { prac.confirmReset = true; return renderPractice(); }
-      Object.assign(prac, { right: 0, seen: 0, streak: 0, best: 0, retry: [], confirmReset: false });
+      Object.assign(prac, { right: 0, seen: 0, streak: 0, best: 0, retry: [], misses: {}, cur: null, confirmReset: false });
       savePrac(); renderPractice();
     };
   }
@@ -719,8 +725,22 @@ td.k { font-weight: 600; white-space: nowrap; }
     if (!prac.q || prac.chosen != null) return;
     prac.chosen = k; prac.seen++;
     prac.confirmReset = false;
-    if (k === prac.q.ans) { prac.right++; prac.streak++; prac.best = Math.max(prac.best, prac.streak); if (prac.topic === "mistakes" || prac.again) mistakes.remove(prac.q.key); }
-    else { prac.streak = 0; mistakes.add(prac.q); prac.retry.push({ q: prac.q, due: prac.seen + 3 }); }
+    const key = prac.q.key, GAPS = [2, 5, 9, 14];
+    if (k === prac.q.ans) {
+      prac.right++; prac.streak++; prac.best = Math.max(prac.best, prac.streak);
+      if (prac.cur) {
+        // right, but not cleared yet: come back again, a little later each time
+        const need = (prac.cur.need ?? 2) - 1, hits = (prac.cur.hits || 0) + 1;
+        if (need > 0) prac.retry.push({ q: prac.q, key, need, hits, due: prac.seen + GAPS[Math.min(hits, 3)] });
+        else { mistakes.remove(key); delete prac.misses[key]; }
+      } else if (prac.topic === "mistakes") mistakes.remove(key);
+    } else {
+      // the more often it's missed, the more correct answers it takes to clear
+      prac.streak = 0; mistakes.add(prac.q);
+      prac.misses[key] = (prac.misses[key] || 0) + 1;
+      prac.retry.push({ q: prac.q, key, need: Math.min(1 + prac.misses[key], 4), hits: 0, due: prac.seen + GAPS[0] });
+    }
+    prac.cur = prac.cur && { ...prac.cur, done: true };
     savePrac();
     renderPractice();
   }
