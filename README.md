@@ -4,6 +4,10 @@ Everything for the Career Skills exam in one place: vocabulary and aptitude. It 
 
 **Use it online:** [Career Skills Cram](https://claude.ai/artifact/C58vY42F73GW4d6HdeFE8W). This link works on a phone too.
 
+## Start with Practice
+
+**Practice is where you learn, and Mock test is where you check.** In Practice you answer one question at a time and see the explanation right away. Any question you get wrong **comes back three questions later, in any topic, until you get it right**. It's also saved to *My mistakes* so you can go through them again the next morning. Spend most of your time there, then take a mock test to see how you'd score.
+
 **Or open `index.html` in a browser.** The app needs no install or internet connection (without internet it just uses the default fonts).
 
 ## What the paper looks like
@@ -28,8 +32,8 @@ The full breakdown by question type is in [`notes/what-to-expect.md`](notes/what
 | When | What | Where |
 |---|---|---|
 | 6:00–6:25 | Take **Set A** cold as a baseline and don't look anything up | App → Mock test → Set A |
-| 6:25–7:05 | **Roots in the tests** (33 roots, the highest-yield vocabulary topic) | App → Flashcards, then `notes/root-words.md` "traps" section |
-| 7:05–7:45 | **Word pairs in the tests** (68 words) | App → Flashcards |
+| 6:25–7:05 | **Roots**: Practice → Root words until your misses stop coming back | App → Practice, then `notes/root-words.md` "traps" section |
+| 7:05–7:45 | **Real test questions** in Practice: all 97, with misses repeated | App → Practice |
 | 7:45–8:15 | **Aptitude self-assessment** (30 questions), then read the method for each type you missed | App → Mock test, then `notes/aptitude.md` |
 | 8:15–8:35 | Break and eat | |
 | 8:35–9:05 | **Real question pool** mock (50 random questions), then retake the ones you missed | App → Mock test |

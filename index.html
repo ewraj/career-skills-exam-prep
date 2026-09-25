@@ -141,7 +141,11 @@ h1, h2, h3 { text-wrap: balance; margin: 0; }
 .omr-row a { color: inherit; text-decoration: none; }
 
 /* practice */
-.pstats { display: flex; gap: 16px; font: 500 13px var(--mono); color: var(--muted); }
+.p-intro { display: grid; gap: 4px; background: var(--accent-soft); border: 1px solid var(--accent); border-radius: var(--radius); padding: 12px 16px; }
+.p-intro b { font: 600 17px/1.3 var(--serif); }
+.p-intro span { font-size: 13.5px; color: var(--ink-soft); }
+.again { display: inline-block; font: 600 11px var(--mono); letter-spacing: .06em; text-transform: uppercase; color: var(--bad); background: var(--bad-soft); border-radius: 999px; padding: 3px 10px; }
+.pstats { flex-wrap: wrap; display: flex; gap: 16px; font: 500 13px var(--mono); color: var(--muted); }
 .pstats b { color: var(--ink); }
 
 /* flashcards */
@@ -185,11 +189,11 @@ td.k { font-weight: 600; white-space: nowrap; }
   <header class="top">
     <div class="brand">
       <div class="mark" aria-hidden="true"><i></i><i class="f"></i><i></i><i></i></div>
-      <div><h1>Career Skills Cram</h1><small>Synonyms · Antonyms · Roots · Idioms · Foreign phrases</small></div>
+      <div><h1>Career Skills Cram</h1><small>Roots · Synonyms · Antonyms · Idioms · Foreign phrases · Aptitude</small></div>
     </div>
     <nav class="tabs" role="tablist" aria-label="Sections">
-      <button role="tab" data-tab="mock">Mock test</button>
       <button role="tab" data-tab="practice">Practice</button>
+      <button role="tab" data-tab="mock">Mock test</button>
       <button role="tab" data-tab="cards">Flashcards</button>
       <button role="tab" data-tab="sheets">Worksheets</button>
       <button role="tab" data-tab="lookup">Look up</button>
@@ -550,7 +554,7 @@ td.k { font-weight: 600; white-space: nowrap; }
     const sel = store.get("mockMode", "pool");
     view.innerHTML = `<section class="stack setup">
       <div class="panel stack">
-        <div class="eyebrow">Tomorrow's paper</div>
+        <div class="eyebrow">Tomorrow's paper · learn in Practice first, then test yourself here</div>
         <h2>Four options, one answer: vocabulary and aptitude</h2>
         <p class="lede"><b>Vocabulary:</b> your four revision sets are one pool of 97 questions reshuffled. About half test root words; the rest are synonyms and antonyms. <b>Aptitude:</b> the self-assessment covers clocks, coding, number and letter series, time &amp; work, ratio and partnership.</p>
         <div class="stats">
@@ -678,11 +682,18 @@ td.k { font-weight: 600; white-space: nowrap; }
     { id: "fws", name: "Foreign worksheet (fill-in)", n: () => DATA.ws.foreign_a.length, next: () => gen.foreignWs(1)[0] },
     { id: "mistakes", name: "My mistakes", n: () => mistakes.all().length, next: () => { const m = mistakes.all(); return m.length ? m[Math.floor(Math.random() * Math.min(m.length, 40))] : null; } },
   ];
-  let prac = { topic: store.get("pTopic", "rev"), q: null, chosen: null, right: 0, seen: 0, streak: 0, lastKey: null };
+  let prac = { topic: store.get("pTopic", "rev"), q: null, chosen: null, right: 0, seen: 0, streak: 0, lastKey: null, retry: [], again: false };
   function nextPractice() {
-    const t = P_TOPICS.find(x => x.id === prac.topic) || P_TOPICS[0];
-    let q = t.next();
-    for (let tries = 0; q && q.key === prac.lastKey && tries < 5 && t.n() > 1; tries++) q = t.next();
+    // a question you missed comes back 3 questions later, until you get it right
+    const due = prac.retry.findIndex(r => r.due <= prac.seen);
+    let q;
+    if (due >= 0) { q = prac.retry.splice(due, 1)[0].q; prac.again = true; }
+    else {
+      const t = P_TOPICS.find(x => x.id === prac.topic) || P_TOPICS[0];
+      q = t.next();
+      for (let tries = 0; q && q.key === prac.lastKey && tries < 5 && t.n() > 1; tries++) q = t.next();
+      prac.again = false;
+    }
     prac.q = q; prac.chosen = null; prac.lastKey = q && q.key;
     renderPractice();
   }
@@ -690,7 +701,9 @@ td.k { font-weight: 600; white-space: nowrap; }
     const q = prac.q;
     view.innerHTML = `<section class="stack">
       <div class="row" role="group" aria-label="Topic">${P_TOPICS.map(t => `<button class="chip" aria-pressed="${t.id === prac.topic}" data-t="${t.id}">${t.name}<span class="n">${t.n()}</span></button>`).join("")}</div>
-      <div class="pstats"><span>Score <b>${prac.right}/${prac.seen}</b></span><span>Streak <b>${prac.streak}</b></span><span class="muted">Keys: <span class="kbd">A</span>–<span class="kbd">D</span> answer · <span class="kbd">Enter</span> next</span></div>
+      <div class="p-intro"><b>Answer, see why, and your misses come back.</b><span>Get one wrong and it returns three questions later, in any topic, until you get it right. It's also saved to <i>My mistakes</i> for tomorrow morning.</span></div>
+      <div class="pstats"><span>Score <b>${prac.right}/${prac.seen}</b></span><span>Streak <b>${prac.streak}</b></span><span>Coming back <b>${prac.retry.length}</b></span><span class="muted">Keys: <span class="kbd">A</span>–<span class="kbd">D</span> answer · <span class="kbd">Enter</span> next</span></div>
+      ${q && prac.again ? `<div><span class="again">Back again: you missed this one</span></div>` : ""}
       ${q ? qHTML(q, 0, { chosen: prac.chosen, reveal: prac.chosen != null }) : `<div class="panel">No mistakes saved yet. Every question you miss in a test or here lands in this list until you get it right.</div>`}
       ${q && prac.chosen != null ? `<div class="row"><button class="btn primary" id="next">Next question</button></div>` : ""}
     </section>`;
@@ -703,8 +716,8 @@ td.k { font-weight: 600; white-space: nowrap; }
   function answerPractice(k) {
     if (!prac.q || prac.chosen != null) return;
     prac.chosen = k; prac.seen++;
-    if (k === prac.q.ans) { prac.right++; prac.streak++; if (prac.topic === "mistakes") mistakes.remove(prac.q.key); }
-    else { prac.streak = 0; mistakes.add(prac.q); }
+    if (k === prac.q.ans) { prac.right++; prac.streak++; if (prac.topic === "mistakes" || prac.again) mistakes.remove(prac.q.key); }
+    else { prac.streak = 0; mistakes.add(prac.q); prac.retry.push({ q: prac.q, due: prac.seen + 3 }); }
     renderPractice();
   }
 
@@ -815,12 +828,12 @@ td.k { font-weight: 600; white-space: nowrap; }
 
   // ------------------------------------------------------------ tabs & keys
   const RENDER = { mock: () => (mock ? renderMock() : renderMockSetup()), practice: () => (prac.q ? renderPractice() : nextPractice()), cards: renderCards, sheets: renderSheets, lookup: renderLookup };
-  let tab = "mock";
+  let tab = "practice";
   function go(t) {
     if (tab === "mock" && t !== "mock") clearInterval(timer);
     tab = RENDER[t] ? t : "mock";
     document.querySelectorAll(".tabs button").forEach(b => b.setAttribute("aria-selected", b.dataset.tab === tab));
-    store.set("tab", tab);
+    store.set("tab2", tab);
     RENDER[tab]();
   }
   document.querySelector(".tabs").onclick = e => { const b = e.target.closest("[data-tab]"); if (b) go(b.dataset.tab); };
@@ -838,7 +851,7 @@ td.k { font-weight: 600; white-space: nowrap; }
     }
   });
   const hashTab = (location.hash || "").slice(1);
-  go(RENDER[hashTab] ? hashTab : store.get("tab", "mock"));
+  go(RENDER[hashTab] ? hashTab : store.get("tab2", "practice"));
 })();
 </script>
 
