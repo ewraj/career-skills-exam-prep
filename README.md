@@ -50,7 +50,7 @@ notes/
   synonyms-antonyms.md           ★ tested words, then the full 391-entry list
   idioms-phrases.md              ★ worksheet idioms, then all 178
   foreign-phrases.md             ★ worksheet expressions, then all 239
-source-pdfs/                     the original handouts and tests
+source-files/                    the original handouts, tests and the self-assessment sheet
 data/                            the same content as JSON (the app is built from this)
 app/template.html, tools/build.py
 ```
