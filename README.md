@@ -2,7 +2,9 @@
 
 Everything for the Career Skills vocabulary exam in one place: the handouts, answer keys, short notes, and a study app that works offline.
 
-**Open `index.html` in a browser.** The app needs no install or internet connection (without internet it just uses the default fonts).
+**Use it online:** [Career Skills Cram](https://claude.ai/artifact/C58vY42F73GW4d6HdeFE8W). This link works on a phone too.
+
+**Or open `index.html` in a browser.** The app needs no install or internet connection (without internet it just uses the default fonts).
 
 ## What the paper looks like
 
