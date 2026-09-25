@@ -1,0 +1,729 @@
+{
+ "idioms_q1": [
+  {
+   "item": "Head Over Heels",
+   "sentence": "Riya fell head over heels for the city the moment she moved there."
+  },
+  {
+   "item": "Mumbo Jumbo",
+   "sentence": "The salesman's pitch was pure mumbo jumbo — nobody understood a word of it."
+  },
+  {
+   "item": "Buy A Lemon",
+   "sentence": "He bought a lemon — the second-hand bike broke down on the ride home."
+  },
+  {
+   "item": "Let The Cat Out Of The Bag",
+   "sentence": "My brother let the cat out of the bag about Mom's surprise party."
+  },
+  {
+   "item": "Van Gogh's ear for music",
+   "sentence": "Don't ask me to judge the singing contest; I have Van Gogh's ear for music."
+  },
+  {
+   "item": "No Dice",
+   "sentence": "I asked the warden for a late pass, but it was no dice."
+  },
+  {
+   "item": "Jaywalk",
+   "sentence": "He was fined for jaywalking across the highway instead of using the zebra crossing."
+  },
+  {
+   "item": "Zero Tolerance",
+   "sentence": "Our college has zero tolerance for ragging."
+  },
+  {
+   "item": "Pass The Buck",
+   "sentence": "When the project failed, the manager tried to pass the buck to his juniors."
+  },
+  {
+   "item": "Knock On Wood",
+   "sentence": "I haven't missed a single deadline this semester — knock on wood."
+  },
+  {
+   "item": "Excuse my French",
+   "sentence": "Excuse my French, but this traffic is bloody awful."
+  },
+  {
+   "item": "A black sheep",
+   "sentence": "He was the black sheep of the family, the only one who never finished school."
+  },
+  {
+   "item": "Good Samaritan",
+   "sentence": "A Good Samaritan rushed the injured cyclist to hospital and left without giving his name."
+  },
+  {
+   "item": "Know the Ropes",
+   "sentence": "Ask Priya to train you; she knows the ropes in this department."
+  },
+  {
+   "item": "Skid Row",
+   "sentence": "After losing his job and his savings, he ended up on skid row."
+  },
+  {
+   "item": "Use Your Loaf",
+   "sentence": "Use your loaf — carry an umbrella when the sky looks like that!"
+  },
+  {
+   "item": "Peeping Tom",
+   "sentence": "The police arrested a Peeping Tom who was spying through hostel windows."
+  },
+  {
+   "item": "Ivy League",
+   "sentence": "She won a scholarship to Princeton, an Ivy League university."
+  },
+  {
+   "item": "Get Down to Brass Tacks",
+   "sentence": "Enough small talk; let's get down to brass tacks and discuss the budget."
+  },
+  {
+   "item": "New York Minute",
+   "sentence": "The concert tickets sold out in a New York minute."
+  },
+  {
+   "item": "Run out of steam",
+   "sentence": "I ran out of steam after studying for eight hours straight."
+  },
+  {
+   "item": "Tongue-in-cheek",
+   "sentence": "His tongue-in-cheek review praised the film for being 'perfectly boring'."
+  },
+  {
+   "item": "Scapegoat",
+   "sentence": "The intern was made the scapegoat for the manager's mistake."
+  },
+  {
+   "item": "Queer the pitch",
+   "sentence": "Leaking our plan to the rivals queered the pitch for the whole deal."
+  },
+  {
+   "item": "Loose Cannon",
+   "sentence": "The new striker is a loose cannon; no one knows what he'll do next."
+  },
+  {
+   "item": "High on the Hog",
+   "sentence": "After the promotion, they started living high on the hog."
+  }
+ ],
+ "idioms_q2": [
+  {
+   "letter": "A",
+   "meaning": "Tricking someone",
+   "answer": "Pulling your leg (also: Joshing me)"
+  },
+  {
+   "letter": "B",
+   "meaning": "Unavailable / To throw away",
+   "answer": "Eighty six"
+  },
+  {
+   "letter": "C",
+   "meaning": "A long time",
+   "answer": "Till the cows come home"
+  },
+  {
+   "letter": "D",
+   "meaning": "Die",
+   "answer": "Kick the bucket"
+  },
+  {
+   "letter": "E",
+   "meaning": "When someone is treated to an expensive meal",
+   "answer": "Wine and dine"
+  },
+  {
+   "letter": "F",
+   "meaning": "No longer have to deal with a tough situation",
+   "answer": "Off the hook"
+  },
+  {
+   "letter": "G",
+   "meaning": "Gamble everything you have",
+   "answer": "Go for broke"
+  },
+  {
+   "letter": "H",
+   "meaning": "A duplicate",
+   "answer": "Dead ringer"
+  },
+  {
+   "letter": "I",
+   "meaning": "A task that can be accomplished very easily",
+   "answer": "A piece of cake"
+  },
+  {
+   "letter": "J",
+   "meaning": "To not agree",
+   "answer": "No dice"
+  },
+  {
+   "letter": "K",
+   "meaning": "Have no idea",
+   "answer": "Your guess is as good as mine"
+  },
+  {
+   "letter": "L",
+   "meaning": "Tone deaf",
+   "answer": "Van Gogh's ear for music"
+  },
+  {
+   "letter": "M",
+   "meaning": "Being upset over something that happened in the past",
+   "answer": "A chip on your shoulder"
+  },
+  {
+   "letter": "N",
+   "meaning": "To state facts so that there's no room for doubts or objections",
+   "answer": "Make no bones about"
+  },
+  {
+   "letter": "O",
+   "meaning": "The exact likeness or kind",
+   "answer": "Spitting image"
+  },
+  {
+   "letter": "P",
+   "meaning": "Old people",
+   "answer": "Long in the tooth"
+  },
+  {
+   "letter": "Q",
+   "meaning": "To catch a dangerous person",
+   "answer": "Catch a tartar"
+  },
+  {
+   "letter": "R",
+   "meaning": "To not agree",
+   "answer": "No dice (repeat of J — 'Set one's face against' = oppose with determination also works)"
+  },
+  {
+   "letter": "S",
+   "meaning": "Give a false alarm",
+   "answer": "Cry wolf"
+  },
+  {
+   "letter": "T",
+   "meaning": "For certain",
+   "answer": "Without a doubt"
+  },
+  {
+   "letter": "U",
+   "meaning": "A mental institution facility",
+   "answer": "Funny farm"
+  },
+  {
+   "letter": "V",
+   "meaning": "Thirteen",
+   "answer": "Baker's dozen"
+  },
+  {
+   "letter": "W",
+   "meaning": "Quickly doing things which results in a poor ending",
+   "answer": "Haste makes waste"
+  },
+  {
+   "letter": "X",
+   "meaning": "You cannot change who you are",
+   "answer": "A leopard can't change his spots"
+  },
+  {
+   "letter": "Y",
+   "meaning": "To have something secured",
+   "answer": "In the bag"
+  },
+  {
+   "letter": "Z",
+   "meaning": "Excessive",
+   "answer": "Over the top"
+  }
+ ],
+ "foreign_a": [
+  {
+   "n": 1,
+   "q": "The politician's speech was dismissed as mere ________, lacking any concrete solutions.",
+   "opts": [
+    "Ad nauseam",
+    "Ad hoc",
+    "Alma mater",
+    "Vox populi"
+   ],
+   "ans": 1,
+   "why": "Ambiguous item — none fits perfectly. 'Ad hoc' (improvised, no long-term plan) is the best of the four."
+  },
+  {
+   "n": 2,
+   "q": "The treaty was signed ________, ensuring privacy away from the media's eyes.",
+   "opts": [
+    "In camera",
+    "In situ",
+    "In extremis",
+    "In loco parentis"
+   ],
+   "ans": 0,
+   "why": "In camera = in private."
+  },
+  {
+   "n": 3,
+   "q": "The lawyer filed a petition of ________ to secure the prisoner's release.",
+   "opts": [
+    "Habeas corpus",
+    "Mea culpa",
+    "Corpus delicti",
+    "Ipso facto"
+   ],
+   "ans": 0,
+   "why": "Writ to bring a detained person before court."
+  },
+  {
+   "n": 4,
+   "q": "His sudden arrival acted as a kind of ________, resolving the narrative too neatly.",
+   "opts": [
+    "Deus ex machina",
+    "Magnum opus",
+    "Ad libitum",
+    "Caveat emptor"
+   ],
+   "ans": 0,
+   "why": "An unexpected event that neatly resolves a plot."
+  },
+  {
+   "n": 5,
+   "q": "Though she lacked experience, her boss gave her ________ to handle the project independently.",
+   "opts": [
+    "Carte blanche",
+    "Tabula rasa",
+    "Pax Romana",
+    "Prima facie"
+   ],
+   "ans": 0,
+   "why": "Full freedom to act."
+  },
+  {
+   "n": 6,
+   "q": "Philosophers often debate whether morality is relative or whether it exists ________.",
+   "opts": [
+    "A priori",
+    "Ad hoc",
+    "Sub judice",
+    "In absentia"
+   ],
+   "ans": 0,
+   "why": "Known through reason, independent of experience."
+  },
+  {
+   "n": 7,
+   "q": "His biography is widely regarded as his ________, the most important work of his career.",
+   "opts": [
+    "Magnum opus",
+    "Tour de force",
+    "Corpus delicti",
+    "Status quo"
+   ],
+   "ans": 0,
+   "why": "One's greatest work."
+  },
+  {
+   "n": 8,
+   "q": "Their romance embodied the spirit of the ________, full of indulgence and pleasure.",
+   "opts": [
+    "Dolce vita",
+    "In vino veritas",
+    "Vox populi",
+    "Panacea"
+   ],
+   "ans": 0,
+   "why": "The sweet life of pleasure."
+  },
+  {
+   "n": 9,
+   "q": "He was known as a ________, constantly prying into others' business.",
+   "opts": [
+    "Bête noire",
+    "Alter ego",
+    "Non sequitur",
+    "Noli me tangere"
+   ],
+   "ans": 0,
+   "why": "None fits 'prying busybody' (that is 'quidnunc'). Bête noire is the expected pick."
+  },
+  {
+   "n": 10,
+   "q": "The court proceedings emphasized the voice of the people, or the ________.",
+   "opts": [
+    "Vox populi",
+    "In medias res",
+    "Au revoir",
+    "Mea culpa"
+   ],
+   "ans": 0,
+   "why": "Voice of the people."
+  },
+  {
+   "n": 11,
+   "q": "The rebellion spread rapidly, creating a sense of ________, or lawless confusion.",
+   "opts": [
+    "En masse",
+    "Coup d'état",
+    "Ad hoc",
+    "Ennui"
+   ],
+   "ans": 1,
+   "why": "Closest to a rebellion; 'lawless confusion' itself would be anarchy."
+  },
+  {
+   "n": 12,
+   "q": "Despite criticism, he continued to work, convinced that history would prove him ________.",
+   "opts": [
+    "De jure",
+    "In toto",
+    "Bona fide",
+    "Sui generis"
+   ],
+   "ans": 2,
+   "why": "Genuine — history would prove him genuine."
+  },
+  {
+   "n": 13,
+   "q": "She justified her decision by saying it was made ________, in the heat of the moment.",
+   "opts": [
+    "Ad hoc",
+    "Ad nauseam",
+    "Post mortem",
+    "Raison d'être"
+   ],
+   "ans": 0,
+   "why": "Made for this moment only, on the spot."
+  },
+  {
+   "n": 14,
+   "q": "The teacher reminded students not to plagiarise, since academic honesty is a matter of ________.",
+   "opts": [
+    "Bona fide",
+    "Ipso facto",
+    "Mea culpa",
+    "Ad libitum"
+   ],
+   "ans": 0,
+   "why": "Good faith."
+  },
+  {
+   "n": 15,
+   "q": "His alma mater invited him to deliver a convocation speech after two decades.",
+   "opts": [
+    "Alma mater",
+    "Alter ego",
+    "Corpus delicti",
+    "Vox populi"
+   ],
+   "ans": 0,
+   "why": "Already filled in on the sheet — one's old school/university."
+  },
+  {
+   "n": 16,
+   "q": "The king ruled with ________, making decisions based only on personal will.",
+   "opts": [
+    "Laissez-faire",
+    "De facto",
+    "Tabula rasa",
+    "Persona non grata"
+   ],
+   "ans": 1,
+   "why": "Power in practice, not by law. (Laissez-faire = hands-off, the opposite.)"
+  },
+  {
+   "n": 17,
+   "q": "The scientist's discovery was published in a journal known for its motto “______” meaning “Truth conquers all.”",
+   "opts": [
+    "Veritas vincit",
+    "Sic transit gloria mundi",
+    "In vino veritas",
+    "Carpe diem"
+   ],
+   "ans": 0,
+   "why": "Truth conquers."
+  },
+  {
+   "n": 18,
+   "q": "During the Renaissance, many thinkers believed in the value of “______,” or the pursuit of knowledge for its own sake.",
+   "opts": [
+    "Sine qua non",
+    "Summum bonum",
+    "Panacea",
+    "Pax Romana"
+   ],
+   "ans": 1,
+   "why": "The highest good."
+  },
+  {
+   "n": 19,
+   "q": "He was praised for being a true ________, a citizen of the world.",
+   "opts": [
+    "Cosmopolitan",
+    "Tabula rasa",
+    "Mea culpa",
+    "Persona non grata"
+   ],
+   "ans": 0,
+   "why": "Citizen of the world."
+  },
+  {
+   "n": 20,
+   "q": "The witness testified, but it was clear that he spoke only ________, not the entire truth.",
+   "opts": [
+    "In toto",
+    "Verbatim",
+    "Sub judice",
+    "Ipso facto"
+   ],
+   "ans": 0,
+   "why": "In toto = entirely; the sentence says he did NOT speak the entire truth."
+  },
+  {
+   "n": 21,
+   "q": "The law stands firm, regardless of individual opinions, under the doctrine of ________.",
+   "opts": [
+    "De jure",
+    "Ad hoc",
+    "Prima facie",
+    "En route"
+   ],
+   "ans": 0,
+   "why": "By law."
+  },
+  {
+   "n": 22,
+   "q": "The general was admired for his ________, or presence of mind during a crisis.",
+   "opts": [
+    "Savoir-faire",
+    "Mea culpa",
+    "Erratum",
+    "Ad infinitum"
+   ],
+   "ans": 0,
+   "why": "Presence of mind, knowing how to act."
+  },
+  {
+   "n": 23,
+   "q": "He accused the journalist of writing ________, a personal attack rather than objective reporting.",
+   "opts": [
+    "Obiter dictum",
+    "Bête noire",
+    "Ad hominem",
+    "Status quo"
+   ],
+   "ans": 2,
+   "why": "Attacking the person, not the argument."
+  },
+  {
+   "n": 24,
+   "q": "The debate quickly descended into ________, with both sides refusing to listen.",
+   "opts": [
+    "Non sequitur",
+    "Coup d'état",
+    "Mea culpa",
+    "Ennui"
+   ],
+   "ans": 0,
+   "why": "Statements that don't follow — a pointless back-and-forth."
+  },
+  {
+   "n": 25,
+   "q": "Her theory remained merely ________, until supported by empirical evidence.",
+   "opts": [
+    "A priori",
+    "Corpus delicti",
+    "Sic transit gloria mundi",
+    "Vox populi"
+   ],
+   "ans": 0,
+   "why": "Theoretical, not yet tested by experience."
+  },
+  {
+   "n": 26,
+   "q": "The scholar emphasized the principle of “______,” or the greatest good for the greatest number.",
+   "opts": [
+    "Summum bonum",
+    "Pax Romana",
+    "In extremis",
+    "Tabula rasa"
+   ],
+   "ans": 0,
+   "why": "Highest/greatest good."
+  },
+  {
+   "n": 27,
+   "q": "The monk lived by the motto “______,” which means “remember you will die.”",
+   "opts": [
+    "Memento mori",
+    "Mea culpa",
+    "Requiem",
+    "Ultimatum"
+   ],
+   "ans": 0,
+   "why": "Remember you will die."
+  },
+  {
+   "n": 28,
+   "q": "The court declared the contract void ________, because it violated fundamental rights.",
+   "opts": [
+    "Ex post facto",
+    "Ipso facto",
+    "Ad libitum",
+    "In absentia"
+   ],
+   "ans": 1,
+   "why": "By that very fact."
+  },
+  {
+   "n": 29,
+   "q": "The CEO enjoyed complete authority and often acted as a true ________.",
+   "opts": [
+    "Autocrat",
+    "Alter ego",
+    "Persona non grata",
+    "Vox populi"
+   ],
+   "ans": 0,
+   "why": "Ruler with absolute power."
+  },
+  {
+   "n": 30,
+   "q": "The defence argued that the confession was obtained ________, under duress.",
+   "opts": [
+    "In extremis",
+    "Pro tempore",
+    "Ex gratia",
+    "In situ"
+   ],
+   "ans": 0,
+   "why": "Under extreme pressure/duress."
+  }
+ ],
+ "foreign_b": [
+  {
+   "term": "Quasi",
+   "meaning": "As if; seemingly, partly",
+   "sentence": "The students' union is a quasi-official body — recognised, but with no legal powers."
+  },
+  {
+   "term": "Panacea",
+   "meaning": "A cure-all",
+   "sentence": "Technology is not a panacea for every problem in education."
+  },
+  {
+   "term": "Caveat",
+   "meaning": "A warning or condition",
+   "sentence": "The scholarship is generous, with one caveat: you must keep a 7.5 CGPA."
+  },
+  {
+   "term": "Hubris",
+   "meaning": "Excessive pride",
+   "sentence": "The champion's hubris made him skip practice, and he lost in the first round."
+  },
+  {
+   "term": "Nota bene",
+   "meaning": "Note well (N.B.)",
+   "sentence": "Nota bene: late submissions will not be accepted."
+  },
+  {
+   "term": "Hyperbole",
+   "meaning": "Deliberate exaggeration",
+   "sentence": "Saying 'I've told you a million times' is hyperbole."
+  },
+  {
+   "term": "En masse",
+   "meaning": "All together; as a group",
+   "sentence": "The workers resigned en masse after the pay cut."
+  },
+  {
+   "term": "Et al.",
+   "meaning": "And others",
+   "sentence": "The study by Sharma et al. was cited in the report."
+  },
+  {
+   "term": "Faux pas",
+   "meaning": "A social blunder",
+   "sentence": "Wearing shoes inside the temple was an embarrassing faux pas."
+  },
+  {
+   "term": "Habeas data",
+   "meaning": "Right to see and correct personal data held about you",
+   "sentence": "Citing habeas data, she asked the bank to show all the personal information it held on her."
+  },
+  {
+   "term": "Quorum",
+   "meaning": "Minimum number of members needed to make decisions",
+   "sentence": "The meeting was postponed because there was no quorum."
+  },
+  {
+   "term": "Doppelgänger",
+   "meaning": "A double; a look-alike",
+   "sentence": "I met my doppelgänger at the airport — we even wore the same jacket."
+  },
+  {
+   "term": "De facto",
+   "meaning": "In practice (though not by law)",
+   "sentence": "Although never appointed, she is the de facto leader of the team."
+  },
+  {
+   "term": "Per se",
+   "meaning": "By itself; intrinsically",
+   "sentence": "Money per se does not bring happiness."
+  },
+  {
+   "term": "Guerrilla",
+   "meaning": "Small independent fighter / irregular warfare",
+   "sentence": "The guerrilla fighters hid in the forest and attacked at night."
+  },
+  {
+   "term": "Prima facie",
+   "meaning": "At first sight; on the face of it",
+   "sentence": "Prima facie, the evidence suggests the accused was at the scene."
+  },
+  {
+   "term": "Quorum",
+   "meaning": "(repeated on the sheet)",
+   "sentence": "A quorum of five members is needed to pass any resolution."
+  },
+  {
+   "term": "Fiat",
+   "meaning": "An authoritative decree or order",
+   "sentence": "The new rule was imposed by government fiat, without any debate."
+  },
+  {
+   "term": "Curriculum vitae",
+   "meaning": "Course of life; a résumé (CV)",
+   "sentence": "Please attach your curriculum vitae to the job application."
+  },
+  {
+   "term": "Carpe diem",
+   "meaning": "Seize the day",
+   "sentence": "Carpe diem — apply for the internship today instead of waiting."
+  },
+  {
+   "term": "Consensus",
+   "meaning": "General agreement",
+   "sentence": "The committee reached a consensus after two hours of discussion."
+  },
+  {
+   "term": "Id est (i.e.)",
+   "meaning": "That is",
+   "sentence": "Submit the form by the deadline, i.e., before Friday 5 p.m."
+  },
+  {
+   "term": "Status quo",
+   "meaning": "The existing state of affairs",
+   "sentence": "The workers want change, but the management prefers the status quo."
+  },
+  {
+   "term": "Erratum",
+   "meaning": "An error (in print)",
+   "sentence": "The publisher issued an erratum correcting the date on page 12."
+  },
+  {
+   "term": "Veni, vidi, vici",
+   "meaning": "I came, I saw, I conquered",
+   "sentence": "She walked into the chess tournament and won every game — veni, vidi, vici."
+  }
+ ]
+}

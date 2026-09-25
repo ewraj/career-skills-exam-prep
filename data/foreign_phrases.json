@@ -1,0 +1,1700 @@
+[
+ {
+  "phrase": "Ad hoc",
+  "meaning": "For a particular purpose only",
+  "lang": "Latin",
+  "freq": "Common",
+  "worksheet": true
+ },
+ {
+  "phrase": "Ad infinitum",
+  "meaning": "To infinity; endlessly",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Ad nauseam",
+  "meaning": "To a sickening degree",
+  "lang": "Latin",
+  "freq": "Common",
+  "worksheet": true
+ },
+ {
+  "phrase": "Al fresco",
+  "meaning": "In the open air",
+  "lang": "Italian",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Alma mater",
+  "meaning": "One's former school/university",
+  "lang": "Latin",
+  "freq": "Common",
+  "worksheet": true
+ },
+ {
+  "phrase": "Alter ego",
+  "meaning": "Second self",
+  "lang": "Latin",
+  "freq": "Common",
+  "worksheet": true
+ },
+ {
+  "phrase": "Amigo",
+  "meaning": "Friend",
+  "lang": "Spanish",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Amor fati",
+  "meaning": "Love of fate",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Annus horribilis",
+  "meaning": "A disastrous year",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Annus mirabilis",
+  "meaning": "A remarkable year",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Bête noire",
+  "meaning": "Something one particularly dislikes",
+  "lang": "French",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Bon voyage",
+  "meaning": "Have a good trip",
+  "lang": "French",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Bona fide",
+  "meaning": "Genuine; in good faith",
+  "lang": "Latin",
+  "freq": "Common",
+  "worksheet": true
+ },
+ {
+  "phrase": "Boulevard",
+  "meaning": "Wide street",
+  "lang": "French",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Bravado",
+  "meaning": "Show of boldness",
+  "lang": "Spanish",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Carpe diem",
+  "meaning": "Seize the day",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Carte blanche",
+  "meaning": "Full freedom",
+  "lang": "French",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Caveat",
+  "meaning": "Warning or caution",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Caveat emptor",
+  "meaning": "Let the buyer beware",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "C'est la vie",
+  "meaning": "That's life",
+  "lang": "French",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Circa",
+  "meaning": "Approximately (dates)",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Civitas",
+  "meaning": "Citizenship/state",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Cognoscenti",
+  "meaning": "Experts",
+  "lang": "Italian",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Consensus",
+  "meaning": "General agreement",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Corpus",
+  "meaning": "Body of work",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Coup d'état",
+  "meaning": "Sudden overthrow",
+  "lang": "French",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Coup de grâce",
+  "meaning": "Final blow",
+  "lang": "French",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Curriculum vitae",
+  "meaning": "Course of life; résumé",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Cui bono",
+  "meaning": "Who benefits?",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Cul-de-sac",
+  "meaning": "Dead-end street",
+  "lang": "French",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "De facto",
+  "meaning": "In practice, not law",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "De jure",
+  "meaning": "By law",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Deus ex machina",
+  "meaning": "God from the machine (unexpected resolution)",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Dictum",
+  "meaning": "Authoritative statement",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Doppelgänger",
+  "meaning": "Double/look-alike",
+  "lang": "German",
+  "freq": "Common",
+  "worksheet": true
+ },
+ {
+  "phrase": "Dulce et decorum est",
+  "meaning": "Sweet and fitting (to die for one's country)",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Du jour",
+  "meaning": "Of the day",
+  "lang": "French",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Dramatis personae",
+  "meaning": "Cast of characters",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "De gustibus non est disputandum",
+  "meaning": "No disputing about taste",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Domus",
+  "meaning": "Household/home",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "E pluribus unum",
+  "meaning": "Out of many, one",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "E.g. (exempli gratia)",
+  "meaning": "For example",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Erratum",
+  "meaning": "Error",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Et al.",
+  "meaning": "And others",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Et cetera (etc.)",
+  "meaning": "And so forth",
+  "lang": "Latin",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Ex gratia",
+  "meaning": "As a favor, not obligation",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Ex officio",
+  "meaning": "By virtue of office",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Ex post facto",
+  "meaning": "After the fact",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Exempli causa",
+  "meaning": "For the sake of example",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Ex nihilo",
+  "meaning": "Out of nothing",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Fait accompli",
+  "meaning": "Accomplished fact",
+  "lang": "French",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Faux pas",
+  "meaning": "Social blunder",
+  "lang": "French",
+  "freq": "Common",
+  "worksheet": true
+ },
+ {
+  "phrase": "Festina lente",
+  "meaning": "Make haste slowly",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Fiat",
+  "meaning": "Decree/order",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Flora and fauna",
+  "meaning": "Plants and animals",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Fortissimo",
+  "meaning": "Very loud (music)",
+  "lang": "Italian",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Francophone",
+  "meaning": "French-speaking",
+  "lang": "French",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Frisson",
+  "meaning": "Thrill/shiver",
+  "lang": "French",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Fugue",
+  "meaning": "Musical form",
+  "lang": "Italian",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Functus officio",
+  "meaning": "Having fulfilled purpose",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Gaffe",
+  "meaning": "Blunder",
+  "lang": "French",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Gaudeamus igitur",
+  "meaning": "Therefore let us rejoice",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Genius loci",
+  "meaning": "Spirit of the place",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Gesundheit",
+  "meaning": "Bless you",
+  "lang": "German",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Graffiti",
+  "meaning": "Wall writing",
+  "lang": "Italian",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Gratis",
+  "meaning": "Free",
+  "lang": "Latin",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Gravitas",
+  "meaning": "Seriousness",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Guerrilla",
+  "meaning": "Small independent fighter",
+  "lang": "Spanish",
+  "freq": "Common",
+  "worksheet": true
+ },
+ {
+  "phrase": "Gulag",
+  "meaning": "Prison camp",
+  "lang": "Russian",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Gymnasium",
+  "meaning": "Secondary school",
+  "lang": "Greek via German",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Habeas corpus",
+  "meaning": "You shall have the body (legal writ)",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Habitat",
+  "meaning": "Natural home",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Haute couture",
+  "meaning": "High fashion",
+  "lang": "French",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Hic et nunc",
+  "meaning": "Here and now",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Hoi polloi",
+  "meaning": "The masses",
+  "lang": "Greek",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Homo sapiens",
+  "meaning": "Wise man",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Hubris",
+  "meaning": "Excessive pride",
+  "lang": "Greek",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Hypothesis",
+  "meaning": "Proposed explanation",
+  "lang": "Greek",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Hypocrite",
+  "meaning": "Pretender",
+  "lang": "Greek",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Hyperbole",
+  "meaning": "Exaggeration",
+  "lang": "Greek",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Id est (i.e.)",
+  "meaning": "That is",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Idée fixe",
+  "meaning": "Fixed idea/obsession",
+  "lang": "French",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Ignoramus",
+  "meaning": "Ignorant person",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Impromptu",
+  "meaning": "Without preparation",
+  "lang": "French",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "In absentia",
+  "meaning": "In absence",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "In camera",
+  "meaning": "In private",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "In loco parentis",
+  "meaning": "In place of parent",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "In medias res",
+  "meaning": "Into the middle of things",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "In memoriam",
+  "meaning": "In memory of",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "In situ",
+  "meaning": "In original place",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Je ne sais quoi",
+  "meaning": "Indescribable quality",
+  "lang": "French",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "J'adoube",
+  "meaning": "I adjust (in chess)",
+  "lang": "French",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Juggernaut",
+  "meaning": "Huge unstoppable force",
+  "lang": "Sanskrit via English",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Junta",
+  "meaning": "Military group ruling",
+  "lang": "Spanish",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Jurisprudence",
+  "meaning": "Theory of law",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Jus cogens",
+  "meaning": "Peremptory norm",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Jus gentium",
+  "meaning": "Law of nations",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Jus soli",
+  "meaning": "Right of soil",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Jus sanguinis",
+  "meaning": "Right of blood",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Juste milieu",
+  "meaning": "Happy medium",
+  "lang": "French",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Kaput",
+  "meaning": "Finished/done",
+  "lang": "German",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Kibitz",
+  "meaning": "Offer unwanted advice",
+  "lang": "Yiddish",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Kudos",
+  "meaning": "Praise",
+  "lang": "Greek",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Kafkaesque",
+  "meaning": "Surreal/illogical",
+  "lang": "German (after Kafka)",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Kaleidoscope",
+  "meaning": "Beautiful changing pattern",
+  "lang": "Greek",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Kulturkampf",
+  "meaning": "Cultural struggle",
+  "lang": "German",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Kyrie eleison",
+  "meaning": "Lord, have mercy",
+  "lang": "Greek",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Kosmos",
+  "meaning": "Universe/order",
+  "lang": "Greek",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Ken",
+  "meaning": "Range of knowledge",
+  "lang": "Scots (from Germanic)",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Kleptocracy",
+  "meaning": "Rule by thieves",
+  "lang": "Greek",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Laissez-faire",
+  "meaning": "Hands-off policy",
+  "lang": "French",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Lapsus linguae",
+  "meaning": "Slip of the tongue",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Legion",
+  "meaning": "Multitude",
+  "lang": "Latin",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Lexicon",
+  "meaning": "Vocabulary",
+  "lang": "Greek",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Locus classicus",
+  "meaning": "Classic example",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Lorem ipsum",
+  "meaning": "Placeholder text",
+  "lang": "Latin",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Luna",
+  "meaning": "Moon",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Lux et veritas",
+  "meaning": "Light and truth",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Lumen",
+  "meaning": "Light",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Lustrum",
+  "meaning": "Five-year period",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Magnum opus",
+  "meaning": "Great work",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Memento mori",
+  "meaning": "Remember you will die",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": true
+ },
+ {
+  "phrase": "Mens rea",
+  "meaning": "Guilty mind (law)",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Modus operandi",
+  "meaning": "Way of operating",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Modus vivendi",
+  "meaning": "Way of living",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Mondegreen",
+  "meaning": "Misheard phrase",
+  "lang": "English (Scottish)",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Mores",
+  "meaning": "Customs",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Mutatis mutandis",
+  "meaning": "With necessary changes",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Myopia",
+  "meaning": "Short-sightedness",
+  "lang": "Greek",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Mythos",
+  "meaning": "Traditional narrative",
+  "lang": "Greek",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Ne plus ultra",
+  "meaning": "Highest point",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Nemo dat",
+  "meaning": "No one gives what he doesn't have",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Neologism",
+  "meaning": "New word",
+  "lang": "Greek",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Nihil obstat",
+  "meaning": "Nothing obstructs (approval)",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Nihilism",
+  "meaning": "Belief in nothing",
+  "lang": "Latin via French",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Nisi prius",
+  "meaning": "Unless before (trial court)",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Nom de plume",
+  "meaning": "Pen name",
+  "lang": "French",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Nota bene (N.B.)",
+  "meaning": "Note well",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Novus ordo seclorum",
+  "meaning": "New order of the ages",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Numen",
+  "meaning": "Divine presence",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Obiter dictum",
+  "meaning": "Passing remark",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Oblivion",
+  "meaning": "State of being forgotten",
+  "lang": "Latin",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Odyssey",
+  "meaning": "Long journey",
+  "lang": "Greek",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Oeuvre",
+  "meaning": "Complete works",
+  "lang": "French",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Omnia vincit amor",
+  "meaning": "Love conquers all",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Omnibus",
+  "meaning": "For all",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Opera",
+  "meaning": "Dramatic musical work",
+  "lang": "Italian",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Oratio obliqua",
+  "meaning": "Indirect speech",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Orbis terrarum",
+  "meaning": "World",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Orthodox",
+  "meaning": "Correct belief",
+  "lang": "Greek",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Panacea",
+  "meaning": "Cure-all",
+  "lang": "Greek",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Pax Romana",
+  "meaning": "Roman peace",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": true
+ },
+ {
+  "phrase": "Per capita",
+  "meaning": "By head/per person",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Per diem",
+  "meaning": "By the day",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Per se",
+  "meaning": "By itself",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Persona non grata",
+  "meaning": "Unwelcome person",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Post mortem",
+  "meaning": "After death",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Post hoc",
+  "meaning": "After this, therefore because of this",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Prima facie",
+  "meaning": "At first sight",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Pro bono",
+  "meaning": "For the public good",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Quasi",
+  "meaning": "As if, seemingly",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Quid pro quo",
+  "meaning": "Something for something",
+  "lang": "Latin",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Quid nunc",
+  "meaning": "Busybody; gossip",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Quorum",
+  "meaning": "Minimum number to decide",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Quot capita, tot sensus",
+  "meaning": "So many men, so many opinions",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Q.E.D. (quod erat demonstrandum)",
+  "meaning": "Which was to be demonstrated",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Querencia",
+  "meaning": "Place of safety",
+  "lang": "Spanish",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Quietus",
+  "meaning": "Final settlement",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Quinquennial",
+  "meaning": "Five-year period",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Quis custodiet ipsos custodes?",
+  "meaning": "Who guards the guards?",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Raison d'être",
+  "meaning": "Reason for existence",
+  "lang": "French",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Requiem",
+  "meaning": "Mass for the dead",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Res gestae",
+  "meaning": "Things done (facts of a case)",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Res ipsa loquitur",
+  "meaning": "The thing speaks for itself",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Res judicata",
+  "meaning": "Already judged",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Rota",
+  "meaning": "Wheel/court",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Rendezvous",
+  "meaning": "Meeting",
+  "lang": "French",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Riposte",
+  "meaning": "Quick reply",
+  "lang": "French",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Rhetoric",
+  "meaning": "Art of persuasion",
+  "lang": "Greek",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Rubicon",
+  "meaning": "Point of no return",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Sans",
+  "meaning": "Without",
+  "lang": "French",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Sapere aude",
+  "meaning": "Dare to know",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Schadenfreude",
+  "meaning": "Joy at others' misfortune",
+  "lang": "German",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Scientia potentia est",
+  "meaning": "Knowledge is power",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Semper fidelis",
+  "meaning": "Always faithful",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Semper idem",
+  "meaning": "Always the same",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Serendipity",
+  "meaning": "Chance discovery",
+  "lang": "Persian via English",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Sine qua non",
+  "meaning": "Essential condition",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Status quo",
+  "meaning": "Existing state",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Sub rosa",
+  "meaning": "In secret",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Tabula rasa",
+  "meaning": "Blank slate",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Tempus fugit",
+  "meaning": "Time flies",
+  "lang": "Latin",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Terra incognita",
+  "meaning": "Unknown land",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Tour de force",
+  "meaning": "An exceptional achievement",
+  "lang": "French",
+  "freq": "Academic",
+  "worksheet": true
+ },
+ {
+  "phrase": "Tristesse",
+  "meaning": "Sadness",
+  "lang": "French",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Ultimatum",
+  "meaning": "Final demand",
+  "lang": "Latin",
+  "freq": "Common",
+  "worksheet": true
+ },
+ {
+  "phrase": "Ultra vires",
+  "meaning": "Beyond one's powers",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Urbi et orbi",
+  "meaning": "To the city and to the world",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Usufruct",
+  "meaning": "Right to use property belonging to another",
+  "lang": "Latin",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Vade mecum",
+  "meaning": "A handbook; constant companion",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Veni, vidi, vici",
+  "meaning": "I came, I saw, I conquered",
+  "lang": "Latin",
+  "freq": "Common",
+  "worksheet": true
+ },
+ {
+  "phrase": "Verbatim",
+  "meaning": "Word for word",
+  "lang": "Latin",
+  "freq": "Common",
+  "worksheet": true
+ },
+ {
+  "phrase": "Veritas",
+  "meaning": "Truth",
+  "lang": "Latin",
+  "freq": "Rare",
+  "worksheet": true
+ },
+ {
+  "phrase": "Vox populi",
+  "meaning": "Voice of the people",
+  "lang": "Latin",
+  "freq": "Common",
+  "worksheet": true
+ },
+ {
+  "phrase": "Wanderlust",
+  "meaning": "Strong desire to travel",
+  "lang": "German",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Weltschmerz",
+  "meaning": "World-weariness; melancholy",
+  "lang": "German",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Wunderkind",
+  "meaning": "Child prodigy",
+  "lang": "German",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Xenophobia",
+  "meaning": "Fear of foreigners",
+  "lang": "Greek via Latin",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "X factor",
+  "meaning": "Special talent",
+  "lang": "Modern Latin/English hybrid",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Yen",
+  "meaning": "Deep desire/longing",
+  "lang": "Japanese",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Yin and Yang",
+  "meaning": "Complementary forces",
+  "lang": "Chinese",
+  "freq": "Common",
+  "worksheet": false
+ },
+ {
+  "phrase": "Zeitgeist",
+  "meaning": "Spirit of the age",
+  "lang": "German",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Zero sum",
+  "meaning": "A situation where one's gain is another's loss",
+  "lang": "Latin via English",
+  "freq": "Academic",
+  "worksheet": false
+ },
+ {
+  "phrase": "Zoo politikon",
+  "meaning": "Political animal (term by Aristotle)",
+  "lang": "Greek via Latin",
+  "freq": "Rare",
+  "worksheet": false
+ },
+ {
+  "phrase": "Zigzag",
+  "meaning": "Indirect, winding course (from French/Germanic roots)",
+  "lang": "French",
+  "freq": "Worksheet",
+  "extra": true,
+  "worksheet": false
+ },
+ {
+  "phrase": "In extremis",
+  "meaning": "In an extreme situation; under duress / at the point of death",
+  "lang": "Latin",
+  "freq": "Worksheet",
+  "extra": true,
+  "worksheet": true
+ },
+ {
+  "phrase": "In toto",
+  "meaning": "Entirely; as a whole",
+  "lang": "Latin",
+  "freq": "Worksheet",
+  "extra": true,
+  "worksheet": true
+ },
+ {
+  "phrase": "Sub judice",
+  "meaning": "Under judicial consideration (not yet decided)",
+  "lang": "Latin",
+  "freq": "Worksheet",
+  "extra": true,
+  "worksheet": true
+ },
+ {
+  "phrase": "Ipso facto",
+  "meaning": "By that very fact",
+  "lang": "Latin",
+  "freq": "Worksheet",
+  "extra": true,
+  "worksheet": true
+ },
+ {
+  "phrase": "Mea culpa",
+  "meaning": "My fault; an admission of guilt",
+  "lang": "Latin",
+  "freq": "Worksheet",
+  "extra": true,
+  "worksheet": true
+ },
+ {
+  "phrase": "Corpus delicti",
+  "meaning": "The body of the crime (facts proving a crime occurred)",
+  "lang": "Latin",
+  "freq": "Worksheet",
+  "extra": true,
+  "worksheet": true
+ },
+ {
+  "phrase": "Ad libitum (ad lib)",
+  "meaning": "At one's pleasure; improvised",
+  "lang": "Latin",
+  "freq": "Worksheet",
+  "extra": true,
+  "worksheet": true
+ },
+ {
+  "phrase": "Ad hominem",
+  "meaning": "Attacking the person rather than the argument",
+  "lang": "Latin",
+  "freq": "Worksheet",
+  "extra": true,
+  "worksheet": true
+ },
+ {
+  "phrase": "A priori",
+  "meaning": "Based on reasoning/theory rather than experience",
+  "lang": "Latin",
+  "freq": "Worksheet",
+  "extra": true,
+  "worksheet": true
+ },
+ {
+  "phrase": "Non sequitur",
+  "meaning": "A statement that does not logically follow",
+  "lang": "Latin",
+  "freq": "Worksheet",
+  "extra": true,
+  "worksheet": true
+ },
+ {
+  "phrase": "Dolce vita",
+  "meaning": "The sweet life; life of pleasure and luxury",
+  "lang": "Italian",
+  "freq": "Worksheet",
+  "extra": true,
+  "worksheet": true
+ },
+ {
+  "phrase": "In vino veritas",
+  "meaning": "In wine there is truth",
+  "lang": "Latin",
+  "freq": "Worksheet",
+  "extra": true,
+  "worksheet": true
+ },
+ {
+  "phrase": "Savoir-faire",
+  "meaning": "Knowing how to act in any situation; presence of mind",
+  "lang": "French",
+  "freq": "Worksheet",
+  "extra": true,
+  "worksheet": true
+ },
+ {
+  "phrase": "Summum bonum",
+  "meaning": "The highest good",
+  "lang": "Latin",
+  "freq": "Worksheet",
+  "extra": true,
+  "worksheet": true
+ },
+ {
+  "phrase": "Sic transit gloria mundi",
+  "meaning": "Thus passes the glory of the world",
+  "lang": "Latin",
+  "freq": "Worksheet",
+  "extra": true,
+  "worksheet": true
+ },
+ {
+  "phrase": "Veritas vincit",
+  "meaning": "Truth conquers (all)",
+  "lang": "Latin",
+  "freq": "Worksheet",
+  "extra": true,
+  "worksheet": true
+ },
+ {
+  "phrase": "Sui generis",
+  "meaning": "Of its own kind; unique",
+  "lang": "Latin",
+  "freq": "Worksheet",
+  "extra": true,
+  "worksheet": true
+ },
+ {
+  "phrase": "Noli me tangere",
+  "meaning": "Touch me not",
+  "lang": "Latin",
+  "freq": "Worksheet",
+  "extra": true,
+  "worksheet": true
+ },
+ {
+  "phrase": "Pro tempore (pro tem)",
+  "meaning": "For the time being; temporarily",
+  "lang": "Latin",
+  "freq": "Worksheet",
+  "extra": true,
+  "worksheet": true
+ },
+ {
+  "phrase": "En masse",
+  "meaning": "All together; in a group",
+  "lang": "French",
+  "freq": "Worksheet",
+  "extra": true,
+  "worksheet": true
+ },
+ {
+  "phrase": "En route",
+  "meaning": "On the way",
+  "lang": "French",
+  "freq": "Worksheet",
+  "extra": true,
+  "worksheet": true
+ },
+ {
+  "phrase": "Au revoir",
+  "meaning": "Goodbye (until we meet again)",
+  "lang": "French",
+  "freq": "Worksheet",
+  "extra": true,
+  "worksheet": true
+ },
+ {
+  "phrase": "Ennui",
+  "meaning": "Boredom; listlessness",
+  "lang": "French",
+  "freq": "Worksheet",
+  "extra": true,
+  "worksheet": true
+ },
+ {
+  "phrase": "Habeas data",
+  "meaning": "Right to access and correct personal data held about you",
+  "lang": "Latin",
+  "freq": "Worksheet",
+  "extra": true,
+  "worksheet": true
+ }
+]

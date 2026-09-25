@@ -1,0 +1,478 @@
+[
+ {
+  "root": "mal",
+  "meaning": "bad, evil",
+  "origin": "Latin",
+  "examples": "malice, maltreat, malfunction, dismal, maleficent, malevolent, malefactor",
+  "tested": true
+ },
+ {
+  "root": "phobia",
+  "meaning": "fear, dislike",
+  "origin": "Greek",
+  "examples": "demophobia (public), zoophobia (animals), theophobia (God), pedophobia (children), gynophobia (women), claustrophobia",
+  "tested": false
+ },
+ {
+  "root": "fin",
+  "meaning": "end, limit, boundary",
+  "origin": "Latin",
+  "examples": "infinity, infinitesimal, confinement, definite, final, finish",
+  "tested": false
+ },
+ {
+  "root": "phil",
+  "meaning": "love",
+  "origin": "Greek",
+  "examples": "bibliophile, philologist, philanthropist, philosopher, Philadelphia (city of brotherly love)",
+  "tested": true
+ },
+ {
+  "root": "logy",
+  "meaning": "study of",
+  "origin": "Greek",
+  "examples": "analogy, anthropology, theology, morphology, biology, psychology",
+  "tested": false
+ },
+ {
+  "root": "theo / thei",
+  "meaning": "God, religion",
+  "origin": "Greek",
+  "examples": "theist, atheist, pantheist, monotheist, theology",
+  "tested": false
+ },
+ {
+  "root": "fact / fac",
+  "meaning": "to make, to do",
+  "origin": "Latin",
+  "examples": "factory, manufacture, artifact, factor, benefactor, malefactor, satisfaction",
+  "tested": true
+ },
+ {
+  "root": "dict / dic",
+  "meaning": "to say",
+  "origin": "Latin",
+  "examples": "prediction, dictate, verdict, indicate, contradict, dictionary",
+  "tested": true
+ },
+ {
+  "root": "cide",
+  "meaning": "killing, killer",
+  "origin": "Latin",
+  "examples": "patricide (father), uxoricide (wife), mariticide (husband), infanticide (child), homicide",
+  "tested": true
+ },
+ {
+  "root": "anti",
+  "meaning": "against, opposite",
+  "origin": "Greek",
+  "examples": "antiseptic, antidote, antisocial, antioxidant",
+  "tested": false
+ },
+ {
+  "root": "act",
+  "meaning": "to move or do",
+  "origin": "Latin",
+  "examples": "actor, acting, reenact",
+  "tested": false
+ },
+ {
+  "root": "crypt",
+  "meaning": "to hide",
+  "origin": "Greek",
+  "examples": "cryptic, apocryphal, cryptography",
+  "tested": false
+ },
+ {
+  "root": "ego",
+  "meaning": "self",
+  "origin": "Latin",
+  "examples": "egotist, egocentric, egomaniac",
+  "tested": true
+ },
+ {
+  "root": "legal / leg",
+  "meaning": "related to law",
+  "origin": "Latin",
+  "examples": "illegal, legalities, paralegal",
+  "tested": false
+ },
+ {
+  "root": "norm",
+  "meaning": "typical, standard",
+  "origin": "Latin",
+  "examples": "abnormal, paranormal, normality",
+  "tested": true
+ },
+ {
+  "root": "meter / metr",
+  "meaning": "measure",
+  "origin": "Greek",
+  "examples": "thermometer, perimeter, geometry",
+  "tested": true
+ },
+ {
+  "root": "tele",
+  "meaning": "far off",
+  "origin": "Greek",
+  "examples": "television, telephone, televise",
+  "tested": true
+ },
+ {
+  "root": "psycho",
+  "meaning": "soul, spirit, mind",
+  "origin": "Greek",
+  "examples": "psychology, psychic",
+  "tested": false
+ },
+ {
+  "root": "therm",
+  "meaning": "heat",
+  "origin": "Greek",
+  "examples": "thermal, thermometer",
+  "tested": false
+ },
+ {
+  "root": "techno",
+  "meaning": "art, science, skill",
+  "origin": "Greek",
+  "examples": "technique, technological",
+  "tested": false
+ },
+ {
+  "root": "pseudo",
+  "meaning": "not genuine, false",
+  "origin": "Greek",
+  "examples": "pseudonym, pseudoscience",
+  "tested": true
+ },
+ {
+  "root": "morph",
+  "meaning": "form, shape",
+  "origin": "Greek",
+  "examples": "morphology, morphing",
+  "tested": true
+ },
+ {
+  "root": "photo / phos",
+  "meaning": "light",
+  "origin": "Greek",
+  "examples": "photograph, phosphorous",
+  "tested": false
+ },
+ {
+  "root": "phon",
+  "meaning": "sound",
+  "origin": "Greek",
+  "examples": "phone, symphony",
+  "tested": false
+ },
+ {
+  "root": "hydr",
+  "meaning": "water",
+  "origin": "Greek",
+  "examples": "hydration, dehydrate",
+  "tested": false
+ },
+ {
+  "root": "mono",
+  "meaning": "one",
+  "origin": "Greek",
+  "examples": "monologue, monotonous",
+  "tested": true
+ },
+ {
+  "root": "mis / miso",
+  "meaning": "hate",
+  "origin": "Greek",
+  "examples": "misanthrope, misogyny",
+  "tested": false
+ },
+ {
+  "root": "micro",
+  "meaning": "small",
+  "origin": "Greek",
+  "examples": "microbe, microscope",
+  "tested": false
+ },
+ {
+  "root": "hetero",
+  "meaning": "different",
+  "origin": "Greek",
+  "examples": "heteronym, heterogeneous",
+  "tested": false
+ },
+ {
+  "root": "scope",
+  "meaning": "viewing instrument",
+  "origin": "Greek",
+  "examples": "microscope, telescope",
+  "tested": false
+ },
+ {
+  "root": "hypo",
+  "meaning": "below, beneath",
+  "origin": "Greek",
+  "examples": "hypothermia, hypothetical",
+  "tested": true
+ },
+ {
+  "root": "homo",
+  "meaning": "same",
+  "origin": "Greek",
+  "examples": "homonym, homogeneous",
+  "tested": true
+ },
+ {
+  "root": "chron",
+  "meaning": "time",
+  "origin": "Greek",
+  "examples": "chronological, chronic",
+  "tested": false
+ },
+ {
+  "root": "gram",
+  "meaning": "thing written",
+  "origin": "Greek",
+  "examples": "epigram, telegram",
+  "tested": false
+ },
+ {
+  "root": "auto",
+  "meaning": "self",
+  "origin": "Greek",
+  "examples": "autobiography, automobile",
+  "tested": true
+ },
+ {
+  "root": "dyna",
+  "meaning": "power",
+  "origin": "Greek",
+  "examples": "dynamic, dynamite",
+  "tested": true
+ },
+ {
+  "root": "bio",
+  "meaning": "life",
+  "origin": "Greek",
+  "examples": "biology, biography",
+  "tested": false
+ },
+ {
+  "root": "dys",
+  "meaning": "bad, hard, unlucky",
+  "origin": "Greek",
+  "examples": "dysfunctional, dyslexic",
+  "tested": true
+ },
+ {
+  "root": "graph",
+  "meaning": "writing",
+  "origin": "Greek",
+  "examples": "graphic, phonograph",
+  "tested": false
+ },
+ {
+  "root": "nym",
+  "meaning": "name",
+  "origin": "Greek",
+  "examples": "antonym, synonym, pseudonym",
+  "tested": true
+ },
+ {
+  "root": "anthropo",
+  "meaning": "man, human, humanity",
+  "origin": "Greek",
+  "examples": "anthropologist, philanthropy",
+  "tested": false
+ },
+ {
+  "root": "aqua",
+  "meaning": "water",
+  "origin": "Latin",
+  "examples": "aquarium, aquamarine",
+  "tested": false
+ },
+ {
+  "root": "bene",
+  "meaning": "good",
+  "origin": "Latin",
+  "examples": "benefactor, benevolent",
+  "tested": true
+ },
+ {
+  "root": "circum",
+  "meaning": "around",
+  "origin": "Latin",
+  "examples": "circumference, circumstance",
+  "tested": false
+ },
+ {
+  "root": "duc / duct",
+  "meaning": "to lead",
+  "origin": "Latin",
+  "examples": "conduct, induce",
+  "tested": true
+ },
+ {
+  "root": "cent",
+  "meaning": "one hundred",
+  "origin": "Latin",
+  "examples": "century, percent",
+  "tested": false
+ },
+ {
+  "root": "mater",
+  "meaning": "mother",
+  "origin": "Latin",
+  "examples": "material, maternity",
+  "tested": false
+ },
+ {
+  "root": "form",
+  "meaning": "shape",
+  "origin": "Latin",
+  "examples": "conform, reform, formation",
+  "tested": true
+ },
+ {
+  "root": "ambi",
+  "meaning": "both",
+  "origin": "Latin",
+  "examples": "ambiguous, ambidextrous",
+  "tested": true
+ },
+ {
+  "root": "mit",
+  "meaning": "to send",
+  "origin": "Latin",
+  "examples": "transmit, admit",
+  "tested": true
+ },
+ {
+  "root": "fort",
+  "meaning": "strength",
+  "origin": "Latin",
+  "examples": "fortitude, fortress",
+  "tested": true
+ },
+ {
+  "root": "fract",
+  "meaning": "to break",
+  "origin": "Latin",
+  "examples": "fracture, fraction",
+  "tested": true
+ },
+ {
+  "root": "struct",
+  "meaning": "to build",
+  "origin": "Latin",
+  "examples": "destruction, restructure",
+  "tested": false
+ },
+ {
+  "root": "scrib / script",
+  "meaning": "to write",
+  "origin": "Latin",
+  "examples": "inscription, prescribe",
+  "tested": false
+ },
+ {
+  "root": "ject",
+  "meaning": "to throw",
+  "origin": "Latin",
+  "examples": "projection, rejection",
+  "tested": false
+ },
+ {
+  "root": "multi",
+  "meaning": "many",
+  "origin": "Latin",
+  "examples": "multimedia, multiple",
+  "tested": true
+ },
+ {
+  "root": "aud",
+  "meaning": "to hear",
+  "origin": "Latin",
+  "examples": "audience, audition",
+  "tested": false
+ },
+ {
+  "root": "sect / sec",
+  "meaning": "to cut",
+  "origin": "Latin",
+  "examples": "bisect, section",
+  "tested": false
+ },
+ {
+  "root": "jud",
+  "meaning": "to judge",
+  "origin": "Latin",
+  "examples": "judicial, prejudice",
+  "tested": true
+ },
+ {
+  "root": "mort",
+  "meaning": "death",
+  "origin": "Latin",
+  "examples": "mortal, mortician, mortuary",
+  "tested": true
+ },
+ {
+  "root": "pater",
+  "meaning": "father",
+  "origin": "Latin",
+  "examples": "paternal, paternity",
+  "tested": true
+ },
+ {
+  "root": "port",
+  "meaning": "to carry",
+  "origin": "Latin",
+  "examples": "portable, transportation",
+  "tested": true
+ },
+ {
+  "root": "contra / counter",
+  "meaning": "against",
+  "origin": "Latin",
+  "examples": "contradict, encounter",
+  "tested": true
+ },
+ {
+  "root": "rupt",
+  "meaning": "to break",
+  "origin": "Latin",
+  "examples": "bankrupt, disruption",
+  "tested": false
+ },
+ {
+  "root": "voc",
+  "meaning": "voice, to call",
+  "origin": "Latin",
+  "examples": "vocalize, advocate",
+  "tested": true
+ },
+ {
+  "root": "spect",
+  "meaning": "to look",
+  "origin": "Latin",
+  "examples": "inspection, spectator",
+  "tested": false
+ },
+ {
+  "root": "vid / vis",
+  "meaning": "to see",
+  "origin": "Latin",
+  "examples": "video, televise",
+  "tested": true
+ },
+ {
+  "root": "sent",
+  "meaning": "to feel, to send",
+  "origin": "Latin",
+  "examples": "consent, resent",
+  "tested": false
+ }
+]

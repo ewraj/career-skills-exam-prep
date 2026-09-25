@@ -1,0 +1,1657 @@
+[
+ {
+  "id": 1,
+  "q": "A \"paranormal\" phenomenon is described as something:",
+  "opts": [
+   "Completely ordinary",
+   "Beyond what is regarded as normal or natural",
+   "Benevolent toward society",
+   "Related exclusively to language"
+  ],
+  "ans": 1,
+  "topic": "root",
+  "why": "para = beyond + norm = standard → beyond what is normal.",
+  "sets": [
+   "A1",
+   "D48"
+  ]
+ },
+ {
+  "id": 2,
+  "q": "The word \"resent\" can be analyzed in relation to a root associated with:",
+  "opts": [
+   "Feeling or experiencing",
+   "Measuring",
+   "Leading",
+   "Writing"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "sent = to feel (consent, resent, sentiment).",
+  "sets": [
+   "A2",
+   "B35"
+  ]
+ },
+ {
+  "id": 3,
+  "q": "Which root best conveys the idea of \"self\"?",
+  "opts": [
+   "Ego",
+   "Mal",
+   "Sev",
+   "Dict"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "ego = self (egotist, egocentric). mal = bad, dict = say.",
+  "sets": [
+   "A3",
+   "B17",
+   "C19"
+  ]
+ },
+ {
+  "id": 4,
+  "q": "The semantic relationship between \"aquarium\" and its root is most closely associated with:",
+  "opts": [
+   "Fire",
+   "Water",
+   "Air",
+   "Earth"
+  ],
+  "ans": 1,
+  "topic": "root",
+  "why": "aqua = water (aquarium, aquamarine).",
+  "sets": [
+   "A4",
+   "C41"
+  ]
+ },
+ {
+  "id": 5,
+  "q": "To \"remonstrate\" means to protest or object strongly. Its antonym is:",
+  "opts": [
+   "Complain",
+   "Protest",
+   "Object",
+   "Acquiesce"
+  ],
+  "ans": 3,
+  "topic": "ant",
+  "why": "Remonstrate = protest, censure. Opposite = acquiesce (accept quietly) / agree.",
+  "sets": [
+   "A5",
+   "B29",
+   "D40"
+  ]
+ },
+ {
+  "id": 6,
+  "q": "\"Concord\" most nearly means:",
+  "opts": [
+   "Discord",
+   "Agreement",
+   "Conflict",
+   "Rivalry"
+  ],
+  "ans": 1,
+  "topic": "syn",
+  "why": "Concord = agreement, accord. Antonym: discord.",
+  "sets": [
+   "A6",
+   "B24",
+   "D47"
+  ]
+ },
+ {
+  "id": 7,
+  "q": "To \"quell\" a disturbance is to:",
+  "opts": [
+   "Intensify it",
+   "Suppress it",
+   "Publicize it",
+   "Initiate it"
+  ],
+  "ans": 1,
+  "topic": "syn",
+  "why": "Quell = subdue, reduce. Antonym: exacerbate, agitate.",
+  "sets": [
+   "A7"
+  ]
+ },
+ {
+  "id": 8,
+  "q": "Which word is closest in meaning to \"mollify\"?",
+  "opts": [
+   "Aggravate",
+   "Placate",
+   "Provoke",
+   "Intensify"
+  ],
+  "ans": 1,
+  "topic": "syn",
+  "why": "Mollify = appease, assuage → placate. Antonym: irritate, infuriate.",
+  "sets": [
+   "A8",
+   "C8"
+  ]
+ },
+ {
+  "id": 9,
+  "q": "Which word best demonstrates the semantic concept behind \"dyna\"?",
+  "opts": [
+   "Dynamic",
+   "Dictate",
+   "Dehydrate",
+   "Dismal"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "dyna = power (dynamic, dynamite).",
+  "sets": [
+   "A9",
+   "C13",
+   "D12"
+  ]
+ },
+ {
+  "id": 10,
+  "q": "\"Trenchant\" criticism is sharp and incisive. Its antonym is:",
+  "opts": [
+   "Cutting",
+   "Penetrating",
+   "Blunt",
+   "Forceful"
+  ],
+  "ans": 2,
+  "topic": "ant",
+  "why": "Trenchant = assertive, forceful, sharp. Antonym: feeble, blunt.",
+  "sets": [
+   "A10"
+  ]
+ },
+ {
+  "id": 11,
+  "q": "Which word best demonstrates the contrast between \"pseudo\" and authenticity?",
+  "opts": [
+   "Pseudonym",
+   "Philanthropy",
+   "Homogeneous",
+   "Inscription"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "pseudo = false, not genuine → pseudonym (false name).",
+  "sets": [
+   "A11",
+   "B31",
+   "C39"
+  ]
+ },
+ {
+  "id": 12,
+  "q": "Which is the closest synonym of \"novice\"?",
+  "opts": [
+   "Expert",
+   "Veteran",
+   "Beginner",
+   "Specialist"
+  ],
+  "ans": 2,
+  "topic": "syn",
+  "why": "Novice = tyro, beginner. Antonym: veteran.",
+  "sets": [
+   "A12",
+   "C40",
+   "D23"
+  ]
+ },
+ {
+  "id": 13,
+  "q": "Which word most clearly demonstrates the root \"mort\"?",
+  "opts": [
+   "Fortify",
+   "Portable",
+   "Mortuary",
+   "Benevolent"
+  ],
+  "ans": 2,
+  "topic": "root",
+  "why": "mort = death → mortuary. (fort = strength, port = carry, bene = good)",
+  "sets": [
+   "A13"
+  ]
+ },
+ {
+  "id": 14,
+  "q": "A \"tyro\" is a novice. Its antonym is therefore:",
+  "opts": [
+   "Beginner",
+   "Amateur",
+   "Veteran",
+   "Apprentice"
+  ],
+  "ans": 2,
+  "topic": "ant",
+  "why": "Tyro = beginner. Antonym: proficient, veteran.",
+  "sets": [
+   "A14",
+   "C38",
+   "D3"
+  ]
+ },
+ {
+  "id": 15,
+  "q": "Which word most directly expresses the idea of \"hate\" through its root?",
+  "opts": [
+   "Misogyny",
+   "Philanthropy",
+   "Benevolence",
+   "Sympathy"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "mis/miso = hate → misogyny, misanthrope.",
+  "sets": [
+   "A15",
+   "B44",
+   "C43"
+  ]
+ },
+ {
+  "id": 16,
+  "q": "\"Psychology\" is connected to the study of:",
+  "opts": [
+   "The mind",
+   "Written language",
+   "Physical distance",
+   "Numerical measurement"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "psycho = soul, mind + logy = study of.",
+  "sets": [
+   "A16",
+   "B16"
+  ]
+ },
+ {
+  "id": 17,
+  "q": "The antonym of \"morbid\" in the sense of unhealthy or diseased is:",
+  "opts": [
+   "Pathological",
+   "Healthy",
+   "Diseased",
+   "Unwholesome"
+  ],
+  "ans": 1,
+  "topic": "ant",
+  "why": "Morbid = nasty, macabre, unhealthy. Antonym: healthy, cheerful.",
+  "sets": [
+   "A17",
+   "B18",
+   "C46",
+   "D33"
+  ]
+ },
+ {
+  "id": 18,
+  "q": "The root \"cide\" is most appropriately associated with:",
+  "opts": [
+   "Seeing",
+   "Killing",
+   "Speaking",
+   "Measuring"
+  ],
+  "ans": 1,
+  "topic": "root",
+  "why": "cide = killing (homicide, infanticide, patricide).",
+  "sets": [
+   "A18",
+   "C7",
+   "D32"
+  ]
+ },
+ {
+  "id": 19,
+  "q": "Which word most clearly illustrates the root \"fact/fac\"?",
+  "opts": [
+   "Manufacture",
+   "Mortality",
+   "Homogeneous",
+   "Pseudonym"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "fac/fact = to do, to make (factory, manufacture).",
+  "sets": [
+   "A19",
+   "B45",
+   "C29",
+   "D31"
+  ]
+ },
+ {
+  "id": 20,
+  "q": "A \"knave\" is most accurately described as:",
+  "opts": [
+   "A virtuous person",
+   "A dishonest or unscrupulous person",
+   "An inexperienced person",
+   "A scholarly person"
+  ],
+  "ans": 1,
+  "topic": "syn",
+  "why": "Knave = dishonest person, scoundrel. Antonym: paragon, innocent.",
+  "sets": [
+   "A20",
+   "B46",
+   "C44",
+   "D19"
+  ]
+ },
+ {
+  "id": 21,
+  "q": "An \"axiom\" is a proposition accepted as self-evident. Which is its closest conceptual opposite?",
+  "opts": [
+   "Certainty",
+   "Doubtful assertion",
+   "Principle",
+   "Maxim"
+  ],
+  "ans": 1,
+  "topic": "ant",
+  "why": "Axiom = adage, truism (self-evident truth). Antonym: absurdity → a doubtful assertion.",
+  "sets": [
+   "A21",
+   "B21",
+   "D44"
+  ]
+ },
+ {
+  "id": 22,
+  "q": "The antonym of \"sublime\" in the sense of elevated or noble is:",
+  "opts": [
+   "Exalted",
+   "Grand",
+   "Base",
+   "Magnificent"
+  ],
+  "ans": 2,
+  "topic": "ant",
+  "why": "Sublime = magnificent, eminent. Opposite = base (low, ignoble) / ridiculous.",
+  "sets": [
+   "A22",
+   "B4"
+  ]
+ },
+ {
+  "id": 23,
+  "q": "In \"inscription,\" the root relationship most strongly suggests:",
+  "opts": [
+   "Writing",
+   "Judging",
+   "Leading",
+   "Hating"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "scrib/script = to write (inscription, prescribe).",
+  "sets": [
+   "A23",
+   "D43"
+  ]
+ },
+ {
+  "id": 24,
+  "q": "The antonym of \"heretic,\" in a context involving adherence to accepted doctrine, would be:",
+  "opts": [
+   "Dissenter",
+   "Nonconformist",
+   "Orthodoxy adherent",
+   "Apostate"
+  ],
+  "ans": 2,
+  "topic": "ant",
+  "why": "Heretic = non-conformist. Antonym: conformable, religious → orthodoxy adherent.",
+  "sets": [
+   "A24",
+   "B14"
+  ]
+ },
+ {
+  "id": 25,
+  "q": "If someone \"takes umbrage\" at a remark, the person:",
+  "opts": [
+   "Finds it amusing",
+   "Takes offence",
+   "Accepts it readily",
+   "Ignores it completely"
+  ],
+  "ans": 1,
+  "topic": "syn",
+  "why": "Umbrage = chagrin, offence. \"Take umbrage\" = feel offended.",
+  "sets": [
+   "A25",
+   "C50",
+   "D28"
+  ]
+ },
+ {
+  "id": 26,
+  "q": "A word describing something \"unlucky\" would most appropriately be associated with:",
+  "opts": [
+   "Mal",
+   "Bene",
+   "Phil",
+   "Fort"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "mal = bad, evil (dys = bad/hard/unlucky is not an option). bene, phil, fort are positive.",
+  "sets": [
+   "A26"
+  ]
+ },
+ {
+  "id": 27,
+  "q": "Which is the closest synonym of \"vilify\"?",
+  "opts": [
+   "Defame",
+   "Glorify",
+   "Exonerate",
+   "Praise"
+  ],
+  "ans": 0,
+  "topic": "syn",
+  "why": "Vilify = malign, slur, defame. Antonym: cherish, commend.",
+  "sets": [
+   "A27"
+  ]
+ },
+ {
+  "id": 28,
+  "q": "Which word is the closest synonym of \"calumny\"?",
+  "opts": [
+   "Defamation",
+   "Praise",
+   "Testimony",
+   "Approval"
+  ],
+  "ans": 0,
+  "topic": "syn",
+  "why": "Calumny = defamation, aspersion. Antonym: commendation, praise.",
+  "sets": [
+   "A28",
+   "C2",
+   "D38"
+  ]
+ },
+ {
+  "id": 29,
+  "q": "The root \"mit\" is most closely associated with:",
+  "opts": [
+   "Sending",
+   "Judging",
+   "Killing",
+   "Naming"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "mit = to send (transmit, admit, mission).",
+  "sets": [
+   "A29",
+   "B27",
+   "C23"
+  ]
+ },
+ {
+  "id": 30,
+  "q": "The word \"philanthropy\" most directly reflects which underlying idea?",
+  "opts": [
+   "Love of humanity",
+   "Fear of society",
+   "Hatred of strangers",
+   "Rule by the wealthy"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "phil = love + anthropo = man, humanity.",
+  "sets": [
+   "A30",
+   "B7",
+   "C25",
+   "D14"
+  ]
+ },
+ {
+  "id": 31,
+  "q": "The word \"bisection\" most directly involves the idea of:",
+  "opts": [
+   "Dividing into two parts",
+   "Measuring several parts",
+   "Combining identical parts",
+   "Leading two groups"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "bi = two + sect = to cut.",
+  "sets": [
+   "A31",
+   "C35"
+  ]
+ },
+ {
+  "id": 32,
+  "q": "\"Baroque\" is most appropriately associated with something:",
+  "opts": [
+   "Plain and austere",
+   "Highly ornate and elaborate",
+   "Completely ordinary",
+   "Strictly mathematical"
+  ],
+  "ans": 1,
+  "topic": "syn",
+  "why": "Baroque = florid, gilt, ornate. Antonym: plain, unadorned.",
+  "sets": [
+   "A32",
+   "B2"
+  ]
+ },
+ {
+  "id": 33,
+  "q": "Which word most clearly contains the idea conveyed by \"morph\"?",
+  "opts": [
+   "Transformation of form",
+   "Moral judgment",
+   "Written expression",
+   "Verbal persuasion"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "morph = form, shape (morphing, morphology).",
+  "sets": [
+   "A33",
+   "B43",
+   "C15",
+   "D8"
+  ]
+ },
+ {
+  "id": 34,
+  "q": "The word \"synonym\" contains a root associated with:",
+  "opts": [
+   "Name",
+   "Judgment",
+   "Water",
+   "Death"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "nym = name (synonym, antonym, pseudonym).",
+  "sets": [
+   "A34",
+   "B13",
+   "D37"
+  ]
+ },
+ {
+  "id": 35,
+  "q": "If an argument is \"contra\" another proposition, it is:",
+  "opts": [
+   "Identical to it",
+   "Derived from it",
+   "Opposed to it",
+   "Unrelated to it"
+  ],
+  "ans": 2,
+  "topic": "root",
+  "why": "contra/counter = against.",
+  "sets": [
+   "A35",
+   "D50"
+  ]
+ },
+ {
+  "id": 36,
+  "q": "Which is the best antonym of \"languid\"?",
+  "opts": [
+   "Lethargic",
+   "Energetic",
+   "Listless",
+   "Feeble"
+  ],
+  "ans": 1,
+  "topic": "ant",
+  "why": "Languid = sluggish, apathetic. Antonym: energetic, spirited.",
+  "sets": [
+   "A36",
+   "C12",
+   "D16"
+  ]
+ },
+ {
+  "id": 37,
+  "q": "Which word most directly illustrates the root \"duc,\" meaning \"to lead\"?",
+  "opts": [
+   "Conduct",
+   "Dictate",
+   "Judicious",
+   "Inscription"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "duc/duct = to lead (conduct, induce).",
+  "sets": [
+   "A37",
+   "C21"
+  ]
+ },
+ {
+  "id": 38,
+  "q": "Which root is associated with the concept of \"many\"?",
+  "opts": [
+   "Multi",
+   "Mono",
+   "Hypo",
+   "Pseudo"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "multi = many. mono = one, hypo = below, pseudo = false.",
+  "sets": [
+   "A38",
+   "B39",
+   "C27",
+   "D20"
+  ]
+ },
+ {
+  "id": 39,
+  "q": "A person emerging from a \"stupor\" would move from a state of:",
+  "opts": [
+   "Alertness to sleep",
+   "Dull unconsciousness to awareness",
+   "Confidence to uncertainty",
+   "Activity to aggression"
+  ],
+  "ans": 1,
+  "topic": "syn",
+  "why": "Stupor = lethargy, unconsciousness. Antonym: consciousness, sensibility.",
+  "sets": [
+   "A39"
+  ]
+ },
+ {
+  "id": 40,
+  "q": "The antonym of \"insolvent\" is:",
+  "opts": [
+   "Bankrupt",
+   "Indebted",
+   "Solvent",
+   "Destitute"
+  ],
+  "ans": 2,
+  "topic": "ant",
+  "why": "Insolvent = indigent, destitute (bankrupt). Antonym: solvent, wealthy.",
+  "sets": [
+   "A40",
+   "C42"
+  ]
+ },
+ {
+  "id": 41,
+  "q": "Which is the strongest antonym of \"callous\"?",
+  "opts": [
+   "Insensitive",
+   "Compassionate",
+   "Indifferent",
+   "Unfeeling"
+  ],
+  "ans": 1,
+  "topic": "ant",
+  "why": "Callous = unfeeling, insensitive. Antonym: compassionate, tender.",
+  "sets": [
+   "A41",
+   "C6",
+   "D22"
+  ]
+ },
+ {
+  "id": 42,
+  "q": "Which word best demonstrates \"dict,\" relating to saying or speaking?",
+  "opts": [
+   "Dictate",
+   "Fracture",
+   "Fortify",
+   "Aquarium"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "dict = to say (dictate, predict, verdict, contradict).",
+  "sets": [
+   "A42",
+   "B15",
+   "C33"
+  ]
+ },
+ {
+  "id": 43,
+  "q": "If a person is \"paralegal,\" the word formation suggests a relationship to:",
+  "opts": [
+   "Medicine",
+   "Law",
+   "Psychology",
+   "Mathematics"
+  ],
+  "ans": 1,
+  "topic": "root",
+  "why": "legal = related to law; paralegal = assists lawyers.",
+  "sets": [
+   "A43"
+  ]
+ },
+ {
+  "id": 44,
+  "q": "Which word most clearly demonstrates \"jud,\" associated with judgment?",
+  "opts": [
+   "Judicial",
+   "Vocational",
+   "Morphological",
+   "Telephonic"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "jud = judge (judicial, prejudice).",
+  "sets": [
+   "A44",
+   "C5"
+  ]
+ },
+ {
+  "id": 45,
+  "q": "A \"jejune\" argument is best described as:",
+  "opts": [
+   "Sophisticated and penetrating",
+   "Naive or intellectually dull",
+   "Maliciously deceptive",
+   "Extremely persuasive"
+  ],
+  "ans": 1,
+  "topic": "syn",
+  "why": "Jejune = dull, boring, naive. Antonym: interesting, exciting.",
+  "sets": [
+   "A45",
+   "B49"
+  ]
+ },
+ {
+  "id": 46,
+  "q": "\"Abject\" in the sense of an \"abject person\" most nearly means:",
+  "opts": [
+   "Despicable",
+   "Distinguished",
+   "Independent",
+   "Celebrated"
+  ],
+  "ans": 0,
+  "topic": "syn",
+  "why": "Abject = despicable, servile. Antonym: commendable, praiseworthy.",
+  "sets": [
+   "A46",
+   "B38"
+  ]
+ },
+ {
+  "id": 47,
+  "q": "\"Circumstance\" contains an element suggesting something:",
+  "opts": [
+   "Around or surrounding",
+   "Beneath",
+   "Against",
+   "Within a name"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "circum = around (circumference, circumstance).",
+  "sets": [
+   "A47",
+   "B22"
+  ]
+ },
+ {
+  "id": 48,
+  "q": "Which is the closest synonym of \"encumbrance\"?",
+  "opts": [
+   "Advantage",
+   "Burden",
+   "Incentive",
+   "Reward"
+  ],
+  "ans": 1,
+  "topic": "syn",
+  "why": "Encumbrance = hindrance, obstacle → burden. Antonym: incentive.",
+  "sets": [
+   "A48"
+  ]
+ },
+ {
+  "id": 49,
+  "q": "To \"rescind\" a regulation is to:",
+  "opts": [
+   "Strengthen it",
+   "Revoke it",
+   "Interpret it",
+   "Publish it"
+  ],
+  "ans": 1,
+  "topic": "syn",
+  "why": "Rescind = annul, abrogate → revoke. Antonym: permit.",
+  "sets": [
+   "A49",
+   "B25"
+  ]
+ },
+ {
+  "id": 50,
+  "q": "Which is the most precise antonym of \"obscure\" when referring to an idea?",
+  "opts": [
+   "Hidden",
+   "Clear",
+   "Unknown",
+   "Ambiguous"
+  ],
+  "ans": 1,
+  "topic": "ant",
+  "why": "Obscure = arcane, vague. Antonym: prominent, clear.",
+  "sets": [
+   "A50",
+   "B5",
+   "D42"
+  ]
+ },
+ {
+  "id": 51,
+  "q": "The antonym of \"vicious\" is:",
+  "opts": [
+   "Malicious",
+   "Virtuous",
+   "Brutal",
+   "Corrupt"
+  ],
+  "ans": 1,
+  "topic": "ant",
+  "why": "Vicious = corrupt, obnoxious. Antonym: noble, virtuous.",
+  "sets": [
+   "B1",
+   "D27"
+  ]
+ },
+ {
+  "id": 52,
+  "q": "Which word is the closest synonym of \"authentic\"?",
+  "opts": [
+   "Fictitious",
+   "Genuine",
+   "Dubious",
+   "Counterfeit"
+  ],
+  "ans": 1,
+  "topic": "syn",
+  "why": "Authentic = accurate, credible → genuine. Antonym: fictitious, unreal.",
+  "sets": [
+   "B3",
+   "C26",
+   "D4"
+  ]
+ },
+ {
+  "id": 53,
+  "q": "Which word is the strongest synonym for \"lax\" in the context of discipline?",
+  "opts": [
+   "Rigorous",
+   "Lenient",
+   "Exacting",
+   "Meticulous"
+  ],
+  "ans": 1,
+  "topic": "syn",
+  "why": "Lax = slack, careless → lenient. Antonym: firm, strict.",
+  "sets": [
+   "B6",
+   "D41"
+  ]
+ },
+ {
+  "id": 54,
+  "q": "To \"arraign\" someone means to:",
+  "opts": [
+   "Praise them publicly",
+   "Call them before a court to answer a charge",
+   "Forgive their offence",
+   "Defend their reputation"
+  ],
+  "ans": 1,
+  "topic": "syn",
+  "why": "Arraign = incriminate, indict (charge in court). Antonym: exculpate, pardon.",
+  "sets": [
+   "B8",
+   "D24"
+  ]
+ },
+ {
+  "id": 55,
+  "q": "Which root would most appropriately appear in a word describing something \"self-directed\"?",
+  "opts": [
+   "Auto",
+   "Homo",
+   "Contra",
+   "Hypo"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "auto = self (automobile, autobiography).",
+  "sets": [
+   "B9",
+   "C9"
+  ]
+ },
+ {
+  "id": 56,
+  "q": "A \"spectator\" is one who:",
+  "opts": [
+   "Leads an event",
+   "Observes an event",
+   "Judges an event",
+   "Creates an event"
+  ],
+  "ans": 1,
+  "topic": "root",
+  "why": "spect = to look (spectator, inspection).",
+  "sets": [
+   "B10"
+  ]
+ },
+ {
+  "id": 57,
+  "q": "The antonym of \"imminent\" is:",
+  "opts": [
+   "Impending",
+   "Approaching",
+   "Distant",
+   "Immediate"
+  ],
+  "ans": 2,
+  "topic": "ant",
+  "why": "Imminent = impending, brewing. Antonym: distant, receding.",
+  "sets": [
+   "B11",
+   "C24",
+   "D36"
+  ]
+ },
+ {
+  "id": 58,
+  "q": "Which is the strongest antonym of \"temperate\" in the sense of behaviour?",
+  "opts": [
+   "Moderate",
+   "Restrained",
+   "Excessive",
+   "Balanced"
+  ],
+  "ans": 2,
+  "topic": "ant",
+  "why": "Temperate = cool, moderate. Antonym: boisterous, violent → excessive.",
+  "sets": [
+   "B12",
+   "C20",
+   "D25"
+  ]
+ },
+ {
+  "id": 59,
+  "q": "Which word is most strongly associated with the root \"fract\"?",
+  "opts": [
+   "Fracture",
+   "Fortitude",
+   "Dictation",
+   "Telepathy"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "fract = to break (fracture, fraction).",
+  "sets": [
+   "B19",
+   "D30"
+  ]
+ },
+ {
+  "id": 60,
+  "q": "Which word best demonstrates the root \"tele\"?",
+  "opts": [
+   "Telephone",
+   "Mortality",
+   "Contradiction",
+   "Fortitude"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "tele = far off (telephone, television).",
+  "sets": [
+   "B20",
+   "C11"
+  ]
+ },
+ {
+  "id": 61,
+  "q": "Which interpretation of \"homogeneous\" is most accurate?",
+  "opts": [
+   "Made of unlike elements",
+   "Made of similar or uniform elements",
+   "Existing beyond nature",
+   "Existing beneath another thing"
+  ],
+  "ans": 1,
+  "topic": "root",
+  "why": "homo = same (hetero = different).",
+  "sets": [
+   "B23",
+   "C45",
+   "D10"
+  ]
+ },
+ {
+  "id": 62,
+  "q": "The word \"infinitesimal\" contains a semantic association with:",
+  "opts": [
+   "The infinite or extremely small",
+   "Leadership",
+   "Measurement",
+   "Judgment"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "fin = end, limit; infinitesimal = immeasurably small.",
+  "sets": [
+   "B26"
+  ]
+ },
+ {
+  "id": 63,
+  "q": "Which is the closest antonym of \"defray\"?",
+  "opts": [
+   "Finance",
+   "Pay",
+   "Reimburse",
+   "Impose a cost upon"
+  ],
+  "ans": 3,
+  "topic": "ant",
+  "why": "Defray = spend, pay (someone's costs). Opposite = impose a cost upon.",
+  "sets": [
+   "B28",
+   "C18",
+   "D34"
+  ]
+ },
+ {
+  "id": 64,
+  "q": "Which pair is most accurately matched?",
+  "opts": [
+   "Jud -- to judge",
+   "Port -- to hate",
+   "Phil -- to write",
+   "Mort -- to measure"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "jud = judge ✓ (port = carry, phil = love, mort = death).",
+  "sets": [
+   "B30",
+   "D26"
+  ]
+ },
+ {
+  "id": 65,
+  "q": "Which is the strongest antonym of \"clandestine\"?",
+  "opts": [
+   "Furtive",
+   "Covert",
+   "Open",
+   "Surreptitious"
+  ],
+  "ans": 2,
+  "topic": "ant",
+  "why": "Clandestine = covert, furtive. Antonym: open, legal.",
+  "sets": [
+   "B32"
+  ]
+ },
+ {
+  "id": 66,
+  "q": "Which root would be most appropriate for constructing a word meaning \"to measure\"?",
+  "opts": [
+   "Metr",
+   "Cide",
+   "Jud",
+   "Voc"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "metr/meter = measure (thermometer, perimeter).",
+  "sets": [
+   "B33",
+   "C47",
+   "D5"
+  ]
+ },
+ {
+  "id": 67,
+  "q": "The opposite of \"zenith\" is:",
+  "opts": [
+   "Summit",
+   "Apex",
+   "Nadir",
+   "Pinnacle"
+  ],
+  "ans": 2,
+  "topic": "ant",
+  "why": "Zenith = summit, apex. Antonym: nadir, base.",
+  "sets": [
+   "B34"
+  ]
+ },
+ {
+  "id": 68,
+  "q": "Which option is the closest synonym of \"boisterous\"?",
+  "opts": [
+   "Tumultuous",
+   "Subdued",
+   "Taciturn",
+   "Restrained"
+  ],
+  "ans": 0,
+  "topic": "syn",
+  "why": "Boisterous = clamorous, rowdy → tumultuous. Antonym: placid, calm.",
+  "sets": [
+   "B36",
+   "C48",
+   "D6"
+  ]
+ },
+ {
+  "id": 69,
+  "q": "A term referring to an abnormal or impaired functioning would most logically employ:",
+  "opts": [
+   "Dys",
+   "Bene",
+   "Phil",
+   "Norm"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "dys = bad, hard (dysfunctional, dyslexic).",
+  "sets": [
+   "B37",
+   "D49"
+  ]
+ },
+ {
+  "id": 70,
+  "q": "Which is the closest antonym of \"deride\"?",
+  "opts": [
+   "Mock",
+   "Ridicule",
+   "Commend",
+   "Taunt"
+  ],
+  "ans": 2,
+  "topic": "ant",
+  "why": "Deride = mock, taunt. Antonym: inspire, encourage → commend.",
+  "sets": [
+   "B40",
+   "C30"
+  ]
+ },
+ {
+  "id": 71,
+  "q": "Which root most directly conveys the meaning \"to look\"?",
+  "opts": [
+   "Vis",
+   "Mit",
+   "Cide",
+   "Form"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "vis/vid = to see (vision, video); spect = look. mit = send, cide = kill, form = shape.",
+  "sets": [
+   "B41",
+   "C37",
+   "D35"
+  ]
+ },
+ {
+  "id": 72,
+  "q": "\"Guile\" refers to cunning or deceit. Its antonym is:",
+  "opts": [
+   "Sincerity",
+   "Craft",
+   "Deception",
+   "Artifice"
+  ],
+  "ans": 0,
+  "topic": "ant",
+  "why": "Guile = cunning, deceit. Antonym: honesty, frankness → sincerity.",
+  "sets": [
+   "B42"
+  ]
+ },
+ {
+  "id": 73,
+  "q": "Which word most directly reflects \"norm,\" relating to a standard or rule?",
+  "opts": [
+   "Normal",
+   "Paranormal",
+   "Noxious",
+   "Novice"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "norm = typical, standard → normal (paranormal = beyond normal).",
+  "sets": [
+   "B47",
+   "C17"
+  ]
+ },
+ {
+  "id": 74,
+  "q": "Which word most clearly exemplifies the root \"metr\"?",
+  "opts": [
+   "Geometry",
+   "Biography",
+   "Philanthropy",
+   "Paranormal"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "metr = measure → geometry (measuring the earth).",
+  "sets": [
+   "B48"
+  ]
+ },
+ {
+  "id": 75,
+  "q": "\"Frugality\" most nearly means:",
+  "opts": [
+   "Extravagance",
+   "Thrift",
+   "Generosity",
+   "Luxury"
+  ],
+  "ans": 1,
+  "topic": "syn",
+  "why": "Frugality = economy, providence → thrift. Antonym: extravagance.",
+  "sets": [
+   "B50",
+   "C28",
+   "D11"
+  ]
+ },
+ {
+  "id": 76,
+  "q": "Which word most clearly illustrates the root \"fort\"?",
+  "opts": [
+   "Strength",
+   "Distance",
+   "Writing",
+   "Similarity"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "fort = strength (fortress, fortitude).",
+  "sets": [
+   "C1"
+  ]
+ },
+ {
+  "id": 77,
+  "q": "Which root most directly means \"beneath\"?",
+  "opts": [
+   "Hyper",
+   "Hypo",
+   "Homo",
+   "Ambi"
+  ],
+  "ans": 1,
+  "topic": "root",
+  "why": "hypo = below, beneath (hypothermia). hyper = above.",
+  "sets": [
+   "C3"
+  ]
+ },
+ {
+  "id": 78,
+  "q": "If a lecture is \"insipid,\" it is most likely:",
+  "opts": [
+   "Riveting",
+   "Bland",
+   "Provocative",
+   "Scholarly"
+  ],
+  "ans": 1,
+  "topic": "syn",
+  "why": "Insipid = tedious, tasteless, vapid → bland. Antonym: pleasing, appetizing.",
+  "sets": [
+   "C4"
+  ]
+ },
+ {
+  "id": 79,
+  "q": "A \"squalid\" environment is:",
+  "opts": [
+   "Luxurious",
+   "Filthy and neglected",
+   "Spacious and elegant",
+   "Quiet and secluded"
+  ],
+  "ans": 1,
+  "topic": "syn",
+  "why": "Squalid = dirty, filthy. Antonym: tidy, attractive.",
+  "sets": [
+   "C10"
+  ]
+ },
+ {
+  "id": 80,
+  "q": "A \"quibble\" is best described as:",
+  "opts": [
+   "A substantial disagreement over principle",
+   "A petty objection or argument",
+   "A formal accusation",
+   "A public commendation"
+  ],
+  "ans": 1,
+  "topic": "syn",
+  "why": "Quibble = equivocate, prevaricate → a petty objection.",
+  "sets": [
+   "C14",
+   "D17"
+  ]
+ },
+ {
+  "id": 81,
+  "q": "To \"concede\" a point in an argument is to:",
+  "opts": [
+   "Yield or admit it",
+   "Conceal it",
+   "Refute it",
+   "Distort it"
+  ],
+  "ans": 0,
+  "topic": "syn",
+  "why": "Concede = yield, permit. Antonym: deny, reject.",
+  "sets": [
+   "C16"
+  ]
+ },
+ {
+  "id": 82,
+  "q": "A \"hapless\" individual is:",
+  "opts": [
+   "Fortunate",
+   "Unfortunate",
+   "Powerful",
+   "Deceptive"
+  ],
+  "ans": 1,
+  "topic": "syn",
+  "why": "Hapless = unfortunate, ill-fated. Antonym: fortunate, lucky.",
+  "sets": [
+   "C22",
+   "D7"
+  ]
+ },
+ {
+  "id": 83,
+  "q": "A \"pseudonym\" is best understood through the root \"nym\" as a:",
+  "opts": [
+   "Secret location",
+   "False or assumed name",
+   "Written argument",
+   "Personal judgment"
+  ],
+  "ans": 1,
+  "topic": "root",
+  "why": "pseudo = false + nym = name.",
+  "sets": [
+   "C31",
+   "D39"
+  ]
+ },
+ {
+  "id": 84,
+  "q": "To \"ratify\" an agreement is to:",
+  "opts": [
+   "Reject it formally",
+   "Approve or confirm it formally",
+   "Question its legality",
+   "Conceal its existence"
+  ],
+  "ans": 1,
+  "topic": "syn",
+  "why": "Ratify = consent, approve. Antonym: deny, dissent.",
+  "sets": [
+   "C32"
+  ]
+ },
+ {
+  "id": 85,
+  "q": "Which is the most precise antonym of \"lucid\" when referring to an explanation?",
+  "opts": [
+   "Clear",
+   "Obscure",
+   "Persuasive",
+   "Concise"
+  ],
+  "ans": 1,
+  "topic": "ant",
+  "why": "Lucid = sound, rational, clear. Antonym: obscure, hidden.",
+  "sets": [
+   "C34"
+  ]
+ },
+ {
+  "id": 86,
+  "q": "\"Subterfuge\" is used to achieve an objective through:",
+  "opts": [
+   "Open honesty",
+   "Direct confrontation",
+   "Deception or a deceptive strategy",
+   "Formal authorization"
+  ],
+  "ans": 2,
+  "topic": "syn",
+  "why": "Subterfuge = deceit, stratagem. Antonym: frankness, openness.",
+  "sets": [
+   "C36"
+  ]
+ },
+ {
+  "id": 87,
+  "q": "Which root is most strongly associated with \"death\"?",
+  "opts": [
+   "Mort",
+   "Port",
+   "Phil",
+   "Metr"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "mort = death (mortal, mortician).",
+  "sets": [
+   "C49"
+  ]
+ },
+ {
+  "id": 88,
+  "q": "The most appropriate antonym of \"immaculate\" is:",
+  "opts": [
+   "Flawless",
+   "Spotless",
+   "Tarnished",
+   "Pristine"
+  ],
+  "ans": 2,
+  "topic": "ant",
+  "why": "Immaculate = unsullied, spotless. Antonym: defiled, tarnished.",
+  "sets": [
+   "D1"
+  ]
+ },
+ {
+  "id": 89,
+  "q": "In the word \"dysfunctional,\" the root element \"dys\" most strongly conveys:",
+  "opts": [
+   "Excess",
+   "Abnormality or difficulty",
+   "Equality",
+   "Distance"
+  ],
+  "ans": 1,
+  "topic": "root",
+  "why": "dys = bad; hard; unlucky → abnormality or difficulty.",
+  "sets": [
+   "D2"
+  ]
+ },
+ {
+  "id": 90,
+  "q": "The root \"contra\" would most plausibly appear in a word describing:",
+  "opts": [
+   "Agreement",
+   "Opposition",
+   "Smallness",
+   "Affection"
+  ],
+  "ans": 1,
+  "topic": "root",
+  "why": "contra = against → opposition (contradict, encounter).",
+  "sets": [
+   "D9"
+  ]
+ },
+ {
+  "id": 91,
+  "q": "Which word most clearly illustrates the root \"form\"?",
+  "opts": [
+   "Formation",
+   "Mortality",
+   "Philanthropy",
+   "Dyslexia"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "form = shape (formation, conform, reform).",
+  "sets": [
+   "D13"
+  ]
+ },
+ {
+  "id": 92,
+  "q": "To \"efface\" something is to erase or obliterate it. Its antonym is:",
+  "opts": [
+   "Inscribe",
+   "Remove",
+   "Delete",
+   "Conceal"
+  ],
+  "ans": 0,
+  "topic": "ant",
+  "why": "Efface = destroy, obliterate. Antonym: retain, maintain → of these, inscribe (write in).",
+  "sets": [
+   "D15"
+  ]
+ },
+ {
+  "id": 93,
+  "q": "Which root-word pairing is INCORRECT?",
+  "opts": [
+   "Mort -- death",
+   "Fort -- strength",
+   "Phil -- love",
+   "Duc -- writing"
+  ],
+  "ans": 3,
+  "topic": "root",
+  "why": "duc = to LEAD, not writing (scrib = write). Other pairs are correct.",
+  "sets": [
+   "D18"
+  ]
+ },
+ {
+  "id": 94,
+  "q": "A person described as \"benevolent\" is one whose conduct is primarily:",
+  "opts": [
+   "Cruel",
+   "Well-intentioned and kind",
+   "Secretive",
+   "Excessively cautious"
+  ],
+  "ans": 1,
+  "topic": "syn",
+  "why": "bene = good → benign, generous. Antonym: malevolent.",
+  "sets": [
+   "D21"
+  ]
+ },
+ {
+  "id": 95,
+  "q": "\"Televise\" contains a root suggesting:",
+  "opts": [
+   "Seeing from a distance",
+   "Writing in secret",
+   "Judging remotely",
+   "Measuring distance"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "tele = far + vis = see.",
+  "sets": [
+   "D29"
+  ]
+ },
+ {
+  "id": 96,
+  "q": "The root \"fort\" contributes the idea of:",
+  "opts": [
+   "Strength",
+   "Distance",
+   "Writing",
+   "Similarity"
+  ],
+  "ans": 0,
+  "topic": "root",
+  "why": "fort = strength (fortress, fortitude).",
+  "sets": [
+   "D45"
+  ]
+ },
+ {
+  "id": 97,
+  "q": "Which word best illustrates the meaning of \"pater\"?",
+  "opts": [
+   "Maternal",
+   "Paternal",
+   "Paralegal",
+   "Paranormal"
+  ],
+  "ans": 1,
+  "topic": "root",
+  "why": "pater = father (paternal, paternity). mater = mother.",
+  "sets": [
+   "D46"
+  ]
+ }
+]

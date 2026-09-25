@@ -1,0 +1,2353 @@
+[
+ {
+  "word": "Abash",
+  "syn": "Disconcert, rattle",
+  "ant": "Uphold, Discompose",
+  "tested": false
+ },
+ {
+  "word": "Abate",
+  "syn": "Moderate, decrease",
+  "ant": "Aggravate",
+  "tested": false
+ },
+ {
+  "word": "Abject",
+  "syn": "Despicable, servile",
+  "ant": "Commendable, Praiseworthy",
+  "tested": true
+ },
+ {
+  "word": "Abjure",
+  "syn": "Forsake, renounce",
+  "ant": "Approve, Sanction",
+  "tested": false
+ },
+ {
+  "word": "Abolish",
+  "syn": "Abrogate, annul",
+  "ant": "Setup, Establish",
+  "tested": false
+ },
+ {
+  "word": "Abortive",
+  "syn": "Vain, unproductive",
+  "ant": "Productive",
+  "tested": false
+ },
+ {
+  "word": "Abound",
+  "syn": "Flourish, proliferate",
+  "ant": "Deficient, Destitute",
+  "tested": false
+ },
+ {
+  "word": "Absolve",
+  "syn": "Pardon, forgive",
+  "ant": "Compel, Accuse",
+  "tested": false
+ },
+ {
+  "word": "Accord",
+  "syn": "Agreement, harmony",
+  "ant": "Discord",
+  "tested": false
+ },
+ {
+  "word": "Acrimony",
+  "syn": "Harshness, bitterness",
+  "ant": "Courtesy, Benevolence",
+  "tested": false
+ },
+ {
+  "word": "Acumen",
+  "syn": "Awareness, brilliance",
+  "ant": "Stupidity, Ignorance",
+  "tested": false
+ },
+ {
+  "word": "Adamant",
+  "syn": "Stubborn, inflexible",
+  "ant": "Flexible, Soft",
+  "tested": false
+ },
+ {
+  "word": "Adhere",
+  "syn": "Comply, observe",
+  "ant": "Condemn, Disjoin",
+  "tested": false
+ },
+ {
+  "word": "Adherent",
+  "syn": "Follower, disciple",
+  "ant": "Rival, Adversary",
+  "tested": true
+ },
+ {
+  "word": "Adjunct",
+  "syn": "Joined, Added",
+  "ant": "Separated, Subtracted",
+  "tested": false
+ },
+ {
+  "word": "Admonish",
+  "syn": "Counsel, reprove",
+  "ant": "Approve, Applaud",
+  "tested": false
+ },
+ {
+  "word": "Adversity",
+  "syn": "Misfortune, calamity",
+  "ant": "Prosperity, Fortune",
+  "tested": false
+ },
+ {
+  "word": "Alien",
+  "syn": "Foreigner, outsider",
+  "ant": "Native, Resident",
+  "tested": false
+ },
+ {
+  "word": "Allay",
+  "syn": "Pacify, soothe",
+  "ant": "Aggravate, Excite",
+  "tested": false
+ },
+ {
+  "word": "Alleviate",
+  "syn": "Abate, relieve",
+  "ant": "Aggravate, Enhance",
+  "tested": false
+ },
+ {
+  "word": "Allure",
+  "syn": "Entice, fascinate",
+  "ant": "Repulse Repel",
+  "tested": false
+ },
+ {
+  "word": "Amplify",
+  "syn": "Augment, deepen",
+  "ant": "Lessen, Contract",
+  "tested": false
+ },
+ {
+  "word": "Arraign",
+  "syn": "Incriminate, indict",
+  "ant": "Exculpate, Pardon",
+  "tested": true
+ },
+ {
+  "word": "Ascend",
+  "syn": "Climb Escalate",
+  "ant": "Descend, Decline",
+  "tested": false
+ },
+ {
+  "word": "Audacity",
+  "syn": "Boldness, Courage",
+  "ant": "Mildness, Cowardice",
+  "tested": false
+ },
+ {
+  "word": "Authentic",
+  "syn": "Accurate, credible",
+  "ant": "Fictitious, unreal",
+  "tested": true
+ },
+ {
+  "word": "Awkward",
+  "syn": "Rude, blundering",
+  "ant": "Adroit, clever",
+  "tested": false
+ },
+ {
+  "word": "Axiom",
+  "syn": "Adage, truism",
+  "ant": "Absurdity, Blunder",
+  "tested": true
+ },
+ {
+  "word": "Baffle",
+  "syn": "Astound, Faze",
+  "ant": "Facilitate, Clarify",
+  "tested": false
+ },
+ {
+  "word": "Barbarous",
+  "syn": "Frustrate, perplex",
+  "ant": "Civilized",
+  "tested": false,
+  "note": "Source lists 'Frustrate, perplex' as synonyms — that looks like a typo; barbarous = savage, cruel."
+ },
+ {
+  "word": "Baroque",
+  "syn": "Florid, gilt",
+  "ant": "Plain, unadorned",
+  "tested": true
+ },
+ {
+  "word": "Barren",
+  "syn": "Desolate, Sterile",
+  "ant": "Damp, Fertile",
+  "tested": false
+ },
+ {
+  "word": "Barrier",
+  "syn": "Barricade, Obstacle",
+  "ant": "Link, Assistance",
+  "tested": false
+ },
+ {
+  "word": "Base",
+  "syn": "Vulgar, Coarse",
+  "ant": "Summit, Noble",
+  "tested": true
+ },
+ {
+  "word": "Batty",
+  "syn": "Insane, silly",
+  "ant": "Sane",
+  "tested": false
+ },
+ {
+  "word": "Bawdy",
+  "syn": "Erotic, Coarse",
+  "ant": "Decent, Moral",
+  "tested": false
+ },
+ {
+  "word": "Befogged",
+  "syn": "Becloud, Dim",
+  "ant": "Clear headed, Uncloud",
+  "tested": false
+ },
+ {
+  "word": "Benevolent",
+  "syn": "Benign, Generous",
+  "ant": "Malevolent, Miserly",
+  "tested": true
+ },
+ {
+  "word": "Benign",
+  "syn": "Favorable, friendly",
+  "ant": "Malignant, Cruel",
+  "tested": false
+ },
+ {
+  "word": "Bewitching",
+  "syn": "Alluring, charming",
+  "ant": "Repulsive, Repugnant",
+  "tested": false
+ },
+ {
+  "word": "Bind",
+  "syn": "Predicament",
+  "ant": "Release",
+  "tested": false
+ },
+ {
+  "word": "Bleak",
+  "syn": "Grim, Austere, Blank",
+  "ant": "Bright, Pleasant, Cheerful",
+  "tested": false
+ },
+ {
+  "word": "Blunt",
+  "syn": "Dull, Insensitive",
+  "ant": "Keen, Sharp",
+  "tested": true
+ },
+ {
+  "word": "Boisterous",
+  "syn": "Clamorous, rowdy",
+  "ant": "Placid, Calm",
+  "tested": true
+ },
+ {
+  "word": "Bold",
+  "syn": "Adventurous",
+  "ant": "Timid",
+  "tested": false
+ },
+ {
+  "word": "Brittle",
+  "syn": "Breakable, crisp",
+  "ant": "Tough, Enduring",
+  "tested": false
+ },
+ {
+  "word": "Bustle",
+  "syn": "Commotion, Tumult",
+  "ant": "Slowness, Quiet",
+  "tested": false
+ },
+ {
+  "word": "Busy",
+  "syn": "Active, Engaged",
+  "ant": "Idle, Lazy",
+  "tested": false
+ },
+ {
+  "word": "Calamity",
+  "syn": "adversity, misfortune",
+  "ant": "Fortune",
+  "tested": false
+ },
+ {
+  "word": "Calculating",
+  "syn": "Canny, Devious",
+  "ant": "Artless, honest",
+  "tested": false
+ },
+ {
+  "word": "Callous",
+  "syn": "obdurate, unfeeling, Insensitive, indurated",
+  "ant": "Compassionate, Tender, Kind, merciful",
+  "tested": true
+ },
+ {
+  "word": "Calm",
+  "syn": "Harmonious, unruffled",
+  "ant": "Stormy, turbulent",
+  "tested": false
+ },
+ {
+  "word": "Calumny",
+  "syn": "defamation, aspersion",
+  "ant": "Commendation, Praise",
+  "tested": true
+ },
+ {
+  "word": "Camouflage",
+  "syn": "Cloak, disguise",
+  "ant": "Reveal",
+  "tested": false
+ },
+ {
+  "word": "Candid",
+  "syn": "Blunt, bluff",
+  "ant": "Evasive",
+  "tested": false
+ },
+ {
+  "word": "Capable",
+  "syn": "competent, able",
+  "ant": "Incompetent, Inept",
+  "tested": false
+ },
+ {
+  "word": "Captivate",
+  "syn": "Charm, fascinate, Beguile, bewitch",
+  "ant": "Disillusion offend, Repel",
+  "tested": false
+ },
+ {
+  "word": "Captivity",
+  "syn": "imprisonment, confinement",
+  "ant": "Freedom, Liberty",
+  "tested": false
+ },
+ {
+  "word": "Carnal",
+  "syn": "Earthly, fleshly",
+  "ant": "Spiritual",
+  "tested": false
+ },
+ {
+  "word": "Catholic",
+  "syn": "Generic, liberal",
+  "ant": "Narrow- minded",
+  "tested": false
+ },
+ {
+  "word": "Cease",
+  "syn": "terminate, desist",
+  "ant": "Begin, Originate",
+  "tested": false
+ },
+ {
+  "word": "Celebrated",
+  "syn": "Acclaimed, lionized",
+  "ant": "Unknown, Inglorious",
+  "tested": true
+ },
+ {
+  "word": "Cement",
+  "syn": "Plaster, mortar",
+  "ant": "Disintegrate",
+  "tested": false
+ },
+ {
+  "word": "Censure",
+  "syn": "Rebuke, reprimand",
+  "ant": "Praise, Acceptance",
+  "tested": false
+ },
+ {
+  "word": "Chaste",
+  "syn": "virtuous, pure",
+  "ant": "Sullied, Lustful",
+  "tested": false
+ },
+ {
+  "word": "Chastise",
+  "syn": "punish, admonish",
+  "ant": "Cheer, encourage",
+  "tested": false
+ },
+ {
+  "word": "Cheap",
+  "syn": "Competitive, Inexpensive",
+  "ant": "Dear, unreasonable",
+  "tested": false
+ },
+ {
+  "word": "Clandestine",
+  "syn": "Covert, furtive",
+  "ant": "Open, Legal",
+  "tested": true
+ },
+ {
+  "word": "Classic",
+  "syn": "Simple, Typical",
+  "ant": "Romantic, Unusual",
+  "tested": false
+ },
+ {
+  "word": "Coarse",
+  "syn": "Bawdy, Boorish",
+  "ant": "Fine, Chaste",
+  "tested": false
+ },
+ {
+  "word": "Comic",
+  "syn": "Clown, Jester",
+  "ant": "Tragic, tragedian",
+  "tested": false
+ },
+ {
+  "word": "Compact",
+  "syn": "Bunched, thick",
+  "ant": "Loose, Diffuse",
+  "tested": false
+ },
+ {
+  "word": "Compassion",
+  "syn": "kindness, sympathy",
+  "ant": "Cruelty, Barbarity",
+  "tested": false
+ },
+ {
+  "word": "Compress",
+  "syn": "Abbreviate, Shrink",
+  "ant": "Amplify, Expand",
+  "tested": false
+ },
+ {
+  "word": "Comprise",
+  "syn": "include, contain",
+  "ant": "Reject, lack",
+  "tested": false
+ },
+ {
+  "word": "Concede",
+  "syn": "yield, permit",
+  "ant": "Deny, reject",
+  "tested": true
+ },
+ {
+  "word": "Conceit",
+  "syn": "Egotism, Immodesty",
+  "ant": "Modesty",
+  "tested": false
+ },
+ {
+  "word": "Concord",
+  "syn": "Agreement, accord",
+  "ant": "Discord",
+  "tested": true
+ },
+ {
+  "word": "Concur",
+  "syn": "approve, agree",
+  "ant": "Differ, disagree",
+  "tested": false
+ },
+ {
+  "word": "Condemn",
+  "syn": "Castigate, Chide",
+  "ant": "Approve, Praise",
+  "tested": false
+ },
+ {
+  "word": "Confident",
+  "syn": "Bold, Undaunted",
+  "ant": "Diffident, cowardly",
+  "tested": false
+ },
+ {
+  "word": "Consent",
+  "syn": "agree, permit",
+  "ant": "Object Disagree",
+  "tested": false
+ },
+ {
+  "word": "Consequence",
+  "syn": "effect, outcome",
+  "ant": "Origin, Start",
+  "tested": false
+ },
+ {
+  "word": "Consolidate",
+  "syn": "solidify, strengthen, Centralize, Fortify",
+  "ant": "Separate, Weaken",
+  "tested": false
+ },
+ {
+  "word": "Conspicuous",
+  "syn": "prominent, obvious",
+  "ant": "Concealed, hidden",
+  "tested": false
+ },
+ {
+  "word": "Contempt",
+  "syn": "scorn, disregard",
+  "ant": "Regard, Praise",
+  "tested": false
+ },
+ {
+  "word": "Contradict",
+  "syn": "deny, oppose",
+  "ant": "Approve, Confirm",
+  "tested": false
+ },
+ {
+  "word": "Contrary",
+  "syn": "dissimilar, conflicting",
+  "ant": "Similar, Alike",
+  "tested": false
+ },
+ {
+  "word": "Courtesy",
+  "syn": "Generosity, Reverence",
+  "ant": "Disdain, Rudeness",
+  "tested": false
+ },
+ {
+  "word": "Creation",
+  "syn": "Formation, foundation",
+  "ant": "Destruction",
+  "tested": false
+ },
+ {
+  "word": "Cunning",
+  "syn": "Acute, Smart",
+  "ant": "Naive, Coarse",
+  "tested": true
+ },
+ {
+  "word": "Decay",
+  "syn": "Collapse, decompose",
+  "ant": "Flourish, Progress",
+  "tested": false
+ },
+ {
+  "word": "Deceit",
+  "syn": "deception, artifice",
+  "ant": "Veracity, Sincerity",
+  "tested": true
+ },
+ {
+  "word": "Decipher",
+  "syn": "interpret, reveal",
+  "ant": "Misinterpret, distort",
+  "tested": false
+ },
+ {
+  "word": "Defile",
+  "syn": "contaminate, pollute",
+  "ant": "Purify, sanctify",
+  "tested": false
+ },
+ {
+  "word": "Defray",
+  "syn": "spend, pay",
+  "ant": "Disclaim, Repudiate",
+  "tested": true
+ },
+ {
+  "word": "Deliberate",
+  "syn": "cautious, intentional",
+  "ant": "Rash, Sudden",
+  "tested": false
+ },
+ {
+  "word": "Demolish",
+  "syn": "Ruin, devastate",
+  "ant": "Repair, construct",
+  "tested": false
+ },
+ {
+  "word": "Denounce",
+  "syn": "Blame, boycott",
+  "ant": "Defend",
+  "tested": false
+ },
+ {
+  "word": "Dense",
+  "syn": "Opaque, piled",
+  "ant": "Sparse, brainy",
+  "tested": false
+ },
+ {
+  "word": "Deprive",
+  "syn": "despoil, divest",
+  "ant": "Restore, Renew",
+  "tested": false
+ },
+ {
+  "word": "Deride",
+  "syn": "mock, taunt",
+  "ant": "Inspire, Encourage",
+  "tested": true
+ },
+ {
+  "word": "Derogatory",
+  "syn": "Sarcastic, critical",
+  "ant": "Laudatory, appreciative",
+  "tested": false
+ },
+ {
+  "word": "Despair",
+  "syn": "Depression, misery",
+  "ant": "Contentment, Hope",
+  "tested": false
+ },
+ {
+  "word": "Destructive",
+  "syn": "Catastrophic, pernicious",
+  "ant": "Creative, Constructive",
+  "tested": false
+ },
+ {
+  "word": "Disdain",
+  "syn": "detest, despise",
+  "ant": "Approve, praise",
+  "tested": false
+ },
+ {
+  "word": "Dissuade",
+  "syn": "Remonstrate, Counsel",
+  "ant": "Incite, Persuade",
+  "tested": false
+ },
+ {
+  "word": "Docile",
+  "syn": "Pliable, pliant",
+  "ant": "Headstrong, obstinate",
+  "tested": false
+ },
+ {
+  "word": "Dwarf",
+  "syn": "Diminutive, Petite",
+  "ant": "Huge, Giant",
+  "tested": false
+ },
+ {
+  "word": "Eager",
+  "syn": "Keen, acquisitive",
+  "ant": "Indifferent, apathetic",
+  "tested": false
+ },
+ {
+  "word": "Eccentric",
+  "syn": "strange, abnormal",
+  "ant": "Natural, Conventional",
+  "tested": false
+ },
+ {
+  "word": "Eclipse",
+  "syn": "Diminution, Dimming",
+  "ant": "Shine, eclipse",
+  "tested": false
+ },
+ {
+  "word": "Ecstasy",
+  "syn": "delight, exultation",
+  "ant": "Despair, Calamity",
+  "tested": false
+ },
+ {
+  "word": "Efface",
+  "syn": "destroy, obliterate",
+  "ant": "Retain, Maintain",
+  "tested": true
+ },
+ {
+  "word": "Eloquence",
+  "syn": "expression, fluency",
+  "ant": "Halting, Stammering",
+  "tested": false
+ },
+ {
+  "word": "Encumbrance",
+  "syn": "hindrance, obstacle",
+  "ant": "Incentive, stimulant",
+  "tested": true
+ },
+ {
+  "word": "Endeavour",
+  "syn": "undertake, aspire",
+  "ant": "Cease, quit",
+  "tested": false
+ },
+ {
+  "word": "Enormous",
+  "syn": "colossal, mammoth",
+  "ant": "Diminutive, negligible",
+  "tested": false
+ },
+ {
+  "word": "Epitome",
+  "syn": "precise, example",
+  "ant": "Increment, expansion",
+  "tested": false
+ },
+ {
+  "word": "Equivocal",
+  "syn": "uncertain, hazy",
+  "ant": "Obvious, lucid",
+  "tested": false
+ },
+ {
+  "word": "Eradicate",
+  "syn": "destroy, exterminate",
+  "ant": "Secure, plant",
+  "tested": false
+ },
+ {
+  "word": "Fabricate",
+  "syn": "construct, produce",
+  "ant": "Destroy, Dismantle",
+  "tested": false
+ },
+ {
+  "word": "Fallacy",
+  "syn": "delusion, mistake",
+  "ant": "Veracity, Truth",
+  "tested": false
+ },
+ {
+  "word": "Falter",
+  "syn": "stumble, demur",
+  "ant": "Persist, Endure",
+  "tested": false
+ },
+ {
+  "word": "Fanatical",
+  "syn": "narrow-minded, biased",
+  "ant": "Liberal, Tolerant",
+  "tested": false
+ },
+ {
+  "word": "Feeble",
+  "syn": "weak, frail",
+  "ant": "Strong, Robust",
+  "tested": true
+ },
+ {
+  "word": "Ferocious",
+  "syn": "cruel, fierce",
+  "ant": "Gentle, Sympathetic",
+  "tested": false
+ },
+ {
+  "word": "Feud",
+  "syn": "strife, quarrel",
+  "ant": "Harmony, fraternity",
+  "tested": false
+ },
+ {
+  "word": "Fluctuate",
+  "syn": "deflect, vacillate",
+  "ant": "Stabilize, resolve",
+  "tested": false
+ },
+ {
+  "word": "Forsake",
+  "syn": "desert, renounce",
+  "ant": "Hold, maintain",
+  "tested": false
+ },
+ {
+  "word": "Fragile",
+  "syn": "weak, infirm",
+  "ant": "Enduring, Tough",
+  "tested": false
+ },
+ {
+  "word": "Frantic",
+  "syn": "violent, agitated",
+  "ant": "Subdued, gentle",
+  "tested": false
+ },
+ {
+  "word": "Frivolous",
+  "syn": "petty, worthless",
+  "ant": "Solemn, significant",
+  "tested": false
+ },
+ {
+  "word": "Frugality",
+  "syn": "economy, providence",
+  "ant": "Lavishness, extravagance",
+  "tested": true
+ },
+ {
+  "word": "Gather",
+  "syn": "Converge, huddle",
+  "ant": "Disperse, Dissemble",
+  "tested": false
+ },
+ {
+  "word": "Generosity",
+  "syn": "Altruism, bounty",
+  "ant": "Stinginess, greed",
+  "tested": true
+ },
+ {
+  "word": "Genuine",
+  "syn": "Absolute, Factual",
+  "ant": "Spurious",
+  "tested": true
+ },
+ {
+  "word": "Gloom",
+  "syn": "obscurity, darkness",
+  "ant": "Delight, mirth",
+  "tested": false
+ },
+ {
+  "word": "Gloomy",
+  "syn": "Bleak, cloudy",
+  "ant": "Gay, Bright",
+  "tested": false
+ },
+ {
+  "word": "Glory",
+  "syn": "Dignity, renown",
+  "ant": "Shame, Disgrace",
+  "tested": false
+ },
+ {
+  "word": "Glut",
+  "syn": "stuff, satiate",
+  "ant": "Starve, abstain",
+  "tested": false
+ },
+ {
+  "word": "Gorgeous",
+  "syn": "magnificent, dazzling",
+  "ant": "Dull, unpretentious",
+  "tested": false
+ },
+ {
+  "word": "Gracious",
+  "syn": "courteous, beneficent",
+  "ant": "Rude, Unforgiving",
+  "tested": false
+ },
+ {
+  "word": "Grisly",
+  "syn": "disgusting, atrocious",
+  "ant": "Pleasing, attractive",
+  "tested": false
+ },
+ {
+  "word": "Grudge",
+  "syn": "hatred, aversion",
+  "ant": "Benevolence, Affection",
+  "tested": false
+ },
+ {
+  "word": "Guile",
+  "syn": "cunning, deceit",
+  "ant": "Honesty, frankness",
+  "tested": true
+ },
+ {
+  "word": "Hamper",
+  "syn": "retard, prevent",
+  "ant": "Promote, facilitate",
+  "tested": false
+ },
+ {
+  "word": "Hamstrung",
+  "syn": "Cripple Debilitate",
+  "ant": "Strengthen, Encourage",
+  "tested": false
+ },
+ {
+  "word": "Hapless",
+  "syn": "unfortunate, ill-fated",
+  "ant": "Fortunate, Lucky",
+  "tested": true
+ },
+ {
+  "word": "Harass",
+  "syn": "irritate, molest",
+  "ant": "Assist, comfort",
+  "tested": false
+ },
+ {
+  "word": "Harmony",
+  "syn": "Conformity, Amicability",
+  "ant": "Discord, discord",
+  "tested": false
+ },
+ {
+  "word": "Hasty",
+  "syn": "Abrupt, Impetuous",
+  "ant": "Leisurely, Cautious",
+  "tested": false
+ },
+ {
+  "word": "Haughty",
+  "syn": "arrogant, pompous",
+  "ant": "Humble, Submissive",
+  "tested": false
+ },
+ {
+  "word": "Hazard",
+  "syn": "Peril, danger",
+  "ant": "Conviction, security",
+  "tested": false
+ },
+ {
+  "word": "Heretic",
+  "syn": "non-conformist, secularist",
+  "ant": "Conformable, religious",
+  "tested": true
+ },
+ {
+  "word": "Hideous",
+  "syn": "frightful, shocking",
+  "ant": "Attractive, alluring",
+  "tested": false
+ },
+ {
+  "word": "Honor",
+  "syn": "Adoration, Reverence",
+  "ant": "Denunciation, Shame",
+  "tested": false
+ },
+ {
+  "word": "Humble",
+  "syn": "Meek, Timid",
+  "ant": "Proud, Assertive",
+  "tested": false
+ },
+ {
+  "word": "Humility",
+  "syn": "Resignation, Fawning",
+  "ant": "Boldness, Pride",
+  "tested": false
+ },
+ {
+  "word": "Hypocrisy",
+  "syn": "Deception, Pharisaism",
+  "ant": "Sincerity, frankness",
+  "tested": false
+ },
+ {
+  "word": "Immaculate",
+  "syn": "unsullied, spotless, Exquisite, Impeccable",
+  "ant": "Defiled, Tarnished",
+  "tested": true
+ },
+ {
+  "word": "Immense",
+  "syn": "huge, enormous",
+  "ant": "Puny, Insignificant",
+  "tested": false
+ },
+ {
+  "word": "Immerse",
+  "syn": "submerge, involve",
+  "ant": "Emerge, uncover",
+  "tested": false
+ },
+ {
+  "word": "Imminent",
+  "syn": "impending, brewing",
+  "ant": "Distant, Receding",
+  "tested": true
+ },
+ {
+  "word": "Immunity",
+  "syn": "prerogative, privilege",
+  "ant": "Blame, Censure",
+  "tested": false
+ },
+ {
+  "word": "Impair",
+  "syn": "diminish, deteriorate",
+  "ant": "Restore, Revive",
+  "tested": false
+ },
+ {
+  "word": "Impartial",
+  "syn": "just, unbiased",
+  "ant": "Prejudiced, Biased",
+  "tested": false
+ },
+ {
+  "word": "Impediment",
+  "syn": "hurdle, obstruction",
+  "ant": "Assistant, Concurrence",
+  "tested": false
+ },
+ {
+  "word": "Impenitent",
+  "syn": "Uncontrite, Obdurate",
+  "ant": "Repentant",
+  "tested": false
+ },
+ {
+  "word": "Impious",
+  "syn": "irreligious, unholy",
+  "ant": "Pious, Devout",
+  "tested": false
+ },
+ {
+  "word": "Impulsive",
+  "syn": "Flaky, Impetuous",
+  "ant": "Cautious, Deliberate",
+  "tested": false
+ },
+ {
+  "word": "Impute",
+  "syn": "attribute, ascribe",
+  "ant": "Exculpate, support",
+  "tested": false
+ },
+ {
+  "word": "Inclination",
+  "syn": "disposition, affection",
+  "ant": "Indifference, Disinclination",
+  "tested": false
+ },
+ {
+  "word": "Incompetent",
+  "syn": "inefficient, unskilled",
+  "ant": "Dexterous, Skilled",
+  "tested": false
+ },
+ {
+  "word": "Incongruous",
+  "syn": "inappropriate, absurd",
+  "ant": "Compatible, harmonious",
+  "tested": false
+ },
+ {
+  "word": "Indifferent",
+  "syn": "Equitable, Haughty",
+  "ant": "Partial, Biased",
+  "tested": true,
+  "note": "Source synonyms are odd; indifferent = unconcerned, neutral."
+ },
+ {
+  "word": "Indigent",
+  "syn": "Destitute, Impoverished",
+  "ant": "Rich, Affluent",
+  "tested": false
+ },
+ {
+  "word": "Inevitable",
+  "syn": "unavoidable, ascertained",
+  "ant": "Unlikely, Doubtful",
+  "tested": false
+ },
+ {
+  "word": "Infernal",
+  "syn": "Damned, Accursed",
+  "ant": "Heavenly,",
+  "tested": false
+ },
+ {
+  "word": "Infringe",
+  "syn": "violate, encroach",
+  "ant": "Comply, Concur",
+  "tested": false
+ },
+ {
+  "word": "Ingenuous",
+  "syn": "undisguised, naive",
+  "ant": "Wily, Crafty",
+  "tested": false
+ },
+ {
+  "word": "Insinuate",
+  "syn": "allude, hint",
+  "ant": "Conceal, Camouflage",
+  "tested": false
+ },
+ {
+  "word": "Insipid",
+  "syn": "Tedious, Prosaic, tasteless, vapid",
+  "ant": "Pleasing, appetizing, Delicious, luscious",
+  "tested": true
+ },
+ {
+  "word": "Insolvent",
+  "syn": "indigent, destitute",
+  "ant": "Wealthy, solvent",
+  "tested": true
+ },
+ {
+  "word": "Instill",
+  "syn": "inculcate, inject",
+  "ant": "Eradicate, extract",
+  "tested": false
+ },
+ {
+  "word": "Interesting",
+  "syn": "Enchanting, Riveting",
+  "ant": "Dull, Uninteresting",
+  "tested": false
+ },
+ {
+  "word": "Intricate",
+  "syn": "tangled, complicated",
+  "ant": "Regulated, Orderly",
+  "tested": false
+ },
+ {
+  "word": "Intrigue",
+  "syn": "scheme, conspiracy",
+  "ant": "Candor, Sincerity",
+  "tested": false
+ },
+ {
+  "word": "Intrinsic",
+  "syn": "genuine, fundamental",
+  "ant": "Extraneous, incidental",
+  "tested": false
+ },
+ {
+  "word": "Invective",
+  "syn": "accusation, censure",
+  "ant": "Approval, acclamation",
+  "tested": false
+ },
+ {
+  "word": "Invincible",
+  "syn": "unconquerable, impregnable",
+  "ant": "Effeminate, languid",
+  "tested": false
+ },
+ {
+  "word": "Irrepressible",
+  "syn": "irresistible, unconfined",
+  "ant": "Composed, hesitant",
+  "tested": false
+ },
+ {
+  "word": "Jaded",
+  "syn": "tired, exhausted",
+  "ant": "Renewed, recreated",
+  "tested": false
+ },
+ {
+  "word": "Jejune",
+  "syn": "dull, boring",
+  "ant": "Interesting, exciting",
+  "tested": true
+ },
+ {
+  "word": "Jovial",
+  "syn": "frolicsome, cheerful",
+  "ant": "Solemn, morose",
+  "tested": false
+ },
+ {
+  "word": "Jubilant",
+  "syn": "rejoicing, triumphant",
+  "ant": "Melancholy, depressing",
+  "tested": false
+ },
+ {
+  "word": "Judicious",
+  "syn": "thoughtful, prudent",
+  "ant": "Irrational, foolish",
+  "tested": true
+ },
+ {
+  "word": "Just",
+  "syn": "honest, impartial",
+  "ant": "Unequal, unfair",
+  "tested": false
+ },
+ {
+  "word": "Justify",
+  "syn": "defend, exculpate",
+  "ant": "Impute, arraign",
+  "tested": false
+ },
+ {
+  "word": "Juvenile",
+  "syn": "young, tender",
+  "ant": "Dotage, antiquated",
+  "tested": false
+ },
+ {
+  "word": "Keen",
+  "syn": "sharp, poignant",
+  "ant": "Vapid, insipid",
+  "tested": false
+ },
+ {
+  "word": "Kindred",
+  "syn": "relation, species",
+  "ant": "Unrelated, dissimilar",
+  "tested": false
+ },
+ {
+  "word": "Knave",
+  "syn": "dishonest, scoundrel",
+  "ant": "Paragon, innocent",
+  "tested": true
+ },
+ {
+  "word": "Knell",
+  "syn": "death knell, last blow",
+  "ant": "Reconstruction, rediscovery",
+  "tested": false
+ },
+ {
+  "word": "Knotty",
+  "syn": "complicated difficult",
+  "ant": "Simple, manageable",
+  "tested": false
+ },
+ {
+  "word": "Languid",
+  "syn": "Sluggish, apathetic",
+  "ant": "Energetic, spirited",
+  "tested": true
+ },
+ {
+  "word": "Lavish",
+  "syn": "abundant, excessive",
+  "ant": "Scarce, deficient",
+  "tested": false
+ },
+ {
+  "word": "Lax",
+  "syn": "slack, careless",
+  "ant": "Firm, reliable",
+  "tested": true
+ },
+ {
+  "word": "Lenient",
+  "syn": "compassionate, merciful",
+  "ant": "Cruel, severe",
+  "tested": true
+ },
+ {
+  "word": "Liable",
+  "syn": "accountable, bound",
+  "ant": "Unaccountable, apt to",
+  "tested": false
+ },
+ {
+  "word": "Liberal",
+  "syn": "magnanimous, generous",
+  "ant": "Stingy, malicious",
+  "tested": false
+ },
+ {
+  "word": "Linger",
+  "syn": "loiter, prolong",
+  "ant": "Hasten, quicken",
+  "tested": false
+ },
+ {
+  "word": "Lucid",
+  "syn": "sound, rational",
+  "ant": "Obscure, hidden",
+  "tested": true
+ },
+ {
+  "word": "Lunacy",
+  "syn": "delusion, insanity",
+  "ant": "Normalcy, sanity",
+  "tested": false
+ },
+ {
+  "word": "Lure",
+  "syn": "attract, entice",
+  "ant": "Repel, dissuade",
+  "tested": false
+ },
+ {
+  "word": "Luscious",
+  "syn": "palatable, delicious",
+  "ant": "Unsavory, tart",
+  "tested": false
+ },
+ {
+  "word": "Luxuriant",
+  "syn": "profuse, abundant",
+  "ant": "Scanty, meagre",
+  "tested": false
+ },
+ {
+  "word": "Malice",
+  "syn": "Vengefulness, grudge",
+  "ant": "Goodwill, Kindness",
+  "tested": false
+ },
+ {
+  "word": "Mandatory",
+  "syn": "Imperative, requisite",
+  "ant": "Optional",
+  "tested": false
+ },
+ {
+  "word": "Masculine",
+  "syn": "Gallant, strapping",
+  "ant": "Feminine, meek",
+  "tested": false
+ },
+ {
+  "word": "Merit",
+  "syn": "Stature, Asset",
+  "ant": "Demerit, dishonor",
+  "tested": false
+ },
+ {
+  "word": "Miraculous",
+  "syn": "marvelous, extraordinary",
+  "ant": "Ordinary, trivial",
+  "tested": false
+ },
+ {
+  "word": "Mitigate",
+  "syn": "alleviate, relieve",
+  "ant": "Augment enhance",
+  "tested": false
+ },
+ {
+  "word": "Modest",
+  "syn": "humble, courteous",
+  "ant": "Arrogant, pompous",
+  "tested": false
+ },
+ {
+  "word": "Molest",
+  "syn": "harass, tease",
+  "ant": "Console, soothe",
+  "tested": false
+ },
+ {
+  "word": "Mollify",
+  "syn": "appease, assuage",
+  "ant": "Irritate, infuriate",
+  "tested": true
+ },
+ {
+  "word": "Momentous",
+  "syn": "notable, eventful",
+  "ant": "Trivial, insignificant",
+  "tested": false
+ },
+ {
+  "word": "Monotonous",
+  "syn": "irksome, tedious",
+  "ant": "Varied, pleasant",
+  "tested": false
+ },
+ {
+  "word": "Morbid",
+  "syn": "Nasty, Macabre",
+  "ant": "Healthy, Cheerful",
+  "tested": true
+ },
+ {
+  "word": "Munificent",
+  "syn": "liberal, hospitable",
+  "ant": "Frugal, penurious",
+  "tested": false
+ },
+ {
+  "word": "Murky",
+  "syn": "dusky, dreary",
+  "ant": "Bright, shining",
+  "tested": false
+ },
+ {
+  "word": "Mutinous",
+  "syn": "recalcitrant, insurgent",
+  "ant": "Submissive, faithful",
+  "tested": false
+ },
+ {
+  "word": "Mutual",
+  "syn": "joint, identical",
+  "ant": "Separate, distinct",
+  "tested": false
+ },
+ {
+  "word": "Niggardly",
+  "syn": "miser, covetous",
+  "ant": "Generous, profuse",
+  "tested": false
+ },
+ {
+  "word": "Nimble",
+  "syn": "prompt, brisk",
+  "ant": "Sluggish, languid",
+  "tested": false
+ },
+ {
+  "word": "Nonchalant",
+  "syn": "indifferent, negligent",
+  "ant": "Attentive, considerate",
+  "tested": false
+ },
+ {
+  "word": "Notion",
+  "syn": "Conceit, Apprehension",
+  "ant": "Reality, Concrete",
+  "tested": false
+ },
+ {
+  "word": "Novice",
+  "syn": "tyro, beginner",
+  "ant": "Veteran, ingenious",
+  "tested": true
+ },
+ {
+  "word": "Noxious",
+  "syn": "baneful, injurious",
+  "ant": "Healing, profitable",
+  "tested": true
+ },
+ {
+  "word": "Nullify",
+  "syn": "cancel, annul",
+  "ant": "Confirm, Uphold",
+  "tested": false
+ },
+ {
+  "word": "Numerous",
+  "syn": "profuse, various",
+  "ant": "Scarce, deficient",
+  "tested": false
+ },
+ {
+  "word": "Obliging",
+  "syn": "Complaisant, Willing",
+  "ant": "Mulish, Obstinate",
+  "tested": false
+ },
+ {
+  "word": "Obscure",
+  "syn": "Arcane, Vague",
+  "ant": "Prominent",
+  "tested": true
+ },
+ {
+  "word": "Obstinate",
+  "syn": "Stubborn, Adamant",
+  "ant": "Pliable, flexible",
+  "tested": false
+ },
+ {
+  "word": "Obstruct",
+  "syn": "impede, prevent",
+  "ant": "Hasten, encourage",
+  "tested": false
+ },
+ {
+  "word": "Obtain",
+  "syn": "Access, Inherit",
+  "ant": "Forfeit",
+  "tested": false
+ },
+ {
+  "word": "Obvious",
+  "syn": "Evident, apparent",
+  "ant": "Obscure, ambiguous",
+  "tested": false
+ },
+ {
+  "word": "Occult",
+  "syn": "latent, ambiguous",
+  "ant": "Intelligible, transparent",
+  "tested": false
+ },
+ {
+  "word": "Odious",
+  "syn": "Malevolent, obnoxious",
+  "ant": "Engaging, fascinating",
+  "tested": false
+ },
+ {
+  "word": "Offensive",
+  "syn": "Abhorrent, obnoxious",
+  "ant": "Engaging, fascinating",
+  "tested": false
+ },
+ {
+  "word": "Offspring",
+  "syn": "descendant, sibling",
+  "ant": "Ancestor, forefather",
+  "tested": false
+ },
+ {
+  "word": "Ominous",
+  "syn": "Menacing, Foreboding",
+  "ant": "Auspicious",
+  "tested": false
+ },
+ {
+  "word": "Opaque",
+  "syn": "obscure, shady",
+  "ant": "Transparent, bright",
+  "tested": false
+ },
+ {
+  "word": "Optimist",
+  "syn": "Idealist",
+  "ant": "Pessimist",
+  "tested": false
+ },
+ {
+  "word": "Oracular",
+  "syn": "cryptic, vague",
+  "ant": "Lucid, distinct",
+  "tested": false
+ },
+ {
+  "word": "Ordain",
+  "syn": "Order, impose",
+  "ant": "Revoke abolish",
+  "tested": false
+ },
+ {
+  "word": "Ornamental",
+  "syn": "decorative, adorned",
+  "ant": "Unseemly, plain",
+  "tested": false
+ },
+ {
+  "word": "Outbreak",
+  "syn": "eruption, insurrection",
+  "ant": "Compliance, subjection",
+  "tested": false
+ },
+ {
+  "word": "Outrage",
+  "syn": "offence, maltreatment",
+  "ant": "Praise, favour",
+  "tested": false
+ },
+ {
+  "word": "Pacify",
+  "syn": "Appease, Chasten",
+  "ant": "Irritate, worsen",
+  "tested": false
+ },
+ {
+  "word": "Pamper",
+  "syn": "Flatter, indulge",
+  "ant": "Deny, disparage",
+  "tested": false
+ },
+ {
+  "word": "Paramount",
+  "syn": "foremost, eminent",
+  "ant": "Trivial, inferior",
+  "tested": false
+ },
+ {
+  "word": "Peerless",
+  "syn": "matchless, unrivalled",
+  "ant": "Mediocre, commonplace",
+  "tested": false
+ },
+ {
+  "word": "Peevish",
+  "syn": "perverse, sullen",
+  "ant": "Suave, amiable",
+  "tested": false
+ },
+ {
+  "word": "Persuade",
+  "syn": "Cajole, Impress",
+  "ant": "Dissuade, halt",
+  "tested": false
+ },
+ {
+  "word": "Pertness",
+  "syn": "flippancy, impudence",
+  "ant": "Modesty, diffidence",
+  "tested": false
+ },
+ {
+  "word": "Perturbed",
+  "syn": "Flustered, anxious",
+  "ant": "Calm",
+  "tested": false
+ },
+ {
+  "word": "Perverse",
+  "syn": "petulant, obstinate",
+  "ant": "Complacent, docile",
+  "tested": false
+ },
+ {
+  "word": "Placid",
+  "syn": "tranquil, calm",
+  "ant": "Turbulent, hostile",
+  "tested": false
+ },
+ {
+  "word": "Pompous",
+  "syn": "haughty, arrogant",
+  "ant": "Unpretentious, humble",
+  "tested": false
+ },
+ {
+  "word": "Precarious",
+  "syn": "doubtful, insecure",
+  "ant": "Assured",
+  "tested": false
+ },
+ {
+  "word": "Predicament",
+  "syn": "plight, dilemma",
+  "ant": "Resolution, confidence",
+  "tested": false
+ },
+ {
+  "word": "Progress",
+  "syn": "Pace, Betterment",
+  "ant": "Retrogress, worsening",
+  "tested": false
+ },
+ {
+  "word": "Prompt",
+  "syn": "Precise, Punctual",
+  "ant": "Slow, Negligent",
+  "tested": false
+ },
+ {
+  "word": "Propagate",
+  "syn": "Inseminate, fecundate",
+  "ant": "Suppress, deplete",
+  "tested": false
+ },
+ {
+  "word": "Prudence",
+  "syn": "Vigilance, Discretion",
+  "ant": "Indiscretion",
+  "tested": false
+ },
+ {
+  "word": "Quack",
+  "syn": "Impostor, deceiver",
+  "ant": "Upright, unfeigned",
+  "tested": false
+ },
+ {
+  "word": "Quaint",
+  "syn": "Queer, strange",
+  "ant": "Familiar, usual",
+  "tested": false
+ },
+ {
+  "word": "Quarantine",
+  "syn": "seclude, screen",
+  "ant": "Befriend, socialize",
+  "tested": false
+ },
+ {
+  "word": "Quell",
+  "syn": "subdue, reduce",
+  "ant": "Exacerbate, agitate",
+  "tested": true
+ },
+ {
+  "word": "Quibble",
+  "syn": "equivocate, prevaricate",
+  "ant": "Unfeigned, plain",
+  "tested": true
+ },
+ {
+  "word": "Raid",
+  "syn": "Incursion, Foray",
+  "ant": "Retreat, release",
+  "tested": false
+ },
+ {
+  "word": "Rapidity",
+  "syn": "Quickness, Velocity",
+  "ant": "Inertia, languidity",
+  "tested": false
+ },
+ {
+  "word": "Ratify",
+  "syn": "consent, approve",
+  "ant": "Deny, dissent",
+  "tested": true
+ },
+ {
+  "word": "Ravage",
+  "syn": "Destroy, ruin",
+  "ant": "Reconstruct, renovate",
+  "tested": false
+ },
+ {
+  "word": "Reason",
+  "syn": "Acumen, Bounds",
+  "ant": "Folly, Speculation",
+  "tested": false
+ },
+ {
+  "word": "Rebellious",
+  "syn": "Restless, attacking",
+  "ant": "Submissive, Compliant",
+  "tested": false
+ },
+ {
+  "word": "Rectify",
+  "syn": "Amend, Remedy",
+  "ant": "Falsify, Worsen",
+  "tested": false
+ },
+ {
+  "word": "Redeem",
+  "syn": "Recover, liberate",
+  "ant": "Conserve lose",
+  "tested": false
+ },
+ {
+  "word": "Reluctant",
+  "syn": "Cautious, Averse",
+  "ant": "anxious, Eager",
+  "tested": false
+ },
+ {
+  "word": "Remnant",
+  "syn": "Residue, piece",
+  "ant": "Entire, whole",
+  "tested": false
+ },
+ {
+  "word": "Remonstrate",
+  "syn": "Censure, protest",
+  "ant": "Agree, loud",
+  "tested": true
+ },
+ {
+  "word": "Remorse",
+  "syn": "Regret, penitence",
+  "ant": "Ruthlessness, obduracy",
+  "tested": false
+ },
+ {
+  "word": "Rescind",
+  "syn": "Annul, abrogate",
+  "ant": "Delegate, permit",
+  "tested": true
+ },
+ {
+  "word": "Resentment",
+  "syn": "Displeasure, wrath",
+  "ant": "Content, Cheer",
+  "tested": false
+ },
+ {
+  "word": "Restrain",
+  "syn": "Detain, Confine",
+  "ant": "Incite",
+  "tested": false
+ },
+ {
+  "word": "Retract",
+  "syn": "Recant, withdraw",
+  "ant": "Confirm, assert",
+  "tested": false
+ },
+ {
+  "word": "Reverence",
+  "syn": "Respect, esteem",
+  "ant": "Disrespect, affront",
+  "tested": false
+ },
+ {
+  "word": "Rout",
+  "syn": "Vanquish, overthrow",
+  "ant": "Succumb, withdraw",
+  "tested": false
+ },
+ {
+  "word": "Rustic",
+  "syn": "Rural, uncivilized",
+  "ant": "Cultured, Refined",
+  "tested": false
+ },
+ {
+  "word": "Ruthless",
+  "syn": "Remorseless, inhumane",
+  "ant": "Compassionate, lenient",
+  "tested": false
+ },
+ {
+  "word": "Sacred",
+  "syn": "Cherish, Divine",
+  "ant": "Ungodly, Profane",
+  "tested": false
+ },
+ {
+  "word": "Sarcastic",
+  "syn": "Ironical, derisive",
+  "ant": "Courteous, gracious",
+  "tested": false
+ },
+ {
+  "word": "Saucy",
+  "syn": "Impudent, insolent",
+  "ant": "Modest, humble",
+  "tested": false
+ },
+ {
+  "word": "Savage",
+  "syn": "Wild, untamed",
+  "ant": "Polished, Civilized",
+  "tested": false
+ },
+ {
+  "word": "Scanty",
+  "syn": "scarce, insufficient",
+  "ant": "Lavish, multitude",
+  "tested": false
+ },
+ {
+  "word": "Servile",
+  "syn": "Slavish, Docile",
+  "ant": "Aggressive, Dominant",
+  "tested": false
+ },
+ {
+  "word": "Shabby",
+  "syn": "miserable, impoverished",
+  "ant": "Prosperous, thriving",
+  "tested": false
+ },
+ {
+  "word": "Shrewd",
+  "syn": "Cunning, crafty",
+  "ant": "Simple, imbecile",
+  "tested": false
+ },
+ {
+  "word": "Slander",
+  "syn": "defame, malign",
+  "ant": "Applaud, approve",
+  "tested": false
+ },
+ {
+  "word": "Sneer",
+  "syn": "mock, scorn",
+  "ant": "Flatter, praise",
+  "tested": false
+ },
+ {
+  "word": "Solicit",
+  "syn": "entreat, implore",
+  "ant": "Protest oppose",
+  "tested": false
+ },
+ {
+  "word": "Sporadic",
+  "syn": "intermittent, scattered",
+  "ant": "Incessant, frequent",
+  "tested": false
+ },
+ {
+  "word": "Spry",
+  "syn": "Nimble, Brisk",
+  "ant": "Lethargic, Sluggish",
+  "tested": false
+ },
+ {
+  "word": "Spurious",
+  "syn": "Fake, Counterfeit",
+  "ant": "Genuine, Authentic",
+  "tested": false
+ },
+ {
+  "word": "Squalid",
+  "syn": "dirty, filthy",
+  "ant": "Tidy, Attractive",
+  "tested": true
+ },
+ {
+  "word": "Stain",
+  "syn": "blemish, tarnish",
+  "ant": "Honor, purify",
+  "tested": false
+ },
+ {
+  "word": "Startled",
+  "syn": "Frightened, Shocked",
+  "ant": "Waveringly",
+  "tested": false
+ },
+ {
+  "word": "Steep",
+  "syn": "Course, lofty",
+  "ant": "Flat, gradual",
+  "tested": false
+ },
+ {
+  "word": "Sterile",
+  "syn": "Barren, Impotent",
+  "ant": "Profitable, Potent",
+  "tested": false
+ },
+ {
+  "word": "Stranger",
+  "syn": "Immigrant, guest",
+  "ant": "Acquaintance, national",
+  "tested": false
+ },
+ {
+  "word": "Stupor",
+  "syn": "lethargy, unconsciousness",
+  "ant": "Sensibility, Consciousness",
+  "tested": true
+ },
+ {
+  "word": "Sublime",
+  "syn": "Magnificent, eminent",
+  "ant": "Ridiculous",
+  "tested": true
+ },
+ {
+  "word": "Subsequent",
+  "syn": "consequent, following",
+  "ant": "Preceding, previous",
+  "tested": false
+ },
+ {
+  "word": "Substantial",
+  "syn": "Considerable, solid",
+  "ant": "Tenuous, fragile",
+  "tested": true
+ },
+ {
+  "word": "Subterfuge",
+  "syn": "Deceit, Stratagem",
+  "ant": "Frankness, Openness",
+  "tested": true
+ },
+ {
+  "word": "Subvert",
+  "syn": "Demolish, sabotage",
+  "ant": "Generate, organize",
+  "tested": false
+ },
+ {
+  "word": "Successful",
+  "syn": "Propitious, Felicitous",
+  "ant": "Destitute, Untoward",
+  "tested": false
+ },
+ {
+  "word": "Succinct",
+  "syn": "Concise, Terse",
+  "ant": "Lengthy, polite",
+  "tested": false
+ },
+ {
+  "word": "Superficial",
+  "syn": "Partial, shallow",
+  "ant": "Profound, discerning",
+  "tested": false
+ },
+ {
+  "word": "Sycophant",
+  "syn": "Parasite, flatterer",
+  "ant": "Devoted, loyal",
+  "tested": false
+ },
+ {
+  "word": "Sympathy",
+  "syn": "Tenderness, harmony",
+  "ant": "Antipathy, Discord",
+  "tested": true
+ },
+ {
+  "word": "System",
+  "syn": "Scheme, Entity",
+  "ant": "Chaos, Disorder",
+  "tested": false
+ },
+ {
+  "word": "Taboo",
+  "syn": "Prohibit, ban",
+  "ant": "Permit, consent",
+  "tested": false
+ },
+ {
+  "word": "Taciturn",
+  "syn": "Reserved, silent",
+  "ant": "Talkative, extrovert",
+  "tested": true
+ },
+ {
+  "word": "Tame",
+  "syn": "Compliant, Subdued",
+  "ant": "Wild, untamed",
+  "tested": false
+ },
+ {
+  "word": "Tedious",
+  "syn": "Wearisome, Irksome",
+  "ant": "Exhilarating, lively",
+  "tested": false
+ },
+ {
+  "word": "Temperate",
+  "syn": "Cool, moderate",
+  "ant": "Boisterous, violent",
+  "tested": true
+ },
+ {
+  "word": "Tenacious",
+  "syn": "Stubborn, Dodge",
+  "ant": "Docile, non- resinous",
+  "tested": false,
+  "note": "Source antonym 'non-resinous' is garbled; tenacious = persistent, opposite = irresolute, docile."
+ },
+ {
+  "word": "Tenement",
+  "syn": "Apartment, Digs",
+  "ant": "Breakeven, dislodge",
+  "tested": false
+ },
+ {
+  "word": "Terse",
+  "syn": "Incisive, Compact",
+  "ant": "Diffuse, Gentle",
+  "tested": false
+ },
+ {
+  "word": "Thick",
+  "syn": "Chunky, massive",
+  "ant": "Thin, attenuated",
+  "tested": false
+ },
+ {
+  "word": "Thrifty",
+  "syn": "Frugal, prudent",
+  "ant": "Extravagant",
+  "tested": false
+ },
+ {
+  "word": "Throng",
+  "syn": "Assembly, crowd",
+  "ant": "Dispersion, sparsity",
+  "tested": false
+ },
+ {
+  "word": "Timid",
+  "syn": "Diffident, coward",
+  "ant": "Bold, intrepid",
+  "tested": false
+ },
+ {
+  "word": "Tranquil",
+  "syn": "Peaceful, composed, Amicable, Calm",
+  "ant": "Violent, furious, Agitated, Fierce",
+  "tested": false
+ },
+ {
+  "word": "Transient",
+  "syn": "Temporal, transitory",
+  "ant": "Lasting, enduring",
+  "tested": false
+ },
+ {
+  "word": "Transparent",
+  "syn": "Diaphanous",
+  "ant": "Opaque",
+  "tested": false
+ },
+ {
+  "word": "Treacherous",
+  "syn": "Dishonest, duplicitous",
+  "ant": "Forthright, reliable",
+  "tested": false
+ },
+ {
+  "word": "Tremble",
+  "syn": "Vibrate",
+  "ant": "Steady",
+  "tested": false
+ },
+ {
+  "word": "Trenchant",
+  "syn": "Assertive, forceful",
+  "ant": "Feeble, ambiguous",
+  "tested": true
+ },
+ {
+  "word": "Trivial",
+  "syn": "Trifling, insignificant",
+  "ant": "Significant, veteran",
+  "tested": false
+ },
+ {
+  "word": "Tumultuous",
+  "syn": "Violent, riotous",
+  "ant": "Peaceful, harmonious",
+  "tested": true
+ },
+ {
+  "word": "Tyro",
+  "syn": "Beginner, riotous",
+  "ant": "Proficient, veteran",
+  "tested": true,
+  "note": "'riotous' in the source is a typo — tyro just means beginner/novice."
+ },
+ {
+  "word": "Umbrage",
+  "syn": "Chagrin, offense",
+  "ant": "Sympathy, goodwill",
+  "tested": true
+ },
+ {
+  "word": "Uncouth",
+  "syn": "Awkward, ungraceful, Boorish, Clownish",
+  "ant": "Elegant, Compensate",
+  "tested": false
+ },
+ {
+  "word": "Urchin",
+  "syn": "Foundling, Orphan",
+  "ant": "Creep, Knave",
+  "tested": false
+ },
+ {
+  "word": "Urge",
+  "syn": "Incite, Implore",
+  "ant": "Abhorrence, Abomination",
+  "tested": false
+ },
+ {
+  "word": "Utterly",
+  "syn": "Completely, entirely",
+  "ant": "Deficiently, incomplete",
+  "tested": false
+ },
+ {
+  "word": "Vagrant",
+  "syn": "Wander, roaming",
+  "ant": "Steady, settled",
+  "tested": false
+ },
+ {
+  "word": "Vain",
+  "syn": "Arrogant, egoistic",
+  "ant": "Modest",
+  "tested": false
+ },
+ {
+  "word": "Valor",
+  "syn": "Bravery, prowess",
+  "ant": "Fear, cowardice",
+  "tested": false
+ },
+ {
+  "word": "Vanity",
+  "syn": "Conceit, pretension",
+  "ant": "Modesty, Humility",
+  "tested": false
+ },
+ {
+  "word": "Venerable",
+  "syn": "Esteemed, honored",
+  "ant": "Unworthy, immature",
+  "tested": false
+ },
+ {
+  "word": "Venom",
+  "syn": "Poison, malevolence",
+  "ant": "Antidote, Benevolent",
+  "tested": false
+ },
+ {
+  "word": "Veteran",
+  "syn": "Ingenious, experienced",
+  "ant": "Novice, tyro",
+  "tested": true
+ },
+ {
+  "word": "Vicious",
+  "syn": "Corrupt, obnoxious",
+  "ant": "Noble, Virtuous",
+  "tested": true
+ },
+ {
+  "word": "Vigilant",
+  "syn": "Cautious, alert",
+  "ant": "Careless, negligent",
+  "tested": false
+ },
+ {
+  "word": "Vilify",
+  "syn": "Malign, Slur, Defame",
+  "ant": "Cherish, Commend",
+  "tested": true
+ },
+ {
+  "word": "Virtue",
+  "syn": "Ethic, morality",
+  "ant": "Vice, dishonesty",
+  "tested": false
+ },
+ {
+  "word": "Vivacious",
+  "syn": "Spirited, Energetic",
+  "ant": "Dispirited, Unattractive",
+  "tested": false
+ },
+ {
+  "word": "Vivid",
+  "syn": "Eloquent, lucid",
+  "ant": "Dull, Dim",
+  "tested": false
+ },
+ {
+  "word": "Vouch",
+  "syn": "Confirm, consent",
+  "ant": "Repudiate, prohibit",
+  "tested": false
+ },
+ {
+  "word": "Waive",
+  "syn": "Relinquish, remove",
+  "ant": "Impose, Clamp",
+  "tested": false
+ },
+ {
+  "word": "Wan",
+  "syn": "Pale, faded",
+  "ant": "Bright, healthy",
+  "tested": false
+ },
+ {
+  "word": "Wane",
+  "syn": "Decline, Dwindle",
+  "ant": "Ameliorate, Rise",
+  "tested": false
+ },
+ {
+  "word": "Wary",
+  "syn": "cautious, circumspect",
+  "ant": "Heedless, negligent",
+  "tested": false
+ },
+ {
+  "word": "Wed",
+  "syn": "marry, combine",
+  "ant": "Divorce, Separate",
+  "tested": false
+ },
+ {
+  "word": "Wicked",
+  "syn": "vicious, immoral",
+  "ant": "Virtuous, Noble",
+  "tested": false
+ },
+ {
+  "word": "Wield",
+  "syn": "Exert, employ",
+  "ant": "Forgo, avoid",
+  "tested": false
+ },
+ {
+  "word": "Wile",
+  "syn": "Trickery, Artifice",
+  "ant": "Naivety, honor",
+  "tested": false
+ },
+ {
+  "word": "Wilt",
+  "syn": "wither, perish",
+  "ant": "Revive, bloom",
+  "tested": false
+ },
+ {
+  "word": "Winsome",
+  "syn": "Beautiful, Comely",
+  "ant": "Alluring, Rapturous",
+  "tested": false,
+  "note": "Source antonyms look wrong; winsome = charming, so antonyms are unattractive, repulsive."
+ },
+ {
+  "word": "Yearn",
+  "syn": "languish, crave",
+  "ant": "Content, satisfy",
+  "tested": false
+ },
+ {
+  "word": "Yell",
+  "syn": "shout, shriek",
+  "ant": "Whisper muted",
+  "tested": false
+ },
+ {
+  "word": "Yield",
+  "syn": "surrender abdicate",
+  "ant": "Resist, protest",
+  "tested": true
+ },
+ {
+  "word": "Yoke",
+  "syn": "connect, harness",
+  "ant": "Liberate, Release",
+  "tested": false
+ },
+ {
+  "word": "Zeal",
+  "syn": "eagerness, fervor",
+  "ant": "Apathy, lethargy",
+  "tested": false
+ },
+ {
+  "word": "Zenith",
+  "syn": "summit, apex",
+  "ant": "Nadir, base",
+  "tested": true
+ },
+ {
+  "word": "Zest",
+  "syn": "delight, enthusiasm",
+  "ant": "Disgust, passive",
+  "tested": false
+ },
+ {
+  "word": "Zig-zag",
+  "syn": "oblique, wayward",
+  "ant": "Straight, unbent",
+  "tested": false
+ }
+]

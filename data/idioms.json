@@ -1,0 +1,918 @@
+[
+ {
+  "idiom": "A Bird In The Hand Is Worth Two In The Bush",
+  "meaning": "Having something that is certain is much better than taking a risk for more, because chances are you might lose everything.",
+  "worksheet": false
+ },
+ {
+  "idiom": "A Blessing In Disguise",
+  "meaning": "Something good that isn't recognized at first.",
+  "worksheet": false
+ },
+ {
+  "idiom": "A black sheep",
+  "meaning": "An odd or disreputable member of a group, especially within a family.",
+  "worksheet": true,
+  "example": "He was the black sheep of the family, the only one who never finished school."
+ },
+ {
+  "idiom": "A Chip On Your Shoulder",
+  "meaning": "Being upset for something that happened in the past.",
+  "worksheet": true
+ },
+ {
+  "idiom": "A Dime A Dozen",
+  "meaning": "Anything that is common and easy to get.",
+  "worksheet": false
+ },
+ {
+  "idiom": "A Doubting Thomas",
+  "meaning": "A skeptic who needs physical or personal evidence in order to believe something.",
+  "worksheet": false
+ },
+ {
+  "idiom": "A House Divided Against Itself Cannot Stand",
+  "meaning": "Everyone involved must unify and function together or it will not work out.",
+  "worksheet": false
+ },
+ {
+  "idiom": "A Leopard Can't Change His Spots",
+  "meaning": "You cannot change who you are.",
+  "worksheet": true
+ },
+ {
+  "idiom": "A Penny Saved Is A Penny Earned",
+  "meaning": "By not spending money, you are saving money (little by little).",
+  "worksheet": false
+ },
+ {
+  "idiom": "A Picture Paints a Thousand Words",
+  "meaning": "A visual presentation is far more descriptive than words.",
+  "worksheet": false
+ },
+ {
+  "idiom": "A Piece of Cake",
+  "meaning": "A task that can be accomplished very easily.",
+  "worksheet": true
+ },
+ {
+  "idiom": "A Slap on the Wrist",
+  "meaning": "A very mild punishment.",
+  "worksheet": false
+ },
+ {
+  "idiom": "A Taste Of Your Own Medicine",
+  "meaning": "When you are mistreated the same way you mistreat others.",
+  "worksheet": false
+ },
+ {
+  "idiom": "At The Drop Of A Hat",
+  "meaning": "Willing to do something immediately.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Back Seat Driver",
+  "meaning": "People who criticize from the sidelines, much like someone giving unwanted advice from the back seat of a vehicle to the driver.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Back To Square One",
+  "meaning": "Having to start all over again.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Baker's Dozen",
+  "meaning": "Thirteen.",
+  "worksheet": true
+ },
+ {
+  "idiom": "Barking Up The Wrong Tree",
+  "meaning": "A mistake made in something you are trying to achieve.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Blue Moon",
+  "meaning": "A rare event or occurrence.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Break A Leg",
+  "meaning": "A superstitious way to say 'good luck' without saying 'good luck', but rather the opposite.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Buy A Lemon",
+  "meaning": "To purchase a vehicle that constantly gives problems or stops running after you drive it away.",
+  "worksheet": true,
+  "example": "He bought a lemon — the second-hand bike broke down on the ride home."
+ },
+ {
+  "idiom": "Can't Cut The Mustard",
+  "meaning": "Someone who isn't adequate enough to compete or participate.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Cast Iron Stomach",
+  "meaning": "Someone who has no problems, complications or ill effects with eating anything or drinking anything.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Catch a tartar",
+  "meaning": "To catch a dangerous person",
+  "worksheet": true
+ },
+ {
+  "idiom": "Charley Horse",
+  "meaning": "Stiffness in the leg / A leg cramp.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Cross Your Fingers",
+  "meaning": "To hope that something happens the way you want it to.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Cry Over Spilt Milk",
+  "meaning": "When you complain about a loss from the past.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Cry Wolf",
+  "meaning": "Intentionally raise a false alarm.",
+  "worksheet": true
+ },
+ {
+  "idiom": "Cup Of Joe",
+  "meaning": "A cup of coffee.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Curiosity Killed The Cat",
+  "meaning": "Being Inquisitive can lead you into a dangerous situation.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Cut to the Chase",
+  "meaning": "Leave out all the unnecessary details and just get to the point.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Dark Horse",
+  "meaning": "One who was previously unknown and is now prominent.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Dead Ringer",
+  "meaning": "100% identical. A duplicate.",
+  "worksheet": true
+ },
+ {
+  "idiom": "Devil's Advocate",
+  "meaning": "Someone who takes a position for the sake of argument without believing in that particular side of the argument. It can also mean one who presents a counter argument for a position they do believe in, to another debater.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Dog Days of Summer",
+  "meaning": "The hottest days of the summer season.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Don't count your chickens before they hatch",
+  "meaning": "Don't rely on it until you're sure of it.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Don't Look A Gift Horse In The Mouth",
+  "meaning": "When someone gives you a gift, don't be ungrateful.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Drive someone up the wall",
+  "meaning": "To irritate and/or annoy very much.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Dropping Like Flies",
+  "meaning": "A large number of people either falling ill or dying.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Dry Run",
+  "meaning": "Rehearsal.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Eighty Six",
+  "meaning": "A certain item is no longer available. Or this idiom can also mean, to throw away.",
+  "worksheet": true
+ },
+ {
+  "idiom": "Elvis has left the building",
+  "meaning": "The show has come to an end. It's all over.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Ethnic Cleansing",
+  "meaning": "Killing of a certain ethnic or religious group on a massive scale.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Every Cloud Has A Silver Lining",
+  "meaning": "Be optimistic, even difficult times will lead to better days.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Everything But The Kitchen Sink",
+  "meaning": "Almost everything and anything has been included.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Excuse my French",
+  "meaning": "Please forgive me for cussing.",
+  "worksheet": true,
+  "example": "Excuse my French, but this traffic is bloody awful."
+ },
+ {
+  "idiom": "Cock and Bull Story",
+  "meaning": "An unbelievable tale.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Feeding Frenzy",
+  "meaning": "An aggressive attack on someone by a group.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Field Day",
+  "meaning": "An enjoyable day or circumstance.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Fixed In Your Ways",
+  "meaning": "Not willing or wanting to change from your normal way of doing something.",
+  "worksheet": false
+ },
+ {
+  "idiom": "From Rags To Riches",
+  "meaning": "To go from being very poor to being very wealthy.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Full Monty",
+  "meaning": "This idiom can mean either, \"the whole thing\" or \"completely nude\".",
+  "worksheet": false
+ },
+ {
+  "idiom": "Funny Farm",
+  "meaning": "A mental institutional facility.",
+  "worksheet": true
+ },
+ {
+  "idiom": "Get Down to Brass Tacks",
+  "meaning": "To become seriously about something.",
+  "worksheet": true,
+  "example": "Enough small talk; let's get down to brass tacks and discuss the budget."
+ },
+ {
+  "idiom": "Get Over It",
+  "meaning": "To move beyond something that is bothering you.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Go For Broke",
+  "meaning": "To gamble everything you have.",
+  "worksheet": true
+ },
+ {
+  "idiom": "Go Out On A Limb",
+  "meaning": "Put yourself in a tough position in order to support someone/something.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Go The Extra Mile",
+  "meaning": "Going above and beyond whatever is required for the task at hand.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Good Samaritan",
+  "meaning": "Someone who helps others when they are in need, with no discussion for compensation, and no thought of a reward.",
+  "worksheet": true,
+  "example": "A Good Samaritan rushed the injured cyclist to hospital and left without giving his name."
+ },
+ {
+  "idiom": "Green Room",
+  "meaning": "The waiting room, especially for those who are about to go on a tv or radio show.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Gut Feeling",
+  "meaning": "A personal intuition you get, especially when feel something may not be right.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Haste Makes Waste",
+  "meaning": "Quickly doing things results in a poor ending.",
+  "worksheet": true
+ },
+ {
+  "idiom": "Hat Trick",
+  "meaning": "When one player scores three goals in the same hockey game. This idiom can also mean three scores in any other sport, such as 3 homeruns, 3 touchdowns, 3 soccer goals, etc.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Have an Axe to Grind",
+  "meaning": "To have a dispute with someone.",
+  "worksheet": false
+ },
+ {
+  "idiom": "He Lost His Head",
+  "meaning": "Angry and overcome by emotions.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Head Over Heels",
+  "meaning": "Very excited and/or joyful, especially when in love.",
+  "worksheet": true,
+  "example": "Riya fell head over heels for the city the moment she moved there."
+ },
+ {
+  "idiom": "Hell in a Handbasket",
+  "meaning": "Deteriorating and headed for complete disaster.",
+  "worksheet": false
+ },
+ {
+  "idiom": "High Five",
+  "meaning": "Slapping palms above each others heads as celebration gesture.",
+  "worksheet": false
+ },
+ {
+  "idiom": "High on the Hog",
+  "meaning": "Living in Luxury.",
+  "worksheet": true,
+  "example": "After the promotion, they started living high on the hog."
+ },
+ {
+  "idiom": "Hit The Books",
+  "meaning": "To study, especially for a test or exam.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Hit The Hay",
+  "meaning": "Go to bed or go to sleep.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Hit The Nail on the Head",
+  "meaning": "Do something exactly right or say something exactly right.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Hit The Sack",
+  "meaning": "Go to bed or go to sleep.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Hocus Pocus",
+  "meaning": "In general, a term used in magic or trickery.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Hold Your Horses",
+  "meaning": "Be patient.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Icing On The Cake",
+  "meaning": "When you already have it good and get something on top of what you already have.",
+  "worksheet": false
+ },
+ {
+  "idiom": "In Like Flynn",
+  "meaning": "To be easily successful, especially when sexual or romantic.",
+  "worksheet": false
+ },
+ {
+  "idiom": "In The Bag",
+  "meaning": "To have something secured.",
+  "worksheet": true
+ },
+ {
+  "idiom": "It's A Small World",
+  "meaning": "You frequently see the same people in different places.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Its Anyone's Call",
+  "meaning": "A competition where the outcome is difficult to judge or predict.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Ivy League",
+  "meaning": "Since 1954 the Ivy League has been the following universities: Columbia, Brown, Cornell, Dartmouth, Yale, Pennsylvania, Princeton, and Harvard.",
+  "worksheet": true,
+  "example": "She won a scholarship to Princeton, an Ivy League university."
+ },
+ {
+  "idiom": "Jaywalk",
+  "meaning": "Crossing the street (from the middle) without using the crosswalk.",
+  "worksheet": true,
+  "example": "He was fined for jaywalking across the highway instead of using the zebra crossing."
+ },
+ {
+  "idiom": "Joshing Me",
+  "meaning": "Tricking me.",
+  "worksheet": true
+ },
+ {
+  "idiom": "Keep An Eye On Him",
+  "meaning": "You should carefully watch him.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Keep body and soul together",
+  "meaning": "To earn a sufficient amount of money in order to keep yourself alive .",
+  "worksheet": false
+ },
+ {
+  "idiom": "Keep one's temper",
+  "meaning": "To be in good mood",
+  "worksheet": false
+ },
+ {
+  "idiom": "Keep your chin up",
+  "meaning": "To remain joyful in a tough situation.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Kick The Bucket",
+  "meaning": "Die.",
+  "worksheet": true
+ },
+ {
+  "idiom": "Kitty-corner",
+  "meaning": "Diagonally across. Sometimes called Catty-Corner as well.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Knee Jerk Reaction",
+  "meaning": "A quick and automatic response.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Knock On Wood",
+  "meaning": "Knuckle tapping on wood in order to avoid some bad luck.",
+  "worksheet": true,
+  "example": "I haven't missed a single deadline this semester — knock on wood."
+ },
+ {
+  "idiom": "Know the Ropes",
+  "meaning": "To understand the details.",
+  "worksheet": true,
+  "example": "Ask Priya to train you; she knows the ropes in this department."
+ },
+ {
+  "idiom": "Last but not least",
+  "meaning": "An introduction phrase to let the audience know that the last person mentioned is no less important than those introduced before him/her.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Leave someone in the lurch",
+  "meaning": "To desert someone in his difficulties",
+  "worksheet": false
+ },
+ {
+  "idiom": "Lend Me Your Ear",
+  "meaning": "To politely ask for someone's full attention.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Let The Cat Out Of The Bag",
+  "meaning": "To share a secret that wasn't supposed to be shared.",
+  "worksheet": true,
+  "example": "My brother let the cat out of the bag about Mom's surprise party."
+ },
+ {
+  "idiom": "Level playing field",
+  "meaning": "A fair competition where no side has an advantage.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Like a chicken with its head cut off",
+  "meaning": "To act in a frenzied manner.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Long in the Tooth",
+  "meaning": "Old people (or horses).",
+  "worksheet": true
+ },
+ {
+  "idiom": "Loose Cannon",
+  "meaning": "Someone who is unpredictable and can cause damage if not kept in check.",
+  "worksheet": true,
+  "example": "The new striker is a loose cannon; no one knows what he'll do next."
+ },
+ {
+  "idiom": "Make No Bones About",
+  "meaning": "To state a fact so there are no doubts or objections.",
+  "worksheet": true
+ },
+ {
+  "idiom": "Method To My Madness",
+  "meaning": "Strange or crazy actions that appear meaningless but in the end are done for a good reason.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Mumbo Jumbo",
+  "meaning": "Nonsense or meaningless speech.",
+  "worksheet": true,
+  "example": "The salesman's pitch was pure mumbo jumbo — nobody understood a word of it."
+ },
+ {
+  "idiom": "Mum's the word",
+  "meaning": "To keep quiet. To say nothing.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Make clean breast of",
+  "meaning": "To confess without reserve",
+  "worksheet": false
+ },
+ {
+  "idiom": "Nest Egg",
+  "meaning": "Savings set aside for future use.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Never Bite The Hand That Feeds You",
+  "meaning": "Don't hurt anyone that helps you.",
+  "worksheet": false
+ },
+ {
+  "idiom": "New kid on the block",
+  "meaning": "Someone new to the group or area.",
+  "worksheet": false
+ },
+ {
+  "idiom": "New York Minute",
+  "meaning": "A minute that seems to go by quickly, especially in a fast paced environment.",
+  "worksheet": true,
+  "example": "The concert tickets sold out in a New York minute."
+ },
+ {
+  "idiom": "No Dice",
+  "meaning": "To not agree. To not accept a proposition.",
+  "worksheet": true,
+  "example": "I asked the warden for a late pass, but it was no dice."
+ },
+ {
+  "idiom": "No Room to Swing a Cat",
+  "meaning": "An unusually small or confined space.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Not Playing With a Full Deck",
+  "meaning": "Someone who lacks intelligence.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Off On The Wrong Foot",
+  "meaning": "Getting a bad start on a relationship or task.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Off The Hook",
+  "meaning": "No longer have to deal with a tough situation.",
+  "worksheet": true
+ },
+ {
+  "idiom": "Off the Record",
+  "meaning": "Something said in confidence that the one speaking doesn't want attributed to him/her.",
+  "worksheet": false
+ },
+ {
+  "idiom": "On Pins And Needles",
+  "meaning": "Anxious or nervous, especially in anticipation of something.",
+  "worksheet": false
+ },
+ {
+  "idiom": "On The Fence",
+  "meaning": "Undecided.",
+  "worksheet": false
+ },
+ {
+  "idiom": "On The Same Page",
+  "meaning": "When multiple people all agree on the same thing.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Out Of The Blue",
+  "meaning": "Something that suddenly and unexpectedly occurs.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Out On A Limb",
+  "meaning": "When someone puts themself in a risky situation.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Out On The Town",
+  "meaning": "To enjoy yourself by going out.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Over My Dead Body",
+  "meaning": "When you absolutely will not allow something to happen.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Over the Top",
+  "meaning": "Very excessive.",
+  "worksheet": true
+ },
+ {
+  "idiom": "Pass The Buck",
+  "meaning": "Avoid responsibility by giving it to someone else.",
+  "worksheet": true,
+  "example": "When the project failed, the manager tried to pass the buck to his juniors."
+ },
+ {
+  "idiom": "Pedal to the metal",
+  "meaning": "To go full speed, especially while driving a vehicle.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Peeping Tom",
+  "meaning": "Someone who observes people in the nude or sexually active people, mainly for his own gratification.",
+  "worksheet": true,
+  "example": "The police arrested a Peeping Tom who was spying through hostel windows."
+ },
+ {
+  "idiom": "Pick up your ears",
+  "meaning": "To listen very carefully.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Pull the plug",
+  "meaning": "To stop something. To bring something to an end.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Pulling Your Leg",
+  "meaning": "Tricking someone as a joke.",
+  "worksheet": true
+ },
+ {
+  "idiom": "Put a sock in it",
+  "meaning": "To tell noisy person or a group to be quiet.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Put one's hand to plough",
+  "meaning": "To take a difficult task",
+  "worksheet": false
+ },
+ {
+  "idiom": "Queer the pitch",
+  "meaning": "Destroy or ruin a plan.",
+  "worksheet": true,
+  "example": "Leaking our plan to the rivals queered the pitch for the whole deal."
+ },
+ {
+  "idiom": "Raincheck",
+  "meaning": "An offer or deal that is declined right now but willing to accept later.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Raining Cats and Dogs",
+  "meaning": "A very loud and noisy rain storm.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Ring Fencing",
+  "meaning": "Separated usual judgement to guarantee protection, especially project funds.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Rise and Shine",
+  "meaning": "Time to get out of bed and get ready for work/school.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Rome Was Not Built In One Day",
+  "meaning": "If you want something to be completely properly, then its going to take time.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Rule Of Thumb",
+  "meaning": "A rough estimate.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Run out of steam",
+  "meaning": "To be completely out of energy.",
+  "worksheet": true,
+  "example": "I ran out of steam after studying for eight hours straight."
+ },
+ {
+  "idiom": "Saved By The Bell",
+  "meaning": "Saved at the last possible moment.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Scapegoat",
+  "meaning": "Someone else who takes the blame.",
+  "worksheet": true,
+  "example": "The intern was made the scapegoat for the manager's mistake."
+ },
+ {
+  "idiom": "Scot-free",
+  "meaning": "To escape and not have to pay.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Set one's face against",
+  "meaning": "To oppose with determination",
+  "worksheet": false
+ },
+ {
+  "idiom": "Sick As A Dog",
+  "meaning": "To be very sick (with the flu or a cold).",
+  "worksheet": false
+ },
+ {
+  "idiom": "Skid Row",
+  "meaning": "The rundown area of a city where the homeless and drug users live.",
+  "worksheet": true,
+  "example": "After losing his job and his savings, he ended up on skid row."
+ },
+ {
+  "idiom": "Smell A Rat",
+  "meaning": "To detect someone in the group is betraying the others.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Smell Something Fishy",
+  "meaning": "Detecting that something isn't right and there might be a reason for it.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Son of a Gun",
+  "meaning": "A scamp.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Southpaw",
+  "meaning": "Someone who is left-handed.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Spitting Image",
+  "meaning": "The exact likeness or kind.",
+  "worksheet": true
+ },
+ {
+  "idiom": "Start From Scratch",
+  "meaning": "To do it all over again from the beginning.",
+  "worksheet": false
+ },
+ {
+  "idiom": "The Ball Is In Your Court",
+  "meaning": "It is your decision this time.",
+  "worksheet": false
+ },
+ {
+  "idiom": "The Best Of Both Worlds",
+  "meaning": "There are two choices and you have them both.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Third times a charm",
+  "meaning": "After no success the first two times, the third try is a lucky one.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Tie the knot",
+  "meaning": "To get married.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Til the cows come home",
+  "meaning": "A long time.",
+  "worksheet": true
+ },
+ {
+  "idiom": "To be above board",
+  "meaning": "To be honest in any business deal",
+  "worksheet": false
+ },
+ {
+  "idiom": "To Make A Long Story Short",
+  "meaning": "Something someone would say during a long and boring story in order to keep his/her audience from losing attention. Usually the story isn't shortened.",
+  "worksheet": false
+ },
+ {
+  "idiom": "To Steal Someone's Thunder",
+  "meaning": "To take the credit for something someone else did.",
+  "worksheet": false
+ },
+ {
+  "idiom": "To cry wolf",
+  "meaning": "To give false alarm",
+  "worksheet": false
+ },
+ {
+  "idiom": "Tongue-in-cheek",
+  "meaning": "Humor, not to be taken seriously.",
+  "worksheet": true,
+  "example": "His tongue-in-cheek review praised the film for being 'perfectly boring'."
+ },
+ {
+  "idiom": "Under the weather",
+  "meaning": "Feeling ill or sick.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Up a blind alley",
+  "meaning": "Going down a course of action that leads to a bad outcome.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Use Your Loaf",
+  "meaning": "Use your head. Think smart.",
+  "worksheet": true,
+  "example": "Use your loaf — carry an umbrella when the sky looks like that!"
+ },
+ {
+  "idiom": "Van Gogh's ear for music",
+  "meaning": "Tone deaf.",
+  "worksheet": true,
+  "example": "Don't ask me to judge the singing contest; I have Van Gogh's ear for music."
+ },
+ {
+  "idiom": "Variety Is The Spice Of Life",
+  "meaning": "The more experiences you try the more exciting life can be.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Wag the Dog",
+  "meaning": "A diversion away from something of greater importance.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Water Under The Bridge",
+  "meaning": "Anything from the past that isn't significant or important anymore.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Wear Your Heart On Your Sleeve",
+  "meaning": "To openly and freely express your emotions.",
+  "worksheet": false
+ },
+ {
+  "idiom": "When It Rains, It Pours",
+  "meaning": "Since it rarely rains, when it does it will be a huge storm.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Wine and Dine",
+  "meaning": "When somebody is treated to an expensive meal.",
+  "worksheet": true
+ },
+ {
+  "idiom": "Without A Doubt",
+  "meaning": "For certain.",
+  "worksheet": true
+ },
+ {
+  "idiom": "X marks the spot",
+  "meaning": "A phrase that is said when someone finds something he/she has been looking for.",
+  "worksheet": false
+ },
+ {
+  "idiom": "You Are What You Eat",
+  "meaning": "In order to stay healthy you must eat healthy foods.",
+  "worksheet": false
+ },
+ {
+  "idiom": "You Can't Judge A Book By Its Cover",
+  "meaning": "Decisions shouldn't be made primarily on appearance.",
+  "worksheet": false
+ },
+ {
+  "idiom": "You Can't Take it With You",
+  "meaning": "Enjoy what you have and not what you don't have, since when you die you cannot take things (such as money) with you.",
+  "worksheet": false
+ },
+ {
+  "idiom": "Your Guess Is As Good As Mine",
+  "meaning": "I have no idea.",
+  "worksheet": true
+ },
+ {
+  "idiom": "Zero Tolerance",
+  "meaning": "No crime or law breaking big or small will be overlooked",
+  "worksheet": true,
+  "example": "Our college has zero tolerance for ragging."
+ }
+]
