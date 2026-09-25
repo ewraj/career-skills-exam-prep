@@ -708,7 +708,7 @@ td.k { font-weight: 600; white-space: nowrap; }
       <div class="pstats"><span>Score <b>${prac.right}/${prac.seen}</b></span><span>Streak <b>${prac.streak}</b></span><span>Best <b>${prac.best}</b></span><span>Coming back <b>${prac.retry.length}</b></span><button class="chip" id="preset" style="padding:2px 10px;font-size:12px">${prac.confirmReset ? "Tap again to reset" : "Reset score"}</button><span class="muted">Keys: <span class="kbd">A</span>–<span class="kbd">D</span> answer · <span class="kbd">Enter</span> next</span></div>
       ${q && prac.again ? `<div><span class="again">Back again · missed ${prac.misses[q.key] || 1}× · ${prac.cur?.need ?? 2} more correct to clear</span></div>` : ""}
       ${q ? qHTML(q, 0, { chosen: prac.chosen, reveal: prac.chosen != null }) : `<div class="panel">No mistakes saved yet. Every question you miss in a test or here lands in this list until you get it right.</div>`}
-      ${q && prac.chosen != null ? `<div class="row"><button class="btn primary" id="next">Next question</button>${prac.chosen === q.ans ? (prac.flagged ? `<span class="small muted">✓ It'll come back 2 questions from now until you know it</span>` : `<button class="btn" id="guessed">Guessed it? Show again <span class="kbd">G</span></button>`) : ""}</div>` : ""}
+      ${q && prac.chosen != null ? `<div class="row"><button class="btn primary" id="next">Next question</button>${prac.chosen === q.ans ? (prac.flagged ? `<span class="small muted">✓ Will revisit</span>` : `<button class="btn" id="guessed">Revisit <span class="kbd">R</span></button>`) : ""}</div>` : ""}
     </section>`;
     view.querySelectorAll("[data-t]").forEach(b => b.onclick = () => { prac.topic = b.dataset.t; store.set("pTopic", prac.topic); nextPractice(); });
     const qEl = view.querySelector(".q");
@@ -880,7 +880,7 @@ td.k { font-weight: 600; white-space: nowrap; }
       const idx = "abcd".indexOf(k) >= 0 ? "abcd".indexOf(k) : "1234".indexOf(k);
       if (idx >= 0 && prac.q && prac.chosen == null && idx < prac.q.opts.length) { e.preventDefault(); answerPractice(idx); }
       else if (k === "enter" && prac.chosen != null) { e.preventDefault(); nextPractice(); }
-      else if (k === "g" && prac.chosen != null) { e.preventDefault(); markGuessed(); }
+      else if ((k === "r" || k === "g") && prac.chosen != null) { e.preventDefault(); markGuessed(); }
     } else if (tab === "cards" && fc) {
       if (k === " " && !fc.flipped) { e.preventDefault(); flipCard(); }
       else if (k === "arrowright" || (k === " " && fc.flipped)) { e.preventDefault(); rateCard(true); }
