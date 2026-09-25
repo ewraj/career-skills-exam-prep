@@ -682,7 +682,10 @@ td.k { font-weight: 600; white-space: nowrap; }
     { id: "fws", name: "Foreign worksheet (fill-in)", n: () => DATA.ws.foreign_a.length, next: () => gen.foreignWs(1)[0] },
     { id: "mistakes", name: "My mistakes", n: () => mistakes.all().length, next: () => { const m = mistakes.all(); return m.length ? m[Math.floor(Math.random() * Math.min(m.length, 40))] : null; } },
   ];
-  let prac = { topic: store.get("pTopic", "rev"), q: null, chosen: null, right: 0, seen: 0, streak: 0, lastKey: null, retry: [], again: false };
+  // score, streak, the repeat queue and the question on screen survive a refresh
+  const saved = store.get("prac", {});
+  let prac = { topic: store.get("pTopic", "rev"), q: null, chosen: null, right: 0, seen: 0, streak: 0, best: 0, lastKey: null, retry: [], again: false, ...saved };
+  const savePrac = () => store.set("prac", { q: prac.q, chosen: prac.chosen, right: prac.right, seen: prac.seen, streak: prac.streak, best: prac.best, lastKey: prac.lastKey, retry: prac.retry, again: prac.again });
   function nextPractice() {
     // a question you missed comes back 3 questions later, until you get it right
     const due = prac.retry.findIndex(r => r.due <= prac.seen);
@@ -695,6 +698,7 @@ td.k { font-weight: 600; white-space: nowrap; }
       prac.again = false;
     }
     prac.q = q; prac.chosen = null; prac.lastKey = q && q.key;
+    savePrac();
     renderPractice();
   }
   function renderPractice() {
@@ -702,7 +706,7 @@ td.k { font-weight: 600; white-space: nowrap; }
     view.innerHTML = `<section class="stack">
       <div class="row" role="group" aria-label="Topic">${P_TOPICS.map(t => `<button class="chip" aria-pressed="${t.id === prac.topic}" data-t="${t.id}">${t.name}<span class="n">${t.n()}</span></button>`).join("")}</div>
       <div class="p-intro"><b>Answer, see why, and your misses come back.</b><span>Get one wrong and it returns three questions later, in any topic, until you get it right. It's also saved to <i>My mistakes</i> for tomorrow morning.</span></div>
-      <div class="pstats"><span>Score <b>${prac.right}/${prac.seen}</b></span><span>Streak <b>${prac.streak}</b></span><span>Coming back <b>${prac.retry.length}</b></span><span class="muted">Keys: <span class="kbd">A</span>–<span class="kbd">D</span> answer · <span class="kbd">Enter</span> next</span></div>
+      <div class="pstats"><span>Score <b>${prac.right}/${prac.seen}</b></span><span>Streak <b>${prac.streak}</b></span><span>Best <b>${prac.best}</b></span><span>Coming back <b>${prac.retry.length}</b></span><button class="chip" id="preset" style="padding:2px 10px;font-size:12px">${prac.confirmReset ? "Tap again to reset" : "Reset score"}</button><span class="muted">Keys: <span class="kbd">A</span>–<span class="kbd">D</span> answer · <span class="kbd">Enter</span> next</span></div>
       ${q && prac.again ? `<div><span class="again">Back again: you missed this one</span></div>` : ""}
       ${q ? qHTML(q, 0, { chosen: prac.chosen, reveal: prac.chosen != null }) : `<div class="panel">No mistakes saved yet. Every question you miss in a test or here lands in this list until you get it right.</div>`}
       ${q && prac.chosen != null ? `<div class="row"><button class="btn primary" id="next">Next question</button></div>` : ""}
@@ -712,12 +716,19 @@ td.k { font-weight: 600; white-space: nowrap; }
     if (qEl) qEl.querySelector(".num, .q-num").textContent = "";
     if (qEl && prac.chosen == null) qEl.onclick = e => { const b = e.target.closest(".opt"); if (b) answerPractice(+b.dataset.k); };
     const n = view.querySelector("#next"); if (n) { n.onclick = nextPractice; n.focus({ preventScroll: true }); }
+    view.querySelector("#preset").onclick = () => {
+      if (!prac.confirmReset) { prac.confirmReset = true; return renderPractice(); }
+      Object.assign(prac, { right: 0, seen: 0, streak: 0, best: 0, retry: [], confirmReset: false });
+      savePrac(); renderPractice();
+    };
   }
   function answerPractice(k) {
     if (!prac.q || prac.chosen != null) return;
     prac.chosen = k; prac.seen++;
-    if (k === prac.q.ans) { prac.right++; prac.streak++; if (prac.topic === "mistakes" || prac.again) mistakes.remove(prac.q.key); }
+    prac.confirmReset = false;
+    if (k === prac.q.ans) { prac.right++; prac.streak++; prac.best = Math.max(prac.best, prac.streak); if (prac.topic === "mistakes" || prac.again) mistakes.remove(prac.q.key); }
     else { prac.streak = 0; mistakes.add(prac.q); prac.retry.push({ q: prac.q, due: prac.seen + 3 }); }
+    savePrac();
     renderPractice();
   }
 
