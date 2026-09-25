@@ -627,7 +627,7 @@ td.k { font-weight: 600; white-space: nowrap; }
     m.done = true;
     m.secs = Math.floor((Date.now() - m.start) / 1000);
     m.score = m.qs.reduce((s, q, i) => s + (m.answers[i] === q.ans), 0);
-    m.qs.forEach((q, i) => { if (m.answers[i] !== q.ans) mistakes.add(q); });
+    m.qs.forEach((q, i) => { if (m.answers[i] !== q.ans) mistakes.add(q); if (m.answers[i] != null) itemStats.rec(q, m.answers[i] === q.ans); });
     const hist = store.get("history", []);
     hist.unshift({ score: m.score, total: m.qs.length, mode: m.modeName, at: Date.now() });
     store.set("history", hist.slice(0, 30));
@@ -692,6 +692,32 @@ td.k { font-weight: 600; white-space: nowrap; }
     has(q) { return !!q && this.set.has(itemId(q.key)); },
     save() { store.set("hidden", [...this.set]); },
   };
+  // per-item right/wrong counts for the learned/total progress; its own storage key, separate from the score
+  const itemStats = {
+    m: store.get("itemStats", {}),
+    rec(q, ok) {
+      const id = itemId(q.key);
+      if (id.startsWith("gen:")) return;
+      const st = this.m[id] || (this.m[id] = { r: 0, w: 0 });
+      if (ok) st.r++; else st.w++;
+      store.set("itemStats", this.m);
+    },
+  };
+  const TOPIC_PREFIX = { rev: "rev:", roots: "r:", synant: "w:", idioms: "i:", foreign: "f:", fws: "fws:", apt: "apt:" };
+  function progress(topicId) {
+    const pre = TOPIC_PREFIX[topicId];
+    if (!pre) return null;
+    const pending = new Set([...prac.retry.map(r => itemId(r.q.key)), ...mistakes.all().map(x => itemId(x.key))]);
+    const ids = new Set([...Object.keys(itemStats.m), ...hidden.set].filter(id => id.startsWith(pre)));
+    let seen = 0, learned = 0, waiting = 0;
+    for (const id of ids) {
+      const st = itemStats.m[id];
+      seen++;
+      if (hidden.set.has(id) || (st && st.r > 0 && !pending.has(id))) learned++;
+      else if (pending.has(id)) waiting++;
+    }
+    return { seen, learned, waiting };
+  }
   let prac = { topic: store.get("pTopic", "rev"), q: null, chosen: null, right: 0, seen: 0, streak: 0, best: 0, lastKey: null, retry: [], again: false, misses: {}, cur: null, ...saved };
   const savePrac = () => store.set("prac", { q: prac.q, chosen: prac.chosen, right: prac.right, seen: prac.seen, streak: prac.streak, best: prac.best, lastKey: prac.lastKey, retry: prac.retry, again: prac.again, misses: prac.misses, cur: prac.cur, flagged: prac.flagged });
   function nextPractice() {
@@ -720,7 +746,8 @@ td.k { font-weight: 600; white-space: nowrap; }
   function renderPractice() {
     const q = prac.q;
     view.innerHTML = `<section class="stack">
-      <div class="row" role="group" aria-label="Topic">${P_TOPICS.map(t => `<button class="chip" aria-pressed="${t.id === prac.topic}" data-t="${t.id}">${t.name}<span class="n">${t.n()}</span></button>`).join("")}</div>
+      <div class="row" role="group" aria-label="Topic">${P_TOPICS.map(t => `<button class="chip" aria-pressed="${t.id === prac.topic}" data-t="${t.id}">${t.name}<span class="n">${(p => (p ? `${p.learned}/${t.n()}` : t.n()))(progress(t.id))}</span></button>`).join("")}</div>
+      ${(p => (p ? `<div class="small muted">${esc((P_TOPICS.find(x => x.id === prac.topic) || {}).name)}: <b style="color:var(--ink)">${p.learned} learned</b> of ${(P_TOPICS.find(x => x.id === prac.topic) || { n: () => 0 }).n()} · ${p.seen} seen · ${p.waiting} still coming back. Learned = answered right and not waiting to repeat.</div>` : ""))(progress(prac.topic))}
       <div class="p-intro"><b>Answer, see why, and your misses come back.</b><span>Get one wrong and it comes back 2 questions later, in any topic. It has to be answered right several times before it's cleared (more times if you keep missing it), with longer gaps as you get it right. It's also saved to <i>My mistakes</i> for tomorrow morning.</span></div>
       <div class="pstats"><span>Score <b>${prac.right}/${prac.seen}</b></span><span>Streak <b>${prac.streak}</b></span><span>Best <b>${prac.best}</b></span><span>Coming back <b>${prac.retry.length}</b></span>${hidden.set.size ? `<button class="chip" id="unhideall" style="padding:2px 10px;font-size:12px">${prac.confirmUnhide ? "Tap again to unhide all" : `Hidden ${hidden.set.size} · unhide`}</button>` : ""}<button class="chip" id="preset" style="padding:2px 10px;font-size:12px">${prac.confirmReset ? "Tap again to reset" : "Reset score"}</button><span class="muted">Keys: <span class="kbd">A</span>–<span class="kbd">D</span> answer · <span class="kbd">Enter</span> next</span></div>
       ${q && prac.again ? `<div><span class="again">Back again · missed ${prac.misses[q.key] || 1}× · ${prac.cur?.need ?? 2} more correct to clear</span></div>` : ""}
@@ -769,6 +796,7 @@ td.k { font-weight: 600; white-space: nowrap; }
     if (!prac.q || prac.chosen != null) return;
     prac.chosen = k; prac.seen++;
     prac.confirmReset = false;
+    itemStats.rec(prac.q, k === prac.q.ans);
     const key = prac.q.key, GAPS = [2, 5, 9, 14];
     if (k === prac.q.ans) {
       prac.right++; prac.streak++; prac.best = Math.max(prac.best, prac.streak);
