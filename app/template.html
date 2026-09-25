@@ -673,16 +673,25 @@ td.k { font-weight: 600; white-space: nowrap; }
     { id: "apt", name: "Aptitude sheet", n: () => DATA.apt.length, next: () => aptQ(DATA.apt[Math.floor(Math.random() * DATA.apt.length)]) },
     { id: "aptdrill", name: "Aptitude drill (new)", n: () => "∞", next: () => gen.aptOne() },
     { id: "fws", name: "Foreign worksheet (fill-in)", n: () => DATA.ws.foreign_a.length, next: () => gen.foreignWs(1)[0] },
-    { id: "mistakes", name: "My mistakes", n: () => mistakes.all().length, next: () => { const m = mistakes.all(); return m.length ? m[Math.floor(Math.random() * Math.min(m.length, 40))] : null; } },
+    { id: "mistakes", name: "My mistakes", n: () => mistakes.all().length, next: () => { const m = mistakes.all().filter(x => !hidden.has(x)); return m.length ? m[Math.floor(Math.random() * Math.min(m.length, 40))] : null; } },
   ];
   // score, streak, the repeat queue and the question on screen survive a refresh
   const saved = store.get("prac", {});
+  // "Don't show again": hides the underlying item (both question directions), stored separately
+  const ITEM_OF = { syn: "w", ant: "w", rootm: "r", roote: "r", idm: "i", idr: "i", fm: "f", fr: "f" };
+  const itemId = key => { const i = key.indexOf(":"), pre = key.slice(0, i); return ITEM_OF[pre] ? ITEM_OF[pre] + ":" + key.slice(i + 1) : key; };
+  const hidden = {
+    set: new Set(store.get("hidden", [])),
+    has(q) { return !!q && this.set.has(itemId(q.key)); },
+    save() { store.set("hidden", [...this.set]); },
+  };
   let prac = { topic: store.get("pTopic", "rev"), q: null, chosen: null, right: 0, seen: 0, streak: 0, best: 0, lastKey: null, retry: [], again: false, misses: {}, cur: null, ...saved };
   const savePrac = () => store.set("prac", { q: prac.q, chosen: prac.chosen, right: prac.right, seen: prac.seen, streak: prac.streak, best: prac.best, lastKey: prac.lastKey, retry: prac.retry, again: prac.again, misses: prac.misses, cur: prac.cur, flagged: prac.flagged });
   function nextPractice() {
     // a question you missed comes back 3 questions later, until you get it right
     // an unanswered repeat (e.g. you switched topic) goes back in the queue
     if (prac.cur && !prac.cur.done && prac.chosen == null) prac.retry.push({ ...prac.cur, due: prac.seen });
+    prac.retry = prac.retry.filter(r => !hidden.has(r.q));
     let due = -1;
     prac.retry.forEach((r, i) => { if (r.due <= prac.seen && (due < 0 || r.due < prac.retry[due].due)) due = i; });
     let q;
@@ -691,12 +700,13 @@ td.k { font-weight: 600; white-space: nowrap; }
     else {
       const t = P_TOPICS.find(x => x.id === prac.topic) || P_TOPICS[0];
       q = t.next();
-      for (let tries = 0; q && q.key === prac.lastKey && tries < 5 && t.n() > 1; tries++) q = t.next();
+      for (let tries = 0; q && (q.key === prac.lastKey || hidden.has(q)) && tries < 40; tries++) q = t.next();
+      if (hidden.has(q)) q = null;
       const queued = q ? prac.retry.findIndex(r => r.key === q.key || r.q.key === q.key) : -1;
       if (queued >= 0) { prac.cur = prac.retry.splice(queued, 1)[0]; q = prac.cur.q; }
       prac.again = !!prac.cur;
     }
-    prac.q = q; prac.chosen = null; prac.lastKey = q && q.key; prac.flagged = false;
+    prac.q = q; prac.chosen = null; prac.lastKey = q && q.key; prac.flagged = false; prac.hid = false;
     savePrac();
     renderPractice();
   }
@@ -705,10 +715,10 @@ td.k { font-weight: 600; white-space: nowrap; }
     view.innerHTML = `<section class="stack">
       <div class="row" role="group" aria-label="Topic">${P_TOPICS.map(t => `<button class="chip" aria-pressed="${t.id === prac.topic}" data-t="${t.id}">${t.name}<span class="n">${t.n()}</span></button>`).join("")}</div>
       <div class="p-intro"><b>Answer, see why, and your misses come back.</b><span>Get one wrong and it comes back 2 questions later, in any topic. It has to be answered right several times before it's cleared (more times if you keep missing it), with longer gaps as you get it right. It's also saved to <i>My mistakes</i> for tomorrow morning.</span></div>
-      <div class="pstats"><span>Score <b>${prac.right}/${prac.seen}</b></span><span>Streak <b>${prac.streak}</b></span><span>Best <b>${prac.best}</b></span><span>Coming back <b>${prac.retry.length}</b></span><button class="chip" id="preset" style="padding:2px 10px;font-size:12px">${prac.confirmReset ? "Tap again to reset" : "Reset score"}</button><span class="muted">Keys: <span class="kbd">A</span>–<span class="kbd">D</span> answer · <span class="kbd">Enter</span> next</span></div>
+      <div class="pstats"><span>Score <b>${prac.right}/${prac.seen}</b></span><span>Streak <b>${prac.streak}</b></span><span>Best <b>${prac.best}</b></span><span>Coming back <b>${prac.retry.length}</b></span>${hidden.set.size ? `<button class="chip" id="unhideall" style="padding:2px 10px;font-size:12px">${prac.confirmUnhide ? "Tap again to unhide all" : `Hidden ${hidden.set.size} · unhide`}</button>` : ""}<button class="chip" id="preset" style="padding:2px 10px;font-size:12px">${prac.confirmReset ? "Tap again to reset" : "Reset score"}</button><span class="muted">Keys: <span class="kbd">A</span>–<span class="kbd">D</span> answer · <span class="kbd">Enter</span> next</span></div>
       ${q && prac.again ? `<div><span class="again">Back again · missed ${prac.misses[q.key] || 1}× · ${prac.cur?.need ?? 2} more correct to clear</span></div>` : ""}
       ${q ? qHTML(q, 0, { chosen: prac.chosen, reveal: prac.chosen != null }) : `<div class="panel">No mistakes saved yet. Every question you miss in a test or here lands in this list until you get it right.</div>`}
-      ${q && prac.chosen != null ? `<div class="row"><button class="btn primary" id="next">Next question</button>${prac.chosen === q.ans ? (prac.flagged ? `<span class="small muted">✓ Will revisit</span>` : `<button class="btn" id="guessed">Revisit <span class="kbd">R</span></button>`) : ""}</div>` : ""}
+      ${q && prac.chosen != null ? `<div class="row"><button class="btn primary" id="next">Next question</button>${prac.chosen === q.ans ? (prac.flagged ? `<span class="small muted">✓ Will revisit</span>` : `<button class="btn" id="guessed">Revisit <span class="kbd">R</span></button>`) : ""}${prac.hid ? `<span class="small muted">✓ Hidden from practice</span><button class="chip" id="unhide1" style="padding:2px 10px;font-size:12px">Undo</button>` : `<button class="btn" id="hide1">Don't show again <span class="kbd">X</span></button>`}</div>` : ""}
     </section>`;
     view.querySelectorAll("[data-t]").forEach(b => b.onclick = () => { prac.topic = b.dataset.t; store.set("pTopic", prac.topic); nextPractice(); });
     const qEl = view.querySelector(".q");
@@ -716,6 +726,12 @@ td.k { font-weight: 600; white-space: nowrap; }
     if (qEl && prac.chosen == null) qEl.onclick = e => { const b = e.target.closest(".opt"); if (b) answerPractice(+b.dataset.k); };
     const n = view.querySelector("#next"); if (n) { n.onclick = nextPractice; n.focus({ preventScroll: true }); }
     const g = view.querySelector("#guessed"); if (g) g.onclick = markGuessed;
+    const h1 = view.querySelector("#hide1"); if (h1) h1.onclick = hideCurrent;
+    const u1 = view.querySelector("#unhide1"); if (u1) u1.onclick = () => { hidden.set.delete(itemId(prac.q.key)); hidden.save(); prac.hid = false; renderPractice(); };
+    const ua = view.querySelector("#unhideall"); if (ua) ua.onclick = () => {
+      if (!prac.confirmUnhide) { prac.confirmUnhide = true; return renderPractice(); }
+      hidden.set.clear(); hidden.save(); prac.confirmUnhide = false; renderPractice();
+    };
     view.querySelector("#preset").onclick = () => {
       if (!prac.confirmReset) { prac.confirmReset = true; return renderPractice(); }
       Object.assign(prac, { right: 0, seen: 0, streak: 0, best: 0, retry: [], misses: {}, cur: null, confirmReset: false });
@@ -723,6 +739,15 @@ td.k { font-weight: 600; white-space: nowrap; }
     };
   }
   // "I guessed": queue a correct answer for repeats without touching score or streak
+  function hideCurrent() {
+    if (!prac.q || prac.chosen == null || prac.hid) return;
+    hidden.set.add(itemId(prac.q.key)); hidden.save();
+    prac.retry = prac.retry.filter(r => !hidden.has(r.q));
+    mistakes.all().filter(x => hidden.has(x)).forEach(x => mistakes.remove(x.key));
+    prac.hid = true;
+    savePrac();
+    renderPractice();
+  }
   function markGuessed() {
     if (!prac.q || prac.chosen !== prac.q.ans || prac.flagged) return;
     const key = prac.q.key, queued = prac.retry.find(r => (r.key || r.q.key) === key);
@@ -880,6 +905,7 @@ td.k { font-weight: 600; white-space: nowrap; }
       const idx = "abcd".indexOf(k) >= 0 ? "abcd".indexOf(k) : "1234".indexOf(k);
       if (idx >= 0 && prac.q && prac.chosen == null && idx < prac.q.opts.length) { e.preventDefault(); answerPractice(idx); }
       else if (k === "enter" && prac.chosen != null) { e.preventDefault(); nextPractice(); }
+      else if (k === "x" && prac.chosen != null) { e.preventDefault(); hideCurrent(); }
       else if ((k === "r" || k === "g") && prac.chosen != null) { e.preventDefault(); markGuessed(); }
     } else if (tab === "cards" && fc) {
       if (k === " " && !fc.flipped) { e.preventDefault(); flipCard(); }
