@@ -1,0 +1,392 @@
+[
+ {
+  "n": 1,
+  "topic": "Clocks",
+  "q": "A clock gains 5 minutes every hour. If it is set correctly at 8:00 a.m., what time will it show when the actual time is 4:00 p.m.?",
+  "opts": [
+   "4:35 p.m.",
+   "4:40 p.m.",
+   "4:45 p.m.",
+   "4:50 p.m."
+  ],
+  "ans": 1,
+  "why": "8 a.m. → 4 p.m. = 8 hours. Gain = 8 × 5 = 40 min, so it shows 4:40 p.m."
+ },
+ {
+  "n": 2,
+  "topic": "Coding-decoding",
+  "q": "If RECTANGLE is coded as TGEVCPING, then how will RHOMBUS be coded?",
+  "opts": [
+   "TJOQDWV",
+   "UVWTJQN",
+   "TJQODWU",
+   "JTQOEWN"
+  ],
+  "ans": 2,
+  "why": "Each letter moves +2 (R→T, E→G, C→E …). RHOMBUS → T J Q O D W U."
+ },
+ {
+  "n": 3,
+  "topic": "Partnership",
+  "q": "A and B start a business with investments in the ratio 3 : 2. After 6 months, B doubles his investment. What will be the ratio in which they distribute the profit at the end of the year?",
+  "opts": [
+   "3 : 4",
+   "2 : 3",
+   "1 : 1",
+   "1 : 2"
+  ],
+  "ans": 2,
+  "why": "Profit ∝ capital × time. A = 3 × 12 = 36. B = 2 × 6 + 4 × 6 = 36. Ratio 36 : 36 = 1 : 1."
+ },
+ {
+  "n": 4,
+  "topic": "Letter series",
+  "q": "Find the missing term: BDF, EGI, HJL, KMO, ?",
+  "opts": [
+   "NPS",
+   "NOP",
+   "NPR",
+   "OPR"
+  ],
+  "ans": 2,
+  "why": "Every letter moves +3: B→E→H→K→N, D→G→J→M→P, F→I→L→O→R. Answer NPR."
+ },
+ {
+  "n": 5,
+  "topic": "Coding-decoding",
+  "q": "In a certain code language, MIRROR is coded as 139181815. How will APPLE be coded in the same language?",
+  "opts": [
+   "11616125",
+   "3984145",
+   "1162254",
+   "11213147"
+  ],
+  "ans": 0,
+  "why": "Each letter becomes its alphabet position (M = 13, I = 9, R = 18 …). A1 P16 P16 L12 E5 → 11616125."
+ },
+ {
+  "n": 6,
+  "topic": "Provisions",
+  "q": "A fort had a provision of food for 150 men for 45 days. After 10 days, 25 men left the fort. For how many more days will the remaining food last for the remaining men?",
+  "opts": [
+   "35 days",
+   "40 days",
+   "42 days",
+   "54 days"
+  ],
+  "ans": 2,
+  "why": "After 10 days the food left = 150 men × 35 days. 125 men remain: 150 × 35 ÷ 125 = 42 days."
+ },
+ {
+  "n": 7,
+  "topic": "Number series",
+  "q": "Find the missing number: 5, 11, 24, 50, 103, 209, ?",
+  "opts": [
+   "419",
+   "421",
+   "423",
+   "422"
+  ],
+  "ans": 3,
+  "why": "×2 then +1, +2, +2, +3, +3, +4: 5×2+1 = 11, 11×2+2 = 24, 24×2+2 = 50, 50×2+3 = 103, 103×2+3 = 209, 209×2+4 = 422."
+ },
+ {
+  "n": 8,
+  "topic": "Number series",
+  "q": "Find the missing number: 8, 43, 11, 41, __, 39, 17",
+  "opts": [
+   "8",
+   "14",
+   "43",
+   "44"
+  ],
+  "ans": 1,
+  "why": "Two alternating series: 8, 11, __, 17 (+3) and 43, 41, 39 (−2). Missing = 14."
+ },
+ {
+  "n": 9,
+  "topic": "Coding-decoding",
+  "q": "In a certain code language, CARROM is written as MORRAC. How will TIBBAR be written in the same language?",
+  "opts": [
+   "RIBBAT",
+   "RABBIT",
+   "BARTIB",
+   "BITRAB"
+  ],
+  "ans": 1,
+  "why": "The code is the word written backwards. TIBBAR reversed = RABBIT."
+ },
+ {
+  "n": 10,
+  "topic": "Number series",
+  "q": "Find the missing number: 2, 6, 15, 31, 56, 92, ?",
+  "opts": [
+   "137",
+   "141",
+   "143",
+   "147"
+  ],
+  "ans": 1,
+  "why": "Differences are squares: 4, 9, 16, 25, 36 → next 49. 92 + 49 = 141."
+ },
+ {
+  "n": 11,
+  "topic": "Letter series",
+  "q": "Find the missing term: AZ, CX, FU, JQ, ?",
+  "opts": [
+   "OL",
+   "OP",
+   "OR",
+   "PT"
+  ],
+  "ans": 0,
+  "why": "First letters +2, +3, +4, +5: A C F J → O. Second letters −2, −3, −4, −5: Z X U Q → L. Answer OL."
+ },
+ {
+  "n": 12,
+  "topic": "Ratio",
+  "q": "Two numbers are in the ratio 3 : 5. If 9 is subtracted from each number, their new ratio becomes 12 : 23. What is the smaller number?",
+  "opts": [
+   "27",
+   "33",
+   "49",
+   "55"
+  ],
+  "ans": 1,
+  "why": "(3x − 9)/(5x − 9) = 12/23 → 69x − 207 = 60x − 108 → 9x = 99 → x = 11. Smaller = 3 × 11 = 33."
+ },
+ {
+  "n": 13,
+  "topic": "Time & work",
+  "q": "If 8 men working 9 hours a day can build a wall 24 m long in 10 days, how many men will be required to build a wall 32 m long working 6 hours a day in 8 days?",
+  "opts": [
+   "15 men",
+   "18 men",
+   "20 men",
+   "24 men"
+  ],
+  "ans": 2,
+  "why": "M₁H₁D₁/W₁ = M₂H₂D₂/W₂ → 8×9×10/24 = M×6×8/32 → 30 = 1.5M → M = 20."
+ },
+ {
+  "n": 14,
+  "topic": "Clocks",
+  "q": "At what time between 3 and 4 o'clock are the hands of a clock at right angles?",
+  "opts": [
+   "3:16 4/11",
+   "3:17 5/11",
+   "3:32 8/11",
+   "3:21 9/11"
+  ],
+  "ans": 2,
+  "why": "Minute hand gains 5.5°/min. At 3:00 it is 90° behind (already a right angle). It must get 90° ahead: gain 180° → 180 ÷ 5.5 = 32 8/11 min."
+ },
+ {
+  "n": 15,
+  "topic": "Clocks",
+  "q": "A faulty clock loses 8 minutes every 24 hours. If it shows the correct time at 12 noon on Monday, what time will it show at 12 noon on Thursday?",
+  "opts": [
+   "11:36 a.m.",
+   "11:40 a.m.",
+   "11:44 a.m.",
+   "11:52 a.m."
+  ],
+  "ans": 0,
+  "why": "Mon noon → Thu noon = 3 days. Loss = 3 × 8 = 24 min, so it shows 11:36 a.m."
+ },
+ {
+  "n": 16,
+  "topic": "Time & work",
+  "q": "If 8 men can make 8 carpets in 8 days, how many carpets can 16 men make in 16 days, assuming all men work at the same rate?",
+  "opts": [
+   "16",
+   "24",
+   "32",
+   "64"
+  ],
+  "ans": 2,
+  "why": "1 man makes 1 carpet in 8 days. 16 men × 16 days = 256 man-days ÷ 8 = 32 carpets."
+ },
+ {
+  "n": 17,
+  "topic": "Number series",
+  "q": "Find the missing number: 7, 10, 18, 33, 55, 84, ?",
+  "opts": [
+   "117",
+   "120",
+   "118",
+   "121"
+  ],
+  "ans": 1,
+  "why": "Differences 3, 8, 15, 22, 29 grow by 7 from the second step on → next difference 36. 84 + 36 = 120."
+ },
+ {
+  "n": 18,
+  "topic": "Games of skill",
+  "q": "A can give B 15 points in a 60-point game, while B can give C 20 points in a 100-point game. How many points can A give C in a 200-point game?",
+  "opts": [
+   "35",
+   "45",
+   "60",
+   "80"
+  ],
+  "ans": 3,
+  "why": "A : B = 60 : 45. B : C = 100 : 80 = 45 : 36. So A : C = 60 : 36 = 200 : 120. A gives C 200 − 120 = 80 points."
+ },
+ {
+  "n": 19,
+  "topic": "Variation",
+  "q": "A variable P is directly proportional to Q and inversely proportional to √R. If P = 5 when Q = 10 and R = 16, find P when Q = 20 and R = 8.",
+  "opts": [
+   "10",
+   "10√2",
+   "20√2",
+   "40"
+  ],
+  "ans": 1,
+  "why": "P = kQ/√R. 5 = 10k/4 → k = 2. P = 2 × 20/√8 = 40/(2√2) = 10√2."
+ },
+ {
+  "n": 20,
+  "topic": "Letter series",
+  "q": "Find the missing term: C2X, F6U, I12R, L20O, ?",
+  "opts": [
+   "O30L",
+   "O24L",
+   "P30M",
+   "N30L"
+  ],
+  "ans": 0,
+  "why": "First letters +3 (C F I L → O). Numbers 1×2, 2×3, 3×4, 4×5 → 5×6 = 30. Last letters −3 (X U R O → L). Answer O30L."
+ },
+ {
+  "n": 21,
+  "topic": "Coding-decoding",
+  "q": "If POWERFUL is coded as QQZIWLBT, which word is represented by the code ECQGJXZ?",
+  "opts": [
+   "DANCERS",
+   "HARMLESS",
+   "PRACTISE",
+   "DANGERS"
+  ],
+  "ans": 0,
+  "why": "Shifts are +1, +2, +3 … by position (P+1 = Q, O+2 = Q, W+3 = Z …). Undo: E−1 = D, C−2 = A, Q−3 = N, G−4 = C, J−5 = E, X−6 = R, Z−7 = S → DANCERS."
+ },
+ {
+  "n": 22,
+  "topic": "Clocks",
+  "q": "At what time between 4 and 5 o'clock will the hands of a clock be exactly opposite to each other?",
+  "opts": [
+   "4:05 5/11",
+   "4:27 3/11",
+   "4:54 6/11",
+   "4:38 2/11"
+  ],
+  "ans": 2,
+  "why": "At 4:00 the minute hand is 120° behind. To be 180° ahead it gains 300°: 300 ÷ 5.5 = 54 6/11 min."
+ },
+ {
+  "n": 23,
+  "topic": "Clocks",
+  "q": "At what time between 7 and 8 o'clock will the hands of a clock coincide?",
+  "opts": [
+   "7:35 5/11",
+   "7:38 2/11",
+   "7:40 10/11",
+   "7:42 4/11"
+  ],
+  "ans": 1,
+  "why": "At 7:00 the minute hand is 210° behind. 210 ÷ 5.5 = 38 2/11 min (shortcut: 60H/11 = 420/11)."
+ },
+ {
+  "n": 24,
+  "topic": "Number series",
+  "q": "Find the missing number: 1, 4, 13, 40, 121, 364, ?",
+  "opts": [
+   "1089",
+   "1090",
+   "1093",
+   "1095"
+  ],
+  "ans": 2,
+  "why": "Each term × 3 + 1: 364 × 3 + 1 = 1093."
+ },
+ {
+  "n": 25,
+  "topic": "Coding-decoding",
+  "q": "In a certain code language, SIMPLE is coded as ISPMEL and CHAPTER is coded as HCPARET. How will TEACHER be coded?",
+  "opts": [
+   "ETCAHER",
+   "ETCAREH",
+   "TEACREH",
+   "AETCRHE"
+  ],
+  "ans": 1,
+  "why": "Swap the first two pairs, then reverse the rest: CH AP | TER → HC PA | RET. TE AC | HER → ET CA | REH = ETCAREH."
+ },
+ {
+  "n": 26,
+  "topic": "Partnership",
+  "q": "A started a business with ₹6,000. B joined after some months with ₹9,000. At the end of the year, the profit was divided equally between A and B. After how many months did B join?",
+  "opts": [
+   "3 months",
+   "4 months",
+   "6 months",
+   "8 months"
+  ],
+  "ans": 1,
+  "why": "Equal profit → equal capital × time. 6000 × 12 = 9000 × m → m = 8 months in the business, so B joined after 12 − 8 = 4 months."
+ },
+ {
+  "n": 27,
+  "topic": "Ages",
+  "q": "Ten years ago, the ages of A and B were in the ratio 13 : 17. Seventeen years from now, their ages will be in the ratio 10 : 11. What is B's present age?",
+  "opts": [
+   "27 years",
+   "40 years",
+   "44 years",
+   "23 years"
+  ],
+  "ans": 0,
+  "why": "10 years ago: 13k and 17k. In 17 years: (13k + 27)/(17k + 27) = 10/11 → 143k + 297 = 170k + 270 → k = 1. B now = 17 + 10 = 27."
+ },
+ {
+  "n": 28,
+  "topic": "Ratio",
+  "q": "If 2A = 3B and 4B = 5C, then the ratio A : C is:",
+  "opts": [
+   "4 : 3",
+   "8 : 15",
+   "15 : 8",
+   "3 : 4"
+  ],
+  "ans": 2,
+  "why": "A/B = 3/2 and B/C = 5/4 → A/C = 15/8. (The sheet leaves out the (a) label on the first option.)"
+ },
+ {
+  "n": 29,
+  "topic": "Time & work",
+  "q": "3 men and 6 boys can do a piece of work in 12 days; 4 men and 7 boys can do the same in 10 days. Then, 6 men and 6 boys can do three times the amount of this work in:",
+  "opts": [
+   "18 days",
+   "21 days",
+   "24 days",
+   "30 days"
+  ],
+  "ans": 3,
+  "why": "12(3m + 6b) = 10(4m + 7b) → 36m + 72b = 40m + 70b → b = 2m. Work = 36m + 144m = 180 man-days. 6m + 6b = 18m per day. 3 × 180 ÷ 18 = 30 days."
+ },
+ {
+  "n": 30,
+  "topic": "Time & work",
+  "q": "If either 24 men or 36 women can reap a field in 40 days, then 16 men and 16 women will reap the field in:",
+  "opts": [
+   "36 days",
+   "16 days",
+   "9 days",
+   "8 days"
+  ],
+  "ans": 0,
+  "why": "24 men = 36 women → 1 man = 1.5 women. 16 men + 16 women = 24 + 16 = 40 women. 36 × 40 ÷ 40 = 36 days."
+ }
+]
