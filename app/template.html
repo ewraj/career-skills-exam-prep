@@ -284,6 +284,219 @@ td.k { font-weight: 600; white-space: nowrap; }
     foreignWs: n => shuffle(DATA.ws.foreign_a).slice(0, n).map(foreignWsQ),
   };
 
+  // ------------------------------------------------------------ aptitude drills: fresh questions in the sheet's types, answers computed
+  const ri = (a, b) => a + Math.floor(Math.random() * (b - a + 1));
+  const one = a => a[Math.floor(Math.random() * a.length)];
+  const gcd = (a, b) => (b ? gcd(b, a % b) : Math.abs(a));
+  const ratio = (a, b) => { const g = gcd(a, b); return `${a / g} : ${b / g}`; };
+  const AL = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  const pos = ch => AL.indexOf(ch) + 1;
+  const letter = n => AL[n - 1];
+  const sh = (ch, k) => AL[(((AL.indexOf(ch) + k) % 26) + 26) % 26];
+  const shiftW = (w, f) => w.split("").map((c, i) => sh(c, f(i))).join("");
+  const rev = w => w.split("").reverse().join("");
+  const inr = n => n.toLocaleString("en-IN");
+  function aq(sub, q, correct, cands, why) {
+    correct = String(correct);
+    const d = uniq(shuffle(cands.map(String))).filter(x => x !== correct).slice(0, 3);
+    for (let k = 1; d.length < 3 && k < 30 && !isNaN(correct); k++) { const alt = String(Number(correct) + k * (k % 2 ? 3 : -2)); if (!d.includes(alt) && alt !== correct) d.push(alt); }
+    const out = mk("gen:" + q, q, correct, d, esc(why), "apt");
+    out.sub = sub;
+    return out;
+  }
+  const fmtClock = mins => {
+    mins = ((mins % 1440) + 1440) % 1440;
+    const h = Math.floor(mins / 60), m = mins % 60;
+    return `${h % 12 || 12}:${String(m).padStart(2, "0")} ${h < 12 ? "a.m." : "p.m."}`;
+  };
+  function genClockRate() {
+    const gains = Math.random() < 0.5, sign = gains ? 1 : -1;
+    if (Math.random() < 0.5) {
+      const g = ri(2, 6), s = ri(6, 10), h = ri(3, 9), end = (s + h) * 60;
+      return aq("Clocks", `A clock ${gains ? "gains" : "loses"} ${g} minutes every hour. It is set right at ${fmtClock(s * 60)}. What time will it show when the correct time is ${fmtClock(end)}?`,
+        fmtClock(end + sign * g * h), [fmtClock(end - sign * g * h), fmtClock(end + sign * g * (h - 1)), fmtClock(end + sign * g * (h + 1))],
+        `${h} hours × ${g} min = ${g * h} min ${gains ? "ahead" : "behind"}.`);
+    }
+    const m = one([4, 5, 6, 8, 10, 12]), d = ri(2, 5), days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    return aq("Clocks", `A clock ${gains ? "gains" : "loses"} ${m} minutes every 24 hours. It shows the correct time at 12 noon on Monday. What time will it show at 12 noon on ${days[d]}?`,
+      fmtClock(720 + sign * m * d), [fmtClock(720 + sign * m * (d + 1)), fmtClock(720 - sign * m * d), fmtClock(720 + sign * m * (d - 1))],
+      `Monday noon → ${days[d]} noon = ${d} days. ${d} × ${m} = ${m * d} min ${gains ? "ahead" : "behind"}.`);
+  }
+  function genClockAngle() {
+    for (;;) {
+      const kind = one(["coincide", "opposite", "right"]), H = ri(1, 11);
+      const offs = { coincide: [0], opposite: [-180, 180], right: [-270, -90, 90, 270] }[kind];
+      const gs = offs.map(o => 30 * H + o).filter(g => g > 0 && g < 330).sort((a, b) => a - b);
+      if (!gs.length) continue;
+      const at = g => { const w = Math.floor(2 * g / 11), r = (2 * g) % 11; return `${H}:${String(w).padStart(2, "0")}${r ? ` ${r}/11` : ""}`; };
+      const g = gs[0];
+      const traps = [0, -270, -180, -90, 90, 180, 270, 60, -60, 30].map(o => 30 * H + o).filter(x => x > 0 && x < 330 && x !== g).map(at);
+      const phrase = { coincide: "coincide", opposite: "be exactly opposite each other", right: gs.length > 1 ? "first be at right angles" : "be at right angles" }[kind];
+      return aq("Clocks", `At what time between ${H} and ${H + 1} o'clock will the hands of a clock ${phrase}?`, at(g), traps,
+        `At ${H}:00 the minute hand is ${30 * H}° behind and gains 5.5° a minute. It must gain ${g}°: ${g} × 2/11 = ${2 * g}/11 = ${at(g).split(":")[1]} min.`);
+    }
+  }
+  function genNumSeries() {
+    const kind = ri(0, 5), idx = [0, 1, 2, 3, 4, 5];
+    let t = [], why = "";
+    if (kind === 5) {
+      const a0 = ri(2, 12), p = ri(2, 5), b0 = ri(30, 60), q = ri(1, 4);
+      const full = [0, 1, 2, 3, 4, 5, 6].map(i => (i % 2 ? b0 - q * ((i - 1) / 2) : a0 + p * (i / 2)));
+      const ans = full[4];
+      return aq("Number series", `Find the missing number: ${full.map((x, i) => (i === 4 ? "__" : x)).join(", ")}`, ans, [ans + 1, ans - 1, ans + p, ans - p, full[3], ans + 2],
+        `Two series take turns: ${a0}, ${a0 + p}, __, ${a0 + 3 * p} (+${p}) and ${b0}, ${b0 - q}, ${b0 - 2 * q} (−${q}). Missing = ${ans}.`);
+    }
+    if (kind === 0) { const n0 = ri(1, 3); t = [ri(1, 9)]; idx.forEach(i => t.push(t[i] + (n0 + i) ** 2)); why = `Differences are squares: ${idx.map(i => (n0 + i) ** 2).join(", ")}.`; }
+    if (kind === 1) { const k = one([2, 3]), c = one([-1, 1, 2]); t = [ri(2, 5)]; idx.forEach(i => t.push(t[i] * k + c)); why = `Each term × ${k} ${c < 0 ? "− 1" : "+ " + c}.`; }
+    if (kind === 2) { const d0 = ri(1, 5), s = ri(2, 6); t = [ri(2, 10)]; idx.forEach(i => t.push(t[i] + d0 + i * s)); why = `Differences ${idx.map(i => d0 + i * s).join(", ")} grow by ${s} each time.`; }
+    if (kind === 3) { t = [ri(1, 6)]; idx.forEach(i => t.push(t[i] * 2 + Math.floor((i + 1) / 2) + 1)); why = `× 2, then + ${idx.map(i => Math.floor((i + 1) / 2) + 1).join(", + ")}.`; }
+    if (kind === 4) {
+      const c = one([-1, 0, 1]), m0 = ri(1, 4), cube = Math.random() < 0.3;
+      t = [0, 1, 2, 3, 4, 5, 6].map(i => (m0 + i) ** (cube ? 3 : 2) + c);
+      why = `Terms are n${cube ? "³" : "²"}${c ? (c > 0 ? " + 1" : " − 1") : ""} for n = ${m0}, ${m0 + 1}, ${m0 + 2} …`;
+    }
+    const ans = t[6];
+    return aq("Number series", `Find the missing number: ${t.slice(0, 6).join(", ")}, ?`, ans, [ans + 1, ans - 1, ans + 2, ans - 2, ans + 3, ans + 5, ans - 4].filter(x => x > 0), `${why} Next = ${ans}.`);
+  }
+  function genLetterSeries() {
+    const kind = ri(0, 2);
+    if (kind === 0) {
+      const k = ri(2, 4), g = ri(1, 3), p1 = ri(1, 26 - 2 * g - 4 * k);
+      const term = j => [0, 1, 2].map(x => letter(p1 + x * g + j * k)).join("");
+      const ans = term(4);
+      return aq("Letter series", `Find the missing term: ${[0, 1, 2, 3].map(term).join(", ")}, ?`, ans,
+        [ans.slice(0, 2) + sh(ans[2], 1), sh(ans[0], 1) + ans.slice(1), ans[0] + sh(ans[1], -1) + ans[2], rev(ans)],
+        `Each letter moves +${k}: ${[0, 1, 2, 3, 4].map(j => letter(p1 + j * k)).join(" → ")}, and the same for the other two places. Answer ${ans}.`);
+    }
+    if (kind === 1) {
+      const a = ri(1, 4), s0 = ri(1, 2), z = ri(22, 26), terms = [];
+      for (let j = 0, f = a, s = z; j < 5; j++) { terms.push(letter(f) + letter(s)); f += s0 + j; s -= s0 + j; }
+      const ans = terms[4];
+      return aq("Letter series", `Find the missing term: ${terms.slice(0, 4).join(", ")}, ?`, ans,
+        [sh(ans[0], 1) + ans[1], ans[0] + sh(ans[1], 1), sh(ans[0], -1) + sh(ans[1], 1), ans[1] + ans[0]],
+        `First letters move +${s0}, +${s0 + 1}, +${s0 + 2}, +${s0 + 3}; second letters move back by the same steps. Answer ${ans}.`);
+    }
+    const k = ri(2, 4), p = ri(1, 26 - 4 * k), q = ri(1 + 4 * k, 26);
+    const [rule, f] = one([["n(n+1)", n => n * (n + 1)], ["n²", n => n * n], ["2n", n => 2 * n], ["n³", n => n ** 3]]);
+    const term = j => letter(p + j * k) + f(j + 1) + letter(q - j * k);
+    const ans = term(4), A1 = letter(p + 4 * k), A2 = letter(q - 4 * k), n5 = f(5);
+    return aq("Letter series", `Find the missing term: ${[0, 1, 2, 3].map(term).join(", ")}, ?`, ans,
+      [A1 + f(6) + A2, sh(A1, 1) + n5 + sh(A2, 1), A1 + n5 + sh(A2, -1), sh(A1, -1) + n5 + A2],
+      `First letter +${k}, last letter −${k}, and the number is ${rule} (n = 1, 2, 3 …). Answer ${ans}.`);
+  }
+  const WORDS = ["TEACHER", "MARKET", "GARDEN", "PLANET", "SCHOOL", "WINDOW", "FLOWER", "BRIDGE", "CANDLE", "SILVER", "ORANGE", "POCKET", "MOTHER", "STREAM",
+    "RABBIT", "PENCIL", "DOCTOR", "FRIEND", "SUMMER", "WINTER", "MONKEY", "JACKET", "BUTTER", "CAMERA", "PLAYER", "STRONG", "FOREST", "NUMBER"];
+  function genCoding() {
+    const [w1, w2] = shuffle(WORDS), kind = ri(0, 3);
+    if (kind === 0) {
+      const k = one([1, 2, 3, -1, -2]), enc = w => shiftW(w, () => k);
+      return aq("Coding-decoding", `If ${w1} is coded as ${enc(w1)}, how is ${w2} coded?`, enc(w2),
+        [shiftW(w2, () => k + 1), shiftW(w2, () => k - 1 || -k), rev(enc(w2)), shiftW(w2, () => -k)],
+        `Every letter moves ${k > 0 ? "+" + k : "−" + -k} (${w1[0]} → ${enc(w1)[0]}). ${w2} → ${enc(w2)}.`);
+    }
+    if (kind === 1) {
+      const r = rev(w2);
+      return aq("Coding-decoding", `In a certain code, ${w1} is written as ${rev(w1)}. How is ${w2} written in that code?`, r,
+        [r[1] + r[0] + r.slice(2), r.slice(0, -2) + r[r.length - 1] + r[r.length - 2], r.slice(1) + r[0], rev(w2.slice(0, 3)) + rev(w2.slice(3))],
+        `The code is the word written backwards. ${w2} → ${r}.`);
+    }
+    if (kind === 2) {
+      const [a, b] = shuffle(WORDS.filter(w => w.length <= 6)), num = w => w.split("").map(pos).join("");
+      return aq("Coding-decoding", `If ${a} is coded as ${num(a)}, how is ${b} coded?`, num(b),
+        [b.split("").map(c => 27 - pos(c)).join(""), b.split("").map(c => pos(c) + 1).join(""), num(rev(b))],
+        `Each letter becomes its alphabet position: ${b.split("").map(c => c + " = " + pos(c)).join(", ")}.`);
+    }
+    const enc = w => shiftW(w, i => i + 1);
+    return aq("Coding-decoding", `If ${w1} is coded as ${enc(w1)}, how is ${w2} coded?`, enc(w2),
+      [shiftW(w2, () => 1), shiftW(w2, i => i + 2), shiftW(w2, i => -(i + 1))],
+      `The shift grows with position: +1, +2, +3 … (${w1.slice(0, 3).split("").map((c, i) => `${c}+${i + 1} = ${sh(c, i + 1)}`).join(", ")} …).`);
+  }
+  function genWork() {
+    const kind = ri(0, 2);
+    if (kind === 0) {
+      for (let t = 0; t < 300; t++) {
+        const M1 = one([4, 6, 8, 10, 12]), H1 = one([6, 8, 9, 10]), D1 = one([5, 6, 8, 10, 12]), W1 = one([12, 18, 20, 24, 30, 36]);
+        const M2 = one([6, 8, 9, 10, 12, 15, 16, 18, 20, 24]), H2 = one([5, 6, 8, 9, 10]), D2 = one([4, 6, 8, 9, 10, 12]);
+        const W2 = W1 * M2 * H2 * D2 / (M1 * H1 * D1);
+        if (!Number.isInteger(W2) || W2 === W1 || W2 < 6 || W2 > 120) continue;
+        return aq("Time & work", `If ${M1} men working ${H1} hours a day can build a wall ${W1} m long in ${D1} days, how many men are needed to build a wall ${W2} m long working ${H2} hours a day in ${D2} days?`,
+          `${M2} men`, [M2 - 2, M2 + 2, M2 + 4, M2 - 4, M2 + 6].filter(x => x > 0).map(x => x + " men"),
+          `M₁H₁D₁/W₁ = M₂H₂D₂/W₂ → ${M1}×${H1}×${D1}/${W1} = M×${H2}×${D2}/${W2} → M = ${M2}.`);
+      }
+    }
+    if (kind <= 1) {
+      for (let t = 0; t < 300; t++) {
+        const [a, b] = one([[2, 3], [3, 4], [1, 2], [2, 5], [3, 5]]), s = ri(4, 12), M = a * s, W = b * s, D = one([10, 12, 15, 20, 24, 30, 36, 40]);
+        const c = ri(2, 20) * a, w = ri(2, 20), perDay = c * b / a + w, days = W * D / perDay;
+        if (!Number.isInteger(days) || days < 2) continue;
+        return aq("Time & work", `Either ${M} men or ${W} women can reap a field in ${D} days. How many days will ${c} men and ${w} women take together?`,
+          `${days} days`, [days + 2, days - 2, days + 4, Math.round(D * M / (c + w)), days * 2, days + 1, days * 3].filter(x => x > 0).map(x => x + " days"),
+          `${M} men = ${W} women, so 1 man = ${b}/${a} women. ${c} men + ${w} women = ${perDay} women. ${W} × ${D} ÷ ${perDay} = ${days} days.`);
+      }
+    }
+    for (let t = 0; t < 500; t++) {
+      const N = one([100, 120, 150, 180, 200, 240, 300]), D = one([20, 24, 30, 36, 40, 45, 60]), x = ri(4, 12), y = one([20, 25, 30, 40, 50, 60]), leave = Math.random() < 0.6;
+      const N2 = leave ? N - y : N + y, days = N * (D - x) / N2;
+      if (N2 <= 0 || !Number.isInteger(days)) continue;
+      return aq("Provisions", `A fort has food for ${N} men for ${D} days. After ${x} days, ${y} men ${leave ? "leave" : "join"}. How many more days will the food last?`,
+        `${days} days`, [D - x, days + 3, days - 3, days + 6, N * D / N2].filter(v => Number.isInteger(v) && v > 0).map(v => v + " days"),
+        `Food left = ${N} men × ${D - x} days. Now ${N2} men: ${N} × ${D - x} ÷ ${N2} = ${days} days.`);
+    }
+    return genNumSeries();
+  }
+  function genRatio() {
+    if (Math.random() < 0.5) {
+      for (let t = 0; t < 300; t++) {
+        const a = ri(2, 7), b = ri(a + 1, 9);
+        if (gcd(a, b) !== 1) continue;
+        const k = ri(3, 15), x = ri(2, 12), sub = Math.random() < 0.5, A = a * k + (sub ? -x : x), B = b * k + (sub ? -x : x);
+        if (A <= 0) continue;
+        return aq("Ratio", `Two numbers are in the ratio ${a} : ${b}. If ${x} is ${sub ? "subtracted from" : "added to"} each, the ratio becomes ${ratio(A, B)}. What is the smaller number?`,
+          a * k, [b * k, a * (k + 1), a * (k - 1), a * k + x, A].filter(v => v > 0),
+          `Numbers ${a}k and ${b}k: (${a}k ${sub ? "−" : "+"} ${x}) / (${b}k ${sub ? "−" : "+"} ${x}) = ${ratio(A, B)} → k = ${k}. Smaller = ${a * k}.`);
+      }
+    }
+    for (;;) {
+      const p = ri(2, 5), q = ri(2, 5), r = ri(2, 5), s = ri(2, 5);
+      if (p === q || r === s || q * s === p * r) continue;
+      return aq("Ratio", `If ${p}A = ${q}B and ${r}B = ${s}C, then A : C is:`, ratio(q * s, p * r),
+        [ratio(p * r, q * s), ratio(q * r, p * s), ratio(p * s, q * r), ratio(q + s, p + r)],
+        `A/B = ${q}/${p} and B/C = ${s}/${r}, so A/C = ${q * s}/${p * r} → ${ratio(q * s, p * r)}.`);
+    }
+  }
+  function genPartner() {
+    const x = one([3000, 4000, 5000, 6000, 8000, 9000, 12000]);
+    if (Math.random() < 0.5) {
+      const t = one([3, 4, 6, 8, 9]), y = 12 * x / t, m = 12 - t;
+      if (!Number.isInteger(y) || y % 100) return genPartner();
+      return aq("Partnership", `A starts a business with ₹${inr(x)}. B joins some months later with ₹${inr(y)}. At the end of the year the profit is shared equally. After how many months did B join?`,
+        `${m} months`, [t, m + 1, m - 1, m + 2].filter(v => v > 0 && v < 12).map(v => v + " months"),
+        `Equal profit → equal capital × months. ${inr(x)} × 12 = ${inr(y)} × t → t = ${t} months in the business, so B joined after 12 − ${t} = ${m} months.`);
+    }
+    const y = one([2000, 3000, 4000, 5000, 6000, 8000, 10000]), m = ri(2, 8);
+    return aq("Partnership", `A starts a business with ₹${inr(x)}. After ${m} months, B joins with ₹${inr(y)}. In what ratio should the profit be shared at the end of the year?`,
+      ratio(x * 12, y * (12 - m)), [ratio(x, y), ratio(x * 12, y * m), ratio(x * (12 - m), y * 12), ratio(y * (12 - m), x * 12), ratio(x * 12, y * (13 - m)), ratio(x * 12, y * (11 - m)), ratio(x * 12 + y, y * (12 - m))],
+      `Capital × months: A = ${inr(x)} × 12, B = ${inr(y)} × ${12 - m}. Ratio ${ratio(x * 12, y * (12 - m))}.`);
+  }
+  function genAges() {
+    for (let t = 0; t < 300; t++) {
+      const a = ri(2, 9), b = ri(a + 1, 13);
+      if (gcd(a, b) !== 1) continue;
+      const k = ri(1, 4), n = one([4, 5, 6, 8, 10]), m = one([4, 5, 6, 8, 10, 12]), Ap = a * k + n, Bp = b * k + n;
+      if (Ap < 8) continue;
+      const fut = ratio(Ap + m, Bp + m);
+      return aq("Ages", `${n} years ago, the ages of A and B were in the ratio ${a} : ${b}. ${m} years from now, the ratio will be ${fut}. What is B's present age?`,
+        `${Bp} years`, [b * k, Bp + m, Ap, Bp + 2, Bp - 2].filter(v => v > 0).map(v => v + " years"),
+        `${n} years ago: ${a}k and ${b}k. In ${m} years both add ${n + m}: (${a}k + ${n + m}) / (${b}k + ${n + m}) = ${fut} → k = ${k}. B now = ${b * k} + ${n} = ${Bp}.`);
+    }
+    return genRatio();
+  }
+  const APT_GENS = { clockAngle: genClockAngle, clockRate: genClockRate, coding: genCoding, number: genNumSeries, work: genWork, letter: genLetterSeries, partner: genPartner, ratio: genRatio, ages: genAges };
+  const APT_MIX = [["clockAngle", 3], ["clockRate", 2], ["coding", 5], ["number", 5], ["work", 5], ["letter", 3], ["partner", 2], ["ratio", 3], ["ages", 2]];
+  const APT_BAG = APT_MIX.flatMap(([k, n]) => Array(n).fill(k));
+  gen.aptOne = () => APT_GENS[one(APT_BAG)]();
+  gen.aptDrill = () => shuffle(APT_MIX.flatMap(([k, n]) => Array.from({ length: n }, () => APT_GENS[k]())));
+
   // ------------------------------------------------------------ mistakes
   const mistakes = {
     all() { return store.get("mistakes", []); },
@@ -317,6 +530,8 @@ td.k { font-weight: 600; white-space: nowrap; }
     { id: "D", name: "Set D as printed", desc: "Exact paper, original order", build: () => setQs("D") },
     { id: "mixed", name: "Everything mixed", desc: "20 real + 10 word pairs + 6 roots + 7 idioms + 7 foreign", build: () => shuffle([...gen.rev(20), ...gen.synant(10), ...gen.roots(6), ...gen.idioms(7), ...gen.foreign(7)]) },
     { id: "apt", name: "Aptitude self-assessment", desc: "The 30-question sheet: clocks, coding, series, time & work …", build: () => DATA.apt.map(aptQ) },
+    { id: "aptdrill", name: "Aptitude drill", desc: "30 new questions in the sheet's types and mix, a fresh set every time", build: () => gen.aptDrill() },
+    { id: "rehearsal", name: "Full rehearsal", desc: "25 real vocabulary + 10 new vocabulary + 15 new aptitude", build: () => [...gen.rev(25), ...shuffle([...gen.synant(6), ...gen.roots(4)]), ...Array.from({ length: 15 }, gen.aptOne)] },
     { id: "beyond", name: "Beyond the pool", desc: "Only new questions generated from the full lists", build: () => shuffle([...gen.synant(16), ...gen.roots(10), ...gen.idioms(12), ...gen.foreign(8), ...gen.foreignWs(4)]) },
   ];
   const byId = Object.fromEntries(DATA.rev.map(r => [r.id, r]));
@@ -452,6 +667,7 @@ td.k { font-weight: 600; white-space: nowrap; }
     { id: "idioms", name: "Idioms", n: () => IDI.length, next: () => gen.idioms(1)[0] },
     { id: "foreign", name: "Foreign phrases", n: () => DATA.foreign.length, next: () => gen.foreign(1)[0] },
     { id: "apt", name: "Aptitude sheet", n: () => DATA.apt.length, next: () => aptQ(DATA.apt[Math.floor(Math.random() * DATA.apt.length)]) },
+    { id: "aptdrill", name: "Aptitude drill (new)", n: () => "∞", next: () => gen.aptOne() },
     { id: "fws", name: "Foreign worksheet (fill-in)", n: () => DATA.ws.foreign_a.length, next: () => gen.foreignWs(1)[0] },
     { id: "mistakes", name: "My mistakes", n: () => mistakes.all().length, next: () => { const m = mistakes.all(); return m.length ? m[Math.floor(Math.random() * Math.min(m.length, 40))] : null; } },
   ];
