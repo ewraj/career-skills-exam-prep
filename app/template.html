@@ -209,12 +209,13 @@ td.k { font-weight: 600; white-space: nowrap; }
 
   // ------------------------------------------------------------ question sources
   const SYN = DATA.synant.filter(e => !e.note);
-  const TOPIC_LABEL = { root: "Root word", syn: "Synonym / meaning", ant: "Antonym", idiom: "Idiom", foreign: "Foreign phrase" };
+  const TOPIC_LABEL = { root: "Root word", syn: "Synonym / meaning", ant: "Antonym", idiom: "Idiom", foreign: "Foreign phrase", apt: "Aptitude" };
 
   function mk(key, q, correct, distractors, why, topic) {
     const opts = shuffle([correct, ...distractors.slice(0, 3)]);
     return { key, q, opts, ans: opts.indexOf(correct), why, topic };
   }
+  function aptQ(a) { return { key: "apt:" + a.n, q: a.q, opts: a.opts, ans: a.ans, why: esc(a.why), topic: "apt", sub: a.topic, src: "Self-assessment Q" + a.n }; }
   function revQ(r) { return { key: "rev:" + r.id, q: r.q, opts: r.opts, ans: r.ans, why: r.why, topic: r.topic, src: r.sets.join(", ") }; }
 
   const related = (e, x) => {
@@ -294,7 +295,7 @@ td.k { font-weight: 600; white-space: nowrap; }
   function qHTML(q, i, opts = {}) {
     const chosen = opts.chosen, reveal = opts.reveal;
     return `<article class="q" id="q${i}">
-      <div class="q-head"><span class="q-num">${i + 1}.</span><span class="q-text">${esc(q.q)}</span><span class="tag">${esc(TOPIC_LABEL[q.topic] || "")}</span></div>
+      <div class="q-head"><span class="q-num">${i + 1}.</span><span class="q-text">${esc(q.q)}</span><span class="tag">${esc(q.sub || TOPIC_LABEL[q.topic] || "")}</span></div>
       <div class="opts" role="radiogroup" aria-label="Question ${i + 1}">
         ${q.opts.map((o, k) => {
           let cls = "opt";
@@ -315,6 +316,7 @@ td.k { font-weight: 600; white-space: nowrap; }
     { id: "C", name: "Set C as printed", desc: "Exact paper, original order", build: () => setQs("C") },
     { id: "D", name: "Set D as printed", desc: "Exact paper, original order", build: () => setQs("D") },
     { id: "mixed", name: "Everything mixed", desc: "20 real + 10 word pairs + 6 roots + 7 idioms + 7 foreign", build: () => shuffle([...gen.rev(20), ...gen.synant(10), ...gen.roots(6), ...gen.idioms(7), ...gen.foreign(7)]) },
+    { id: "apt", name: "Aptitude self-assessment", desc: "The 30-question sheet: clocks, coding, series, time & work …", build: () => DATA.apt.map(aptQ) },
     { id: "beyond", name: "Beyond the pool", desc: "Only new questions generated from the full lists", build: () => shuffle([...gen.synant(16), ...gen.roots(10), ...gen.idioms(12), ...gen.foreign(8), ...gen.foreignWs(4)]) },
   ];
   const byId = Object.fromEntries(DATA.rev.map(r => [r.id, r]));
@@ -327,14 +329,15 @@ td.k { font-weight: 600; white-space: nowrap; }
     view.innerHTML = `<section class="stack setup">
       <div class="panel stack">
         <div class="eyebrow">Tomorrow's paper</div>
-        <h2>50 questions · four options · one answer each</h2>
-        <p class="lede">Your four revision sets are one pool of 97 questions reshuffled. About half test root words, the rest synonyms and antonyms, and most words come straight from the handouts. Start with the real pool, then try “Beyond the pool” to cover the words they could add.</p>
+        <h2>Four options, one answer: vocabulary and aptitude</h2>
+        <p class="lede"><b>Vocabulary:</b> your four revision sets are one pool of 97 questions reshuffled. About half test root words; the rest are synonyms and antonyms. <b>Aptitude:</b> the self-assessment covers clocks, coding, number and letter series, time &amp; work, ratio and partnership.</p>
         <div class="stats">
           <div class="stat"><b>${DATA.rev.length}</b><span>unique test questions</span></div>
           <div class="stat"><b>${DATA.roots.length}</b><span>root words</span></div>
           <div class="stat"><b>${DATA.synant.length}</b><span>synonym/antonym entries</span></div>
           <div class="stat"><b>${DATA.idioms.length}</b><span>idioms &amp; phrases</span></div>
           <div class="stat"><b>${DATA.foreign.length}</b><span>foreign expressions</span></div>
+          <div class="stat"><b>${DATA.apt.length}</b><span>aptitude questions, worked</span></div>
         </div>
       </div>
       <div class="panel stack">
@@ -409,7 +412,7 @@ td.k { font-weight: 600; white-space: nowrap; }
     const m = mock;
     const pct = Math.round(100 * m.score / m.qs.length);
     const by = {};
-    m.qs.forEach((q, i) => { const t = TOPIC_LABEL[q.topic] || "Other"; by[t] = by[t] || [0, 0]; by[t][1]++; if (m.answers[i] === q.ans) by[t][0]++; });
+    m.qs.forEach((q, i) => { const t = q.sub || TOPIC_LABEL[q.topic] || "Other"; by[t] = by[t] || [0, 0]; by[t][1]++; if (m.answers[i] === q.ans) by[t][0]++; });
     const wrong = m.qs.map((q, i) => [q, i]).filter(([q, i]) => m.answers[i] !== q.ans);
     const verdict = pct >= 90 ? "Exam-ready. Skim your misses and sleep." : pct >= 75 ? "Solid. Clear the misses below, then take another paper." : pct >= 50 ? "Getting there. Drill the weak section in Flashcards, then retake." : "Start with Flashcards → “Roots in the tests”, then come back.";
     view.innerHTML = `<section class="stack">
@@ -448,6 +451,7 @@ td.k { font-weight: 600; white-space: nowrap; }
     { id: "synant", name: "Synonyms & antonyms", n: () => SYN.length, next: () => gen.synant(1)[0] },
     { id: "idioms", name: "Idioms", n: () => IDI.length, next: () => gen.idioms(1)[0] },
     { id: "foreign", name: "Foreign phrases", n: () => DATA.foreign.length, next: () => gen.foreign(1)[0] },
+    { id: "apt", name: "Aptitude sheet", n: () => DATA.apt.length, next: () => aptQ(DATA.apt[Math.floor(Math.random() * DATA.apt.length)]) },
     { id: "fws", name: "Foreign worksheet (fill-in)", n: () => DATA.ws.foreign_a.length, next: () => gen.foreignWs(1)[0] },
     { id: "mistakes", name: "My mistakes", n: () => mistakes.all().length, next: () => { const m = mistakes.all(); return m.length ? m[Math.floor(Math.random() * Math.min(m.length, 40))] : null; } },
   ];
